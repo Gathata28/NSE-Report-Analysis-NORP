@@ -50,6 +50,21 @@ The database is already included at `data/indexes/nse_reports_archive.sqlite`. T
 
 Useful views include `vw_report_catalog`, `vw_periodic_core_reports`, `vw_fact_panel`, `vw_data_quality_flags`, `vw_market_price_panel`, `vw_market_sector_panel`, `vw_market_dataset_catalog`, and `vw_market_quality_flags`.
 
+## Filtered public PDF downloads
+
+Use `scripts/download_reports.py` to download all reports or any combination of sector, company, ticker, year range, report frequency, and document subtype filters. The command writes a resumable checksum manifest and can optionally create a ZIP archive. See [`docs/DOWNLOAD_REPORTS.md`](docs/DOWNLOAD_REPORTS.md) for examples, output statuses, landing-page behavior, and responsible handling of blocked hosts.
+
+```bash
+python scripts/download_reports.py \
+  --output-dir ./downloads/banking-2020-2025 \
+  --sector BANKING \
+  --year-from 2020 \
+  --year-to 2025 \
+  --csv-manifest ./downloads/banking-2020-2025.csv
+```
+
+Use `--dry-run` first to inspect the exact selection without making network requests.
+
 ## Provenance and responsible use
 
 Issuer pages, issuer-controlled APIs/CDNs, and exact NSE/CMA fallback documents are distinguished in `source_tier`. A bounded HTTP sample is not a full-corpus download verification. Secondary sources are retained only as discovery or status leads. No delisting, successor identity, or report period is inferred from absence alone. The attached market-data import preserves anomalies rather than imputing or silently dropping values. This is research infrastructure, not investment advice.

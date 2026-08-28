@@ -195,3 +195,44 @@ def test_deduplicate_skips_nullable_urls_without_crashing():
     ])
     assert len(rows) == 1
     assert rows[0]["download_url"] == "https://example.test/report.pdf"
+
+
+def test_download_filter_combines_ticker_sector_year_and_frequency():
+    from download_reports import DEFAULT_DB, select_reports
+
+    rows = select_reports(
+        DEFAULT_DB,
+        sectors=["BANKING"],
+        tickers=["SCBK"],
+        companies=[],
+        year_from=2020,
+        year_to=2025,
+        frequencies=["Annual / full-year"],
+        subtypes=[],
+        limit=3,
+    )
+    assert rows
+    assert len(rows) <= 3
+    assert all(row["ticker"] == "SCBK" for row in rows)
+    assert all(row["sector"] == "BANKING" for row in rows)
+    assert all(2020 <= int(row["report_year"]) <= 2025 for row in rows)
+    assert all(row["report_frequency"] == "Annual / full-year" for row in rows)
+
+
+def test_sector_aliases_are_canonicalized():
+    from download_reports import canonical_sector
+
+    assert canonical_sector("MANUFACTURING & ALLIED") == "MANUFACTURING AND ALLIED"
+    assert canonical_sector("  banking ") == "BANKING"
+
+
+def test_landing_page_candidates_rank_matching_pdf_links():
+    from download_reports import pdf_candidates
+
+    html = """
+    <a href='/other.pdf'>Other document</a>
+    <a href='/SCBK-Annual-Report-2024.pdf'>SCBK Annual Report 2024</a>
+    <a href='/notice.html'>Notice</a>
+    """
+    candidates = pdf_candidates(html, "https://example.test/reports/", "SCBK Annual Report 2024")
+    assert candidates[0][1] == "https://example.test/SCBK-Annual-Report-2024.pdf"
