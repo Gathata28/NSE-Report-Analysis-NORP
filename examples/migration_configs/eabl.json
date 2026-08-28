@@ -1,0 +1,8 @@
+{
+  "issuer": "East African Breweries PLC",
+  "ticker": "EABL",
+  "source_page": "https://www.eabl.com/investors/financial-results",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/eabl_financial_results_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch1_eabl.csv"
+}

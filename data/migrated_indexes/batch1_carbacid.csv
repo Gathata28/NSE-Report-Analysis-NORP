@@ -1,0 +1,2 @@
+record_id,issuer,ticker,report_frequency,document_subtype,report_year_label,webpage_title,source_page_url,download_url,http_status,content_type,source_tier
+NSE-00001,Carbacid Investments PLC,CARB,Annual / full-year,Annual report,2025,2025 Annual Report,https://carbacid.com/,https://carbacid.com/documents/87/2025_Annual_Report.pdf,linked from source page,application/pdf (inferred from URL),Issuer website

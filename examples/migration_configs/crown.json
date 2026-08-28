@@ -1,0 +1,8 @@
+{
+  "issuer": "Crown Paints Kenya PLC",
+  "ticker": "CRWN",
+  "source_page": "https://www.crownpaints.co.ke/about?tab=report#report",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/crown_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch1_crown.csv"
+}

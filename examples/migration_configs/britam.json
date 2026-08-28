@@ -1,0 +1,8 @@
+{
+  "issuer": "Britam Holdings PLC",
+  "ticker": "BRIT",
+  "source_page": "https://www.britam.com/investor-relations/annual-reports",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/britam_annual_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch1_britam.csv"
+}

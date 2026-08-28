@@ -86,8 +86,8 @@ def deduplicate_records(records: Iterable[Mapping[str, str]], issuer: str | None
     seen: set[tuple[str, str]] = set()
     for record in records:
         row = dict(record)
-        row_issuer = row.get("issuer", issuer or "")
-        url = row.get("download_url") or row.get("direct_url") or row.get("url", "")
+        row_issuer = str(row.get("issuer") or issuer or "")
+        url = str(row.get("download_url") or row.get("direct_url") or row.get("url") or "")
         key = (row_issuer.strip().lower(), url.strip())
         if not url.strip() or key in seen:
             continue

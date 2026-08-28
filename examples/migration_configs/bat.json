@@ -1,0 +1,8 @@
+{
+  "issuer": "British American Tobacco Kenya PLC",
+  "ticker": "BAT",
+  "source_page": "https://www.batkenya.com/investors-and-reporting/financial-sustainability-reports",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/bat_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch1_bat.csv"
+}

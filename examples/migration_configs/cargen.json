@@ -1,0 +1,8 @@
+{
+  "issuer": "Car & General (Kenya) PLC",
+  "ticker": "CGEN",
+  "source_page": "https://cargen.com/financial-reports/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/cargen_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch1_cargen.csv"
+}

@@ -172,7 +172,7 @@ def test_kplc_live_collector_filters_financial_pdfs_from_noise(monkeypatch):
     import collect_kplc_live
 
     fixture = Path(__file__).parent / "fixtures" / "kplc_investor_relations.html"
-    response = SimpleNamespace(text=fixture.read_text(encoding="utf-8"))
+    response = SimpleNamespace(text=fixture.read_text(encoding="utf-8"), raise_for_status=lambda: None)
     monkeypatch.setattr(collect_kplc_live, "fetch_with_retry", lambda *args, **kwargs: response)
 
     rows = collect_kplc_live.collect_links()
@@ -184,3 +184,14 @@ def test_kplc_live_collector_filters_financial_pdfs_from_noise(monkeypatch):
     assert any("annual report" in title or "financial results" in title for title in titles)
     assert not any("e-mobility" in title for title in titles)
     assert not any("conference" in title for title in titles)
+
+
+def test_deduplicate_skips_nullable_urls_without_crashing():
+    from norp_engine import deduplicate_records
+
+    rows = deduplicate_records([
+        {"issuer": "Carbacid Investments PLC", "url": None, "title": "missing"},
+        {"issuer": "Carbacid Investments PLC", "url": "https://example.test/report.pdf", "title": "valid"},
+    ])
+    assert len(rows) == 1
+    assert rows[0]["download_url"] == "https://example.test/report.pdf"

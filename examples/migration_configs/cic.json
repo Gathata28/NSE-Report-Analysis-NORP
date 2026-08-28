@@ -1,0 +1,8 @@
+{
+  "issuer": "CIC Insurance Group PLC",
+  "ticker": "CIC",
+  "source_page": "https://www.cicinsurancegroup.com/investor-relations/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/cic_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch1_cic.csv"
+}
