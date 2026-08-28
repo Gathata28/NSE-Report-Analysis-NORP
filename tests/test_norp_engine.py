@@ -66,3 +66,73 @@ def test_normalization_accepts_direct_url_and_source_page_url_aliases():
 
 def test_hyphenated_integrated_report_is_annual():
     assert classify_frequency("Integrated-Report-Financial-Statements-2024", "") == "Annual / full-year"
+
+
+def test_retry_policy_is_tier_specific():
+    from norp_engine import retry_policy_for_tier
+
+    assert retry_policy_for_tier("Issuer website").max_attempts == 3
+    assert retry_policy_for_tier("NSE/exchange fallback").max_attempts == 4
+    assert retry_policy_for_tier("Secondary aggregator").max_attempts == 2
+
+
+def test_fetch_with_retry_retries_transient_status_and_preserves_tls_default():
+    import requests
+    from norp_engine import RetryPolicy, fetch_with_retry
+
+    class FakeSession:
+        def __init__(self):
+            self.calls = []
+            self.responses = [requests.Response(), requests.Response()]
+            self.responses[0].status_code = 503
+            self.responses[1].status_code = 200
+
+        def get(self, url, **kwargs):
+            self.calls.append((url, kwargs))
+            return self.responses.pop(0)
+
+    session = FakeSession()
+    delays = []
+    response = fetch_with_retry(
+        "https://issuer.example/report.pdf",
+        session=session,
+        sleep=delays.append,
+        policy=RetryPolicy(max_attempts=3, backoff_factor=0.25, timeout=5.0),
+    )
+    assert response.status_code == 200
+    assert len(session.calls) == 2
+    assert delays == [0.25]
+    assert "verify" not in session.calls[0][1]
+    assert session.calls[0][1]["timeout"] == 5.0
+
+
+def test_fetch_with_retry_returns_non_retryable_response_without_sleep():
+    import requests
+    from norp_engine import RetryPolicy, fetch_with_retry
+
+    class FakeSession:
+        def get(self, url, **kwargs):
+            response = requests.Response()
+            response.status_code = 404
+            return response
+
+    delays = []
+    response = fetch_with_retry(
+        "https://issuer.example/missing.pdf",
+        session=FakeSession(),
+        sleep=delays.append,
+        policy=RetryPolicy(max_attempts=4, backoff_factor=1.0, timeout=5.0),
+    )
+    assert response.status_code == 404
+    assert delays == []
+
+
+def test_host_limiter_keeps_hosts_independent():
+    from norp_engine import HostConcurrencyLimiter
+
+    limiter = HostConcurrencyLimiter(default_cap=2)
+    first = limiter.semaphore_for("https://one.example/a.pdf", "Issuer website")
+    same_host = limiter.semaphore_for("https://one.example/b.pdf", "Issuer website")
+    second = limiter.semaphore_for("https://two.example/a.pdf", "Issuer website")
+    assert first is same_host
+    assert first is not second

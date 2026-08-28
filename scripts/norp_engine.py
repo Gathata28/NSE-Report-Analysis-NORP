@@ -3,9 +3,15 @@ from __future__ import annotations
 
 import csv
 import re
+import time
+from dataclasses import dataclass
+from threading import BoundedSemaphore, Lock
+from urllib.parse import urlparse
 from datetime import date, datetime
 from pathlib import Path
-from typing import Iterable, Mapping
+from typing import Callable, Iterable, Mapping
+
+import requests
 
 REPORT_FIELDS = [
     "record_id", "issuer", "ticker", "report_frequency", "document_subtype",
@@ -132,3 +138,122 @@ def write_index(path: Path, records: Iterable[Mapping[str, str]]) -> None:
         writer = csv.DictWriter(handle, fieldnames=REPORT_FIELDS, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(rows)
+
+
+@dataclass(frozen=True)
+class RetryPolicy:
+    """Retry settings for one source tier."""
+
+    max_attempts: int
+    backoff_factor: float
+    timeout: float
+    max_backoff: float = 30.0
+
+
+RETRY_POLICIES: dict[str, RetryPolicy] = {
+    "issuer": RetryPolicy(max_attempts=3, backoff_factor=0.5, timeout=30.0),
+    "nse": RetryPolicy(max_attempts=4, backoff_factor=1.0, timeout=45.0),
+    "secondary": RetryPolicy(max_attempts=2, backoff_factor=2.0, timeout=30.0),
+}
+RETRYABLE_STATUS_CODES = {408, 425, 429, 500, 502, 503, 504}
+
+
+def retry_policy_for_tier(source_tier: str) -> RetryPolicy:
+    """Return a conservative policy based on the source tier label."""
+    label = (source_tier or "").lower()
+    if "nse" in label or "exchange" in label or "cma" in label:
+        return RETRY_POLICIES["nse"]
+    if "secondary" in label or "aggregator" in label:
+        return RETRY_POLICIES["secondary"]
+    return RETRY_POLICIES["issuer"]
+
+
+class HostConcurrencyLimiter:
+    """Maintain independent concurrency caps for each destination host."""
+
+    def __init__(self, *, default_cap: int = 2, cap_by_tier: Mapping[str, int] | None = None) -> None:
+        if default_cap < 1:
+            raise ValueError("default_cap must be at least 1")
+        self.default_cap = default_cap
+        self.cap_by_tier = dict(cap_by_tier or {"issuer": 2, "nse": 1, "secondary": 1})
+        self._semaphores: dict[str, BoundedSemaphore] = {}
+        self._lock = Lock()
+
+    def _cap_for_tier(self, source_tier: str) -> int:
+        policy_key = "issuer"
+        label = (source_tier or "").lower()
+        if "nse" in label or "exchange" in label or "cma" in label:
+            policy_key = "nse"
+        elif "secondary" in label or "aggregator" in label:
+            policy_key = "secondary"
+        return max(1, int(self.cap_by_tier.get(policy_key, self.default_cap)))
+
+    def semaphore_for(self, url: str, source_tier: str) -> BoundedSemaphore:
+        """Return the shared semaphore for the URL's hostname."""
+        host = (urlparse(url).hostname or "").lower()
+        if not host:
+            raise ValueError(f"URL has no hostname: {url!r}")
+        with self._lock:
+            if host not in self._semaphores:
+                self._semaphores[host] = BoundedSemaphore(self._cap_for_tier(source_tier))
+            return self._semaphores[host]
+
+
+DEFAULT_HOST_LIMITER = HostConcurrencyLimiter()
+
+
+def fetch_with_retry(
+    url: str,
+    *,
+    source_tier: str = "Issuer website",
+    session: requests.Session | None = None,
+    limiter: HostConcurrencyLimiter | None = None,
+    policy: RetryPolicy | None = None,
+    sleep: Callable[[float], None] = time.sleep,
+    headers: Mapping[str, str] | None = None,
+) -> requests.Response:
+    """Fetch a public URL with tiered retries and a per-host concurrency cap.
+
+    The function preserves normal TLS certificate verification by relying on the
+    requests default (`verify=True`). It retries transient network errors and
+    selected HTTP statuses, but returns non-retryable responses unchanged so the
+    caller can record the source-specific status and provenance.
+    """
+    parsed = urlparse(url)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        raise ValueError(f"Only absolute HTTP(S) URLs are supported: {url!r}")
+    selected_policy = policy or retry_policy_for_tier(source_tier)
+    if selected_policy.max_attempts < 1:
+        raise ValueError("max_attempts must be at least 1")
+    request_session = session or requests.Session()
+    host_limiter = limiter or DEFAULT_HOST_LIMITER
+    request_headers = {"User-Agent": "NORP-public-archive/1.0"}
+    if headers:
+        request_headers.update(headers)
+    last_error: Exception | None = None
+
+    for attempt in range(1, selected_policy.max_attempts + 1):
+        try:
+            semaphore = host_limiter.semaphore_for(url, source_tier)
+            with semaphore:
+                response = request_session.get(
+                    url,
+                    headers=request_headers,
+                    timeout=selected_policy.timeout,
+                )
+            if response.status_code not in RETRYABLE_STATUS_CODES:
+                return response
+            last_error = requests.HTTPError(
+                f"retryable HTTP status {response.status_code} for {url}",
+                response=response,
+            )
+        except requests.RequestException as error:
+            last_error = error
+
+        if attempt < selected_policy.max_attempts:
+            delay = min(selected_policy.max_backoff, selected_policy.backoff_factor * (2 ** (attempt - 1)))
+            sleep(delay)
+
+    if last_error is not None:
+        raise last_error
+    raise requests.RequestException(f"request failed without a response: {url}")
