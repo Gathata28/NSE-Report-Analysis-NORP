@@ -34,6 +34,7 @@ jobs:
         uses: shundor/python-bandit-scan@ab1d87dfccc5a0ffab88be3aaac6ffe35c10d6cd
         with: # optional arguments
           # Bandit exits nonzero when findings are detected, so this workflow gates the build.
+          exit_zero: false
           # Github token of the repository (automatically created by Github)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information.
           # File or directory to run bandit on
