@@ -1,0 +1,10 @@
+records 9
+{'title': 'Download', 'url': 'https://www.kenyare.co.ke/sites/default/files/resource/documents/Kenya%20Re%20Report%202025%20-final.pdf', 'filename': 'Kenya%20Re%20Report%202025%20-final.pdf'}
+{'title': 'Download', 'url': 'https://www.kenyare.co.ke/sites/default/files/resource/documents/Kenya%20Re%20Integrated%20Annual%20Report%202025.pdf', 'filename': 'Kenya%20Re%20Integrated%20Annual%20Report%202025.pdf'}
+{'title': 'Download', 'url': 'https://www.kenyare.co.ke/sites/default/files/resource/documents/KENYA%20RE%20Annual%20Report%202024_Draft_10_190625.pdf', 'filename': 'KENYA%20RE%20Annual%20Report%202024_Draft_10_190625.pdf'}
+{'title': 'Download', 'url': 'https://www.kenyare.co.ke/sites/default/files/resource/documents/ANNUAL%20REPORT%202023_2%20%282%29.pdf', 'filename': 'ANNUAL%20REPORT%202023_2%20%282%29.pdf'}
+{'title': 'Download', 'url': 'https://www.kenyare.co.ke/sites/default/files/resource/documents/2022%20Kenya%20Re%20Annual%20%20Report.pdf', 'filename': '2022%20Kenya%20Re%20Annual%20%20Report.pdf'}
+{'title': 'Download', 'url': 'https://www.kenyare.co.ke/sites/default/files/resource/documents/KENYA%20RE%20ANNUAL%20REPORT%202021_0.pdf', 'filename': 'KENYA%20RE%20ANNUAL%20REPORT%202021_0.pdf'}
+{'title': 'Download', 'url': 'https://www.kenyare.co.ke/sites/default/files/resource/documents/Annual%20Report%202021%20for%20web_1.pdf', 'filename': 'Annual%20Report%202021%20for%20web_1.pdf'}
+{'title': 'Download', 'url': 'https://www.kenyare.co.ke/sites/default/files/resource/documents/KENYA%20RE%20ANNUAL%20REPORT%202019.pdf', 'filename': 'KENYA%20RE%20ANNUAL%20REPORT%202019.pdf'}
+{'title': 'Download', 'url': 'https://www.kenyare.co.ke/sites/default/files/resource/documents/KENYA%20RE%20ANNUAL%20REPORT%202018.pdf', 'filename': 'KENYA%20RE%20ANNUAL%20REPORT%202018.pdf'}

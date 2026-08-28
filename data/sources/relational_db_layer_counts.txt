@@ -1,0 +1,7 @@
+select count(*) from report [(1761,)]
+select count(*) from report_file [(2,)]
+select count(*) from report_text [(52,)]
+select count(*) from report_qualitative [(52,)]
+select count(*) from report_fact [(251,)]
+select count(*) from coverage_gap [(1,)]
+select extraction_method,count(*) from report_text group by extraction_method [('tesseract-ocr', 52)]

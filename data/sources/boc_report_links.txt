@@ -1,0 +1,14 @@
+records 13
+{'title': '2025 Annual Report', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/2025-annual-report.pdf', 'filename': '2025-annual-report.pdf'}
+{'title': '2024 Annual Report Financial Statement', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/2024-annual-report--fs.pdf', 'filename': '2024-annual-report--fs.pdf'}
+{'title': '2011 Annual Report', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/reports/annual-report-2011.pdf', 'filename': 'annual-report-2011.pdf'}
+{'title': '2012 Annual Report', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/reports/annual-report-2012.pdf', 'filename': 'annual-report-2012.pdf'}
+{'title': '2013 Annual Report', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/reports/annual-report-2013.pdf', 'filename': 'annual-report-2013.pdf'}
+{'title': '2014 Annual Report', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/reports/annual-report-2014.pdf', 'filename': 'annual-report-2014.pdf'}
+{'title': '2015 Annual Report', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/reports/annual-report-2015.pdf', 'filename': 'annual-report-2015.pdf'}
+{'title': '2016 Annual Report', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/reports/annual-report-2016.pdf', 'filename': 'annual-report-2016.pdf'}
+{'title': '2017 Annual Report', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/reports/annual-report-2017.pdf', 'filename': 'annual-report-2017.pdf'}
+{'title': '2018 Annual Report', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/reports/annual-report-2018.pdf', 'filename': 'annual-report-2018.pdf'}
+{'title': '2020 Annual Report', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/reports/annual-report-2020.pdf', 'filename': 'annual-report-2020.pdf'}
+{'title': '2021 Annual Report', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/reports/annual-report-2022.pdf', 'filename': 'annual-report-2022.pdf'}
+{'title': '2023 Annual Report', 'url': 'https://assets.linde.com/-/media/global/africa/kenya/annual-reports/reports/annual-report-2023.pdf', 'filename': 'annual-report-2023.pdf'}

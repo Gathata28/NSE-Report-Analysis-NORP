@@ -1,0 +1,67 @@
+sector,issuer_name,ticker,isin,official_site_url,indexed_report_records,annual_records,semiannual_records,quarterly_records,coverage_status
+AGRICULTURAL,Eaagads Ltd Ord 1.25 AIMS,EGAD,KE0000000208,https://www.eaagads.co.ke/,7,0,0,7,indexed first-party records
+AGRICULTURAL,Kapchorua Tea Co. Ltd Ord Ord 5.00 AIMS,KAPC,KE4000001760,https://www.williamsontea.com/our-farms/kapchorua/,14,2,5,4,indexed first-party records
+AGRICULTURAL,Kakuzi Ord.5.00,KUKZ,KE0000000281,,24,12,12,0,indexed first-party records
+AGRICULTURAL,Limuru Tea Co. Ltd Ord 20.00,LIMT,KE0000000356,https://www.unilever-ewa.com/investor-relations/limuru-tea-financial-reports-and-accounts/,1,1,0,0,indexed first-party records
+AGRICULTURAL,Sasini Ltd Ord 1.00,SASN,KE0000000430,https://sasini.co.ke/,12,6,5,1,indexed first-party records
+AGRICULTURAL,Williamson Tea Kenya Ltd Ord 5.00,WTK,KE0000000505,https://www.williamsontea.com/,14,2,1,4,indexed first-party records
+AUTOMOBILES AND ACCESSORIES,Car and General (K) Ltd Ord 5.00,CGEN,KE0000000109,https://www.cargen.com/,25,17,2,0,indexed first-party records
+BANKING,Absa Bank Kenya PLC,ABSA,KE0000000067,https://www.absabank.co.ke/personal/,104,35,19,30,indexed first-party records
+BANKING,Stanbic Holdings Plc. ord.5.00,SBIC,KE0000000091,https://www.stanbicbank.co.ke/,138,68,40,24,indexed first-party records
+BANKING,I&M Holdings Ltd Ord 1.00,IMH,KE0000000125,https://www.imbankgroup.com/,90,25,20,30,indexed first-party records
+BANKING,Diamond Trust Bank Kenya Ltd Ord 4.00,DTK,KE0000000158,https://dtbk.dtbafrica.com/,28,0,3,25,indexed first-party records
+BANKING,Standard Chartered Bank Ltd Ord 5.00,SCBK,KE0000000448,https://www.sc.com/ke/,81,31,9,25,indexed first-party records
+BANKING,Equity Group Holdings Ord 0.50,EQTY,KE0000000554,https://equitygroupholdings.com/,6,3,2,1,indexed first-party records
+BANKING,The Co-operative Bank of Kenya Ltd Ord 1.00,COOP,KE1000001568,https://www.co-opbank.co.ke/,24,1,0,0,indexed first-party records
+BANKING,BK Group PLC,BKG,KE5000008986,https://bk.rw/personal,56,24,0,29,indexed first-party records
+BANKING,Family Bank Limited,FMLY,KE9930006987,https://familybank.co.ke/,66,20,10,21,indexed first-party records
+BANKING,HF Group Ltd Ord 5.00,HFCK,KE0000000240,https://www.hfgroup.co.ke/,80,22,5,45,indexed first-party records
+BANKING,HF Group Ltd Ord 5.00,KCB,KE0000000315,https://kcbgroup.com/,20,10,2,5,indexed first-party records
+BANKING,NCBA Group PLC,NCBA,KE0000000406,https://ke.ncbagroup.com/,9,0,4,3,indexed first-party records
+COMMERCIAL AND SERVICES,Express Ltd Ord 5.00,XPRS,KE0000000224,http://www.expresskenya.co.ke/express/,7,3,4,0,indexed first-party records
+COMMERCIAL AND SERVICES,Sameer Africa PLC Ord 5.00,SMER,KE0000000232,https://sameerafrica.com/,40,28,8,0,indexed first-party records
+COMMERCIAL AND SERVICES,Kenya Airways Ltd Ord 5.00,KQ,KE0000000307,https://www.kenya-airways.com/ke/,47,6,10,0,indexed first-party records
+COMMERCIAL AND SERVICES,Nation Media Group Ord. 2.50,NMG,KE0000000380,https://www.nationmedia.com/,12,0,0,0,indexed first-party records
+COMMERCIAL AND SERVICES,Standard Group Ltd Ord 5.00,SGL,KE0000000455,https://www.standardmedia.co.ke/corporate/,24,6,3,0,indexed first-party records
+COMMERCIAL AND SERVICES,TPS Eastern Africa (Serena) Ltd Ord 1.00,TPSE,KE0000000539,https://africanfinancials.com/company/ke-tpse/,29,13,2,0,indexed first-party records
+COMMERCIAL AND SERVICES,Scangroup Ltd Ord 1.00,SCAN,KE0000000562,https://www.wpp-scangroup.com/,68,28,16,0,indexed first-party records
+COMMERCIAL AND SERVICES,Uchumi Supermarket Ltd Ord 5.00,UCHM,KE0000000489,https://www.uchumisupermarkets.co.ke/,3,0,3,0,indexed first-party records
+COMMERCIAL AND SERVICES,Longhorn Publishers Ltd,LKL,KE2000002275,https://longhornpublishers.com/,32,21,11,0,indexed first-party records
+COMMERCIAL AND SERVICES,Deacons (East Africa) Plc Ord 2.50,DCON,KE5000005438,,1,0,0,0,indexed first-party records
+COMMERCIAL AND SERVICES,Nairobi Business Ventures Ltd,NBV,KE5000000090,http://www.nbvplc.com/,22,0,10,12,indexed first-party records
+CONSTRUCTION AND ALLIED,Athi River Mining Ord 5.00,ARM,KE0000000034,,2,2,0,0,indexed first-party records
+CONSTRUCTION AND ALLIED,Bamburi Cement PLC Ord 5.00,BAMB,KE0000000059,https://www.lafarge.co.ke/,10,8,1,0,indexed first-party records
+CONSTRUCTION AND ALLIED,Crown Paints Kenya PLC. 0rd 5.00,CRWN,KE0000000141,https://www.crownpaints.co.ke/,19,15,1,0,indexed first-party records
+CONSTRUCTION AND ALLIED,E.A.Cables PLC Ord 0.50,CABL,KE0000000174,https://www.eacables.com/index.php,1,0,1,0,indexed first-party records
+CONSTRUCTION AND ALLIED,E.A.Portland Cement Ltd Ord 5.00,PORT,KE0000000190,https://www.eacables.com/index.php,2,2,0,0,indexed first-party records
+ENERGY AND PETROLEUM,Total Kenya Ltd Ord 5.00,TOTL,KE0000000463,https://totalenergies.ke/,22,18,1,0,indexed first-party records
+ENERGY AND PETROLEUM,KenGen Ltd Ord. 2.50,KEGN,KE0000000547,https://www.kengen.co.ke/,4,4,0,0,indexed first-party records
+ENERGY AND PETROLEUM,Kenya Power & Lighting Co Ltd,KPLC,KE0000000349,,13,5,8,0,indexed first-party records
+ENERGY AND PETROLEUM,Umeme Ltd Ord 0.50,UMME,KE2000005815,http://umeme.co.ug/,6,5,0,0,indexed first-party records
+INSURANCE,Jubilee Holdings Ltd Ord 5.00,JUB,KE0000000273,https://jubileeinsurance.com/ke/,14,1,0,0,indexed first-party records
+INSURANCE,Sanlam Allianz Holdings (Kenya) PLC 0rd 5.00,SLAM,KE0000000414,https://www.sanlam.com/kenya,18,11,4,0,indexed first-party records
+INSURANCE,Kenya Re-Insurance Corporation Ltd Ord 2.50,KNRE,KE0000000604,https://kenyare.co.ke/,24,0,0,0,indexed first-party records
+INSURANCE,Liberty Kenya Holdings Ltd,LBTY,,https://www.libertykenya.co.ke/,1,0,0,0,indexed first-party records
+INSURANCE,Britam Holdings Ltd Ord 0.10,BRIT,KE2000002192,https://ke.britam.com/,15,15,0,0,indexed first-party records
+INSURANCE,CIC Insurance Group Ltd Ord 1.00,CIC,KE2000002317,https://cic.co.ke/,35,21,3,0,indexed first-party records
+INVESTMENT,Olympia Capital Holdings ltd Ord 5.00,OCH,KE0000000166,https://ochl.co.ke/,9,5,3,0,indexed first-party records
+INVESTMENT,Centum Investment Co Ltd Ord 0.50,CTUM,KE0000000265,https://centum.co.ke/,64,38,22,2,indexed first-party records
+INVESTMENT,Trans-Century Ltd,TCL,KE2000002184,http://transcentury.co.ke/,1,1,0,0,indexed first-party records
+INVESTMENT,Home Afrika Ltd Ord 1.00,HAFR,KE2000007258,https://www.homeafrika.com/,19,10,0,0,indexed first-party records
+INVESTMENT,Kurwitu Ventures,KURV,KE4000001216,,1,0,0,0,indexed first-party records
+INVESTMENT SERVICES,Nairobi Securities Exchange Ltd Ord 4.00,NSE,KE3000009674,,7,0,0,0,indexed first-party records
+MANUFACTURING AND ALLIED,B.O.C Kenya Ltd Ord 5.00,BOC,KE0000000042,,13,13,0,0,indexed first-party records
+MANUFACTURING AND ALLIED,British American Tobacco Kenya Ltd Ord 10.00,BAT,KE0000000075,https://www.batkenya.com/,31,22,9,0,indexed first-party records
+MANUFACTURING AND ALLIED,Carbacid Investments Ltd Ord 5.00,CARB,KE0000000117,https://carbacid.com/,1,1,0,0,indexed first-party records
+MANUFACTURING AND ALLIED,East African Breweries Ltd Ord 2.00,EABL,KE0000000216,https://www.eabl.com/,68,30,36,0,indexed first-party records
+MANUFACTURING AND ALLIED,Mumias Sugar Co. Ltd Ord 2.00,MSC,KE0000000372,,5,4,1,0,indexed first-party records
+MANUFACTURING AND ALLIED,Unga Group Ltd Ord 5.00,UNGA,KE0000000497,https://unga-group.com/,26,12,8,0,indexed first-party records
+MANUFACTURING AND ALLIED,Eveready East Africa Ltd Ord.1.00,EVRD,KE0000000588,https://eveready.co.ke/,3,1,0,1,indexed first-party records
+MANUFACTURING AND ALLIED,AFRICA MEGA AGRICORP PLC 5.00,AMAC,KE0000000331,,2,2,0,0,indexed first-party records
+MANUFACTURING AND ALLIED,Flame Tree Group Holdings Ltd Ord 0.825,FTGH,KE4000001323,https://flametreebrands.com/,11,9,1,0,indexed first-party records
+MANUFACTURING AND ALLIED,Shri Krishana Overseas (SKL),SKL.O0000,KE9900001216,,1,0,0,0,indexed first-party records
+TELECOMMUNICATION AND TECHNOLOGY,Safaricom PLC Ord 0.05,SCOM,KE1000001402,https://www.safaricom.co.ke/business,140,2,50,2,indexed first-party records
+REAL ESTATE INVESTMENT TRUST,Laptrust Imara I-REIT,LAPR,KE9100008870,https://laptrustimaraireit.co.ke/,6,5,1,0,indexed first-party records
+REAL ESTATE INVESTMENT TRUST,TRIFIC Green USD I-REIT,TRFC,KE9930007092,https://trific.co.ke/i-reit/,0,0,0,0,not yet indexed; archive search required
+EXCHANGE TRADED FUND,New Gold Issuer (RP) Ltd,GLD,ZAE000060067,,6,0,0,1,indexed first-party records
+EXCHANGE TRADED FUND,Satrix MSCI World Feeder ETF,SMWF.E0000,ZAE000246104,,9,0,0,0,indexed first-party records

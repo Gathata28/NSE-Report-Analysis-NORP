@@ -1,0 +1,364 @@
+{
+  "forms": [
+    {
+      "action": "/kenya-listed-company-documents/?wpv_view_count=21075",
+      "method": "get",
+      "id": null,
+      "class": [
+        "wpv-filter-form",
+        "js-wpv-filter-form",
+        "js-wpv-filter-form-21075",
+        "js-wpv-form-full",
+        "js-wpv-dps-enabled",
+        "js-wpv-ajax-results-enabled"
+      ]
+    }
+  ],
+  "selects": {
+    "wpv-tax-sector": [
+      {
+        "text": "SECTOR",
+        "value": "0"
+      },
+      {
+        "text": "Agricultural",
+        "value": "agricultural"
+      },
+      {
+        "text": "Banking",
+        "value": "banking"
+      },
+      {
+        "text": "Beverages",
+        "value": "beverages"
+      },
+      {
+        "text": "Building & Associated",
+        "value": "building-associated"
+      },
+      {
+        "text": "Energy",
+        "value": "energy"
+      },
+      {
+        "text": "Engineering",
+        "value": "engineering"
+      },
+      {
+        "text": "Food",
+        "value": "food"
+      },
+      {
+        "text": "Industrial holding",
+        "value": "industrial-holding"
+      },
+      {
+        "text": "Insurance",
+        "value": "insurance"
+      },
+      {
+        "text": "Investment",
+        "value": "investment"
+      },
+      {
+        "text": "Paper & Packaging",
+        "value": "paper-packaging"
+      },
+      {
+        "text": "Printing & Publishing",
+        "value": "printing-publishing"
+      },
+      {
+        "text": "Property",
+        "value": "property"
+      },
+      {
+        "text": "Retail",
+        "value": "retail"
+      },
+      {
+        "text": "Technology",
+        "value": "technology"
+      },
+      {
+        "text": "Tourism",
+        "value": "tourism"
+      },
+      {
+        "text": "Transport",
+        "value": "transport"
+      }
+    ],
+    "wpv-document-type": [
+      {
+        "text": "TYPE",
+        "value": "0"
+      },
+      {
+        "text": "Abridged Reports",
+        "value": "abridged-reports"
+      },
+      {
+        "text": "Annual Reports",
+        "value": "annual-reports"
+      },
+      {
+        "text": "Circulars",
+        "value": "circulars"
+      },
+      {
+        "text": "Interim Reports",
+        "value": "interim-reports"
+      },
+      {
+        "text": "Presentations",
+        "value": "presentations"
+      },
+      {
+        "text": "Prospectus",
+        "value": "prospectus"
+      }
+    ],
+    "wpv-doc-year": [
+      {
+        "text": "YEAR",
+        "value": "0"
+      },
+      {
+        "text": "2026",
+        "value": "2026"
+      },
+      {
+        "text": "2025",
+        "value": "2025"
+      },
+      {
+        "text": "2024",
+        "value": "2024"
+      },
+      {
+        "text": "2023",
+        "value": "2023"
+      },
+      {
+        "text": "2022",
+        "value": "2022"
+      },
+      {
+        "text": "2021",
+        "value": "2021"
+      },
+      {
+        "text": "2020",
+        "value": "2020"
+      },
+      {
+        "text": "2019",
+        "value": "2019"
+      },
+      {
+        "text": "2018",
+        "value": "2018"
+      },
+      {
+        "text": "2017",
+        "value": "2017"
+      },
+      {
+        "text": "2016",
+        "value": "2016"
+      },
+      {
+        "text": "2015",
+        "value": "2015"
+      },
+      {
+        "text": "2014",
+        "value": "2014"
+      },
+      {
+        "text": "2013",
+        "value": "2013"
+      },
+      {
+        "text": "2012",
+        "value": "2012"
+      },
+      {
+        "text": "2011",
+        "value": "2011"
+      },
+      {
+        "text": "2010",
+        "value": "2010"
+      },
+      {
+        "text": "2009",
+        "value": "2009"
+      },
+      {
+        "text": "2008",
+        "value": "2008"
+      },
+      {
+        "text": "2007",
+        "value": "2007"
+      },
+      {
+        "text": "2006",
+        "value": "2006"
+      },
+      {
+        "text": "2005",
+        "value": "2005"
+      },
+      {
+        "text": "2004",
+        "value": "2004"
+      },
+      {
+        "text": "2003",
+        "value": "2003"
+      },
+      {
+        "text": "2002",
+        "value": "2002"
+      },
+      {
+        "text": "2001",
+        "value": "2001"
+      },
+      {
+        "text": "2000",
+        "value": "2000"
+      },
+      {
+        "text": "1999",
+        "value": "1999"
+      },
+      {
+        "text": "1998",
+        "value": "1998"
+      },
+      {
+        "text": "1997",
+        "value": "1997"
+      },
+      {
+        "text": "1996",
+        "value": "1996"
+      }
+    ],
+    "wpv-document-period": [
+      {
+        "text": "PERIOD",
+        "value": "0"
+      },
+      {
+        "text": "FY",
+        "value": "fy"
+      },
+      {
+        "text": "HY",
+        "value": "hy"
+      },
+      {
+        "text": "Q1",
+        "value": "q1"
+      },
+      {
+        "text": "Q2",
+        "value": "q2"
+      },
+      {
+        "text": "Q3",
+        "value": "q3"
+      },
+      {
+        "text": "Q4",
+        "value": "q4"
+      }
+    ]
+  },
+  "document_links": [
+    {
+      "title": "Kenya Airways Limited (KQ.ke) HY2026 Interim Report",
+      "url": "https://africanfinancials.com/document/ke-kq-2026-ir-hy/"
+    },
+    {
+      "title": "Olympia Capital Holdings Limited (OCH.ke) 2026 Annual Report",
+      "url": "https://africanfinancials.com/document/ke-och-2026-ar-00/"
+    },
+    {
+      "title": "KCB Group Plc (KCB.ke) HY2026 Presentation",
+      "url": "https://africanfinancials.com/document/ke-kcb-2026-pr-hy/"
+    },
+    {
+      "title": "KCB Group Plc (KCB.ke) Q12026 Presentation",
+      "url": "https://africanfinancials.com/document/ke-kcb-2026-pr-q1/"
+    },
+    {
+      "title": "Equity Bank Limited (EQTY.ke) HY2026 Presentation",
+      "url": "https://africanfinancials.com/document/ke-eqty-2026-pr-hy/"
+    },
+    {
+      "title": "Equity Bank Limited (EQTY.ke) HY2026 Interim Report",
+      "url": "https://africanfinancials.com/document/ke-eqty-2026-ir-hy/"
+    },
+    {
+      "title": "Nation Media Group Limited (NMG.ke) HY2026 Interim Report",
+      "url": "https://africanfinancials.com/document/ke-nmg-2026-ir-hy/"
+    },
+    {
+      "title": "Umeme Limited (UMME.ke) 2025 Annual Report",
+      "url": "https://africanfinancials.com/document/ke-umme-2025-ar-00/"
+    },
+    {
+      "title": "KCB Group Plc (KCB.ke) HY2026 Interim Report",
+      "url": "https://africanfinancials.com/document/ke-kcb-2026-ir-hy/"
+    },
+    {
+      "title": "The Co-operative Bank of Kenya Limited (COOP.ke) HY2026 Interim Report",
+      "url": "https://africanfinancials.com/document/ke-coop-2026-ir-hy/"
+    },
+    {
+      "title": "East African Breweries PLC (EABL.ke) 2026 Abridged Report",
+      "url": "https://africanfinancials.com/document/ke-eabl-2026-ab-00/"
+    },
+    {
+      "title": "East African Breweries PLC (EABL.ke) 2026 Presentation",
+      "url": "https://africanfinancials.com/document/ke-eabl-2026-pr-00/"
+    }
+  ],
+  "pagination_data": [
+    {
+      "id": "21075",
+      "query": "normal",
+      "type": "ajaxed",
+      "effect": "fade",
+      "duration": 500,
+      "speed": 5,
+      "pause_on_hover": "disabled",
+      "stop_rollover": "false",
+      "cache_pages": "enabled",
+      "preload_images": "enabled",
+      "preload_pages": "enabled",
+      "preload_reach": 1,
+      "spinner": "builtin",
+      "spinner_image": "",
+      "callback_next": "",
+      "manage_history": "disabled",
+      "has_controls_in_form": "disabled",
+      "infinite_tolerance": 0,
+      "max_pages": 310,
+      "page": 1,
+      "base_permalink": "/kenya-listed-company-documents/?wpv_view_count=21075&wpv_paged=WPV_PAGE_NUM",
+      "loop": {
+        "type": "",
+        "name": "",
+        "data": [],
+        "id": 0
+      }
+    }
+  ]
+}

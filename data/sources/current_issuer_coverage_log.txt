@@ -1,0 +1,53 @@
+universe 66 with_records 14 without_records 52
+EGAD Eaagads Ltd Ord 1.25 AIMS https://www.eaagads.co.ke/
+KAPC Kapchorua Tea Co. Ltd Ord Ord 5.00 AIMS https://www.williamsontea.com/our-farms/kapchorua/
+KUKZ Kakuzi Ord.5.00 
+LIMT Limuru Tea Co. Ltd Ord 20.00 https://www.unilever-ewa.com/investor-relations/limuru-tea-financial-reports-and-accounts/
+SASN Sasini Ltd Ord 1.00 https://sasini.co.ke/
+WTK Williamson Tea Kenya Ltd Ord 5.00 https://www.williamsontea.com/
+CGEN Car and General (K) Ltd Ord 5.00 https://www.cargen.com/
+BKG BK Group PLC https://bk.rw/personal
+FMLY Family Bank Limited https://familybank.co.ke/
+HFCK HF Group Ltd Ord 5.00 https://www.hfgroup.co.ke/
+XPRS Express Ltd Ord 5.00 http://www.expresskenya.co.ke/express/
+SMER Sameer Africa PLC Ord 5.00 https://sameerafrica.com/
+KQ Kenya Airways Ltd Ord 5.00 https://www.kenya-airways.com/ke/
+SGL Standard Group Ltd Ord 5.00 https://www.standardmedia.co.ke/corporate/
+TPSE TPS Eastern Africa (Serena) Ltd Ord 1.00 https://africanfinancials.com/company/ke-tpse/
+SCAN Scangroup Ltd Ord 1.00 https://www.wpp-scangroup.com/
+UCHM Uchumi Supermarket Ltd Ord 5.00 https://www.uchumisupermarkets.co.ke/
+LKL Longhorn Publishers Ltd https://longhornpublishers.com/
+DCON Deacons (East Africa) Plc Ord 2.50 
+NBV Nairobi Business Ventures Ltd http://www.nbvplc.com/
+ARM Athi River Mining Ord 5.00 
+BAMB Bamburi Cement PLC Ord 5.00 https://www.lafarge.co.ke/
+CRWN Crown Paints Kenya PLC. 0rd 5.00 https://www.crownpaints.co.ke/
+CABL E.A.Cables PLC Ord 0.50 https://www.eacables.com/index.php
+PORT E.A.Portland Cement Ltd Ord 5.00 https://www.eacables.com/index.php
+TOTL Total Kenya Ltd Ord 5.00 https://totalenergies.ke/
+UMME Umeme Ltd Ord 0.50 http://umeme.co.ug/
+JUB Jubilee Holdings Ltd Ord 5.00 https://jubileeinsurance.com/ke/
+SLAM Sanlam Allianz Holdings (Kenya) PLC 0rd 5.00 https://www.sanlam.com/kenya
+KNRE Kenya Re-Insurance Corporation Ltd Ord 2.50 https://kenyare.co.ke/
+LBTY Liberty Kenya Holdings Ltd https://www.libertykenya.co.ke/
+BRIT Britam Holdings Ltd Ord 0.10 https://ke.britam.com/
+CIC CIC Insurance Group Ltd Ord 1.00 https://cic.co.ke/
+OCH Olympia Capital Holdings ltd Ord 5.00 https://ochl.co.ke/
+CTUM Centum Investment Co Ltd Ord 0.50 https://centum.co.ke/
+TCL Trans-Century Ltd http://transcentury.co.ke/
+HAFR Home Afrika Ltd Ord 1.00 https://www.homeafrika.com/
+KURV Kurwitu Ventures 
+NSE Nairobi Securities Exchange Ltd Ord 4.00 
+BOC B.O.C Kenya Ltd Ord 5.00 
+BAT British American Tobacco Kenya Ltd Ord 10.00 https://www.batkenya.com/
+CARB Carbacid Investments Ltd Ord 5.00 https://carbacid.com/
+MSC Mumias Sugar Co. Ltd Ord 2.00 
+UNGA Unga Group Ltd Ord 5.00 https://unga-group.com/
+EVRD Eveready East Africa Ltd Ord.1.00 https://eveready.co.ke/
+AMAC AFRICA MEGA AGRICORP PLC 5.00 
+FTGH Flame Tree Group Holdings Ltd Ord 0.825 https://flametreebrands.com/
+SKL.O0000 Shri Krishana Overseas (SKL) 
+LAPR Laptrust Imara I-REIT https://laptrustimaraireit.co.ke/
+TRFC TRIFIC Green USD I-REIT https://trific.co.ke/i-reit/
+GLD New Gold Issuer (RP) Ltd 
+SMWF.E0000 Satrix MSCI World Feeder ETF 

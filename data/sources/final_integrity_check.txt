@@ -1,0 +1,10 @@
+nse_first_party_tranche_index.csv rows= 1761
+nse_reports_normalized_validated.csv rows= 1761
+current_issuer_coverage_log.csv rows= 66
+current_gap_disclosures.csv rows= 1
+nse_link_validation_sample.csv rows= 212
+historical_nse_universe.csv rows= 62
+xlsx_testzip= None
+xlsx_formulas= 0
+archive_testzip= None
+archive_members= 7

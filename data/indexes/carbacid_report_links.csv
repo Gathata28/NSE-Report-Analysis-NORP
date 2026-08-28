@@ -1,0 +1,4 @@
+title,url,source_page_url,verification
+2025 Annual Report,https://carbacid.com/documents/87/2025_Annual_Report.pdf,https://carbacid.com/,HTTP 200 application/pdf; official issuer domain
+
+Caveat: Carbacid's official homepage was retrieved through the public text extractor but its annual-report link list was not exposed there; the direct 2025 PDF endpoint was independently verified with curl and identified as a 60-page PDF. Additional Carbacid years remain to be enumerated from first-party pages or explicitly labeled fallback sources.

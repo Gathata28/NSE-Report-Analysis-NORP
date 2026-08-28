@@ -1,0 +1,10 @@
+records 9
+{'title': 'Satrix MSCI World Feeder ETF Annual Financial Statements 2025.pdf', 'year': '2025', 'url': 'https://satrix.co.za/media/92364', 'filename': '92364.pdf', 'source_page': 'https://satrix.co.za/products/product-details?id=33'}
+{'title': 'Satrix MSCI World Feeder Portfolio Annual Financial Statements 2024.pdf', 'year': '2024', 'url': 'https://satrix.co.za/media/90866', 'filename': '90866.pdf', 'source_page': 'https://satrix.co.za/products/product-details?id=33'}
+{'title': 'Satrix MSCI World Feeder Portfolio Annual Financial Statements 2023.pdf', 'year': '2023', 'url': 'https://satrix.co.za/media/88196', 'filename': '88196.pdf', 'source_page': 'https://satrix.co.za/products/product-details?id=33'}
+{'title': 'Satrix MSCI World ETF Annual Financial Statements 2022.pdf', 'year': '2022', 'url': 'https://satrix.co.za/media/76632', 'filename': '76632.pdf', 'source_page': 'https://satrix.co.za/products/product-details?id=33'}
+{'title': 'Satrix MSCI World Feeder ETF Annual Financial Statements 2020.pdf', 'year': '2020', 'url': 'https://satrix.co.za/media/50977', 'filename': '50977.pdf', 'source_page': 'https://satrix.co.za/products/product-details?id=33'}
+{'title': 'Satrix MSCI World Feeder ETF Annual Financial Statements 2019.pdf', 'year': '2019', 'url': 'https://satrix.co.za/media/40165', 'filename': '40165.pdf', 'source_page': 'https://satrix.co.za/products/product-details?id=33'}
+{'title': 'Satrix MSCI World Feeder ETF Annual Financial Statements 2018.pdf', 'year': '2018', 'url': 'https://satrix.co.za/media/30891', 'filename': '30891.pdf', 'source_page': 'https://satrix.co.za/products/product-details?id=33'}
+{'title': 'Satrix MSCI World Feeder ETF Annual Financial Statements 2017.pdf', 'year': '2017', 'url': 'https://satrix.co.za/media/30816', 'filename': '30816.pdf', 'source_page': 'https://satrix.co.za/products/product-details?id=33'}
+{'title': 'Satrix MSCI World Feeder ETF Annual Financial Statements 2016.pdf', 'year': '2016', 'url': 'https://satrix.co.za/media/22204', 'filename': '22204.pdf', 'source_page': 'https://satrix.co.za/products/product-details?id=33'}

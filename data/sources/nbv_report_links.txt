@@ -1,0 +1,23 @@
+records 22
+{'title': 'FINANCIAL STATEMENTS FOR THE PERIOD ENDED 31ST MARCH 2024', 'url': 'https://www.nbvplc.com/31ST 2024-1.pdf', 'filename': '31ST 2024-1.pdf', 'source_page': 'https://www.nbvplc.com/annual.html'}
+{'title': 'FINANCIAL STATEMENTS FOR THE PERIOD ENDED 31ST MARCH 2023', 'url': 'https://www.nbvplc.com/dkfurhsfdlb.pdf', 'filename': 'dkfurhsfdlb.pdf', 'source_page': 'https://www.nbvplc.com/annual.html'}
+{'title': 'FINANCIAL STATEMENTS FOR THE PERIOD ENDED 31ST MARCH 2022', 'url': 'https://www.nbvplc.com/jfitsdcmfld.pdf', 'filename': 'jfitsdcmfld.pdf', 'source_page': 'https://www.nbvplc.com/annual.html'}
+{'title': 'FINANCIAL STATEMENTS FOR THE PERIOD ENDED 31ST MARCH 2021', 'url': 'https://www.nbvplc.com/agshtyr.pdf', 'filename': 'agshtyr.pdf', 'source_page': 'https://www.nbvplc.com/annual.html'}
+{'title': 'FINANCIAL STATEMENTS FOR THE PERIOD ENDED 31ST MARCH 2020', 'url': 'https://www.nbvplc.com/wurtsdf.pdf', 'filename': 'wurtsdf.pdf', 'source_page': 'https://www.nbvplc.com/annual.html'}
+{'title': 'FINANCIAL STATEMENTS FOR THE PERIOD ENDED 31ST MARCH 2019', 'url': 'https://www.nbvplc.com/xertsd.pdf', 'filename': 'xertsd.pdf', 'source_page': 'https://www.nbvplc.com/annual.html'}
+{'title': 'FINANCIAL STATEMENTS FOR THE PERIOD ENDED 31ST MARCH 2018', 'url': 'https://www.nbvplc.com/llyyts.pdf', 'filename': 'llyyts.pdf', 'source_page': 'https://www.nbvplc.com/annual.html'}
+{'title': 'FINANCIAL STATEMENTS FOR THE PERIOD ENDED 31ST MARCH 2017', 'url': 'https://www.nbvplc.com/dshklgh.pdf', 'filename': 'dshklgh.pdf', 'source_page': 'https://www.nbvplc.com/annual.html'}
+{'title': 'FINANCIAL STATEMENTS FOR THE PERIOD ENDED 31ST MARCH 2016', 'url': 'https://www.nbvplc.com/ssttdda.pdf', 'filename': 'ssttdda.pdf', 'source_page': 'https://www.nbvplc.com/annual.html'}
+{'title': 'FINANCIAL STATEMENTS FOR THE PERIOD ENDED 31ST MARCH 2015', 'url': 'https://www.nbvplc.com/qqeydadd.pdf', 'filename': 'qqeydadd.pdf', 'source_page': 'https://www.nbvplc.com/annual.html'}
+{'title': 'FINANCIAL STATEMENTS FOR THE PERIOD ENDED 31ST MARCH 2014', 'url': 'https://www.nbvplc.com/laereok.pdf', 'filename': 'laereok.pdf', 'source_page': 'https://www.nbvplc.com/annual.html'}
+{'title': 'FINANCIAL STATEMENTS FOR THE PERIOD ENDED 31ST MARCH 2013', 'url': 'https://www.nbvplc.com/kdceiurd.pdf', 'filename': 'kdceiurd.pdf', 'source_page': 'https://www.nbvplc.com/annual.html'}
+{'title': 'UN-AUDITED RESULTS FOR THE SIX MONTHS PERIOD 30 SEPT 2025', 'url': 'https://www.nbvplc.com/UNAUDITED 2025.pdf', 'filename': 'UNAUDITED 2025.pdf', 'source_page': 'https://www.nbvplc.com/financial.html'}
+{'title': 'UN-AUDITED RESULTS FOR THE SIX MONTHS PERIOD 30 SEPT 2024', 'url': 'https://www.nbvplc.com/0000366265.pdf', 'filename': '0000366265.pdf', 'source_page': 'https://www.nbvplc.com/financial.html'}
+{'title': 'UN-AUDITED RESULTS FOR THE SIX MONTHS PERIOD 30 SEPT 2023', 'url': 'https://www.nbvplc.com/jtddly8874.pdf', 'filename': 'jtddly8874.pdf', 'source_page': 'https://www.nbvplc.com/financial.html'}
+{'title': 'UN-AUDITED RESULTS FOR THE SIX MONTHS PERIOD 30 SEPT 2022', 'url': 'https://www.nbvplc.com/ffrid3ddj.pdf', 'filename': 'ffrid3ddj.pdf', 'source_page': 'https://www.nbvplc.com/financial.html'}
+{'title': 'UN-AUDITED RESULTS FOR THE SIX MONTHS PERIOD 30 SEPT 2021', 'url': 'https://www.nbvplc.com/nvbd47eh.pdf', 'filename': 'nvbd47eh.pdf', 'source_page': 'https://www.nbvplc.com/financial.html'}
+{'title': 'UN-AUDITED RESULTS FOR THE SIX MONTHS PERIOD 30 SEPT 2020', 'url': 'https://www.nbvplc.com/rdg943nfdf.pdf', 'filename': 'rdg943nfdf.pdf', 'source_page': 'https://www.nbvplc.com/financial.html'}
+{'title': 'UN-AUDITED RESULTS FOR THE SIX MONTHS PERIOD 30 SEPT 2019', 'url': 'https://www.nbvplc.com/d88sdsdd.pdf', 'filename': 'd88sdsdd.pdf', 'source_page': 'https://www.nbvplc.com/financial.html'}
+{'title': 'UN-AUDITED RESULTS FOR THE SIX MONTHS PERIOD 30 SEPT 2018', 'url': 'https://www.nbvplc.com/s9kjfeiee.pdf', 'filename': 's9kjfeiee.pdf', 'source_page': 'https://www.nbvplc.com/financial.html'}
+{'title': 'UN-AUDITED RESULTS FOR THE SIX MONTHS PERIOD 30 SEPT 2017', 'url': 'https://www.nbvplc.com/9hdjdshe.pdf', 'filename': '9hdjdshe.pdf', 'source_page': 'https://www.nbvplc.com/financial.html'}
+{'title': 'UN-AUDITED RESULTS FOR THE SIX MONTHS PERIOD 30 SEPT 2016', 'url': 'https://www.nbvplc.com/9kdeirud.pdf', 'filename': '9kdeirud.pdf', 'source_page': 'https://www.nbvplc.com/financial.html'}

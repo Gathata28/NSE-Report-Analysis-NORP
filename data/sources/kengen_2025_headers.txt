@@ -1,0 +1,21 @@
+HTTP/2 200 
+date: Thu, 27 Aug 2026 08:04:58 GMT
+content-type: application/pdf
+cf-ray: a3199183ea2f36c6-DAC
+cf-cache-status: DYNAMIC
+accept-ranges: bytes
+age: 0
+cache-control: no-cache, must-revalidate, max-age=0, no-store, private
+content-disposition: inline;filename="KenGen_Financial_Results_2025.pdf"
+expires: Wed, 11 Jan 1984 05:00:00 GMT
+server: cloudflare
+x-robots-tag: noindex, nofollow
+vary: Accept-Encoding,User-Agent
+content-description: File Transfer
+content-transfer-encoding: binary
+robots: none
+x-cache: MISS
+set-cookie: __wpdm_client=9f671319a6d04d68f4eb987c234358bc; path=/; domain=www.kengen.co.ke; secure; HttpOnly
+set-cookie: __cf_bm=Xh3E3u.DG7W0x5nrjawqikYN368Fq0fgp79joC_xBpQ-1787817897.5873945-1.0.1.1-TX094Of.b4VBK5naUpEyETcsvINd9oHsEplTQrfitDac74K3P_qaaMBA8IkjuacniC2ZQwM5yN9iwI2ua.KtPkUm4pFwdPBUNYYNjeTJDMVIgjq4AFzsyp3WcTN5K6Ro; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.kengen.co.ke; Expires=Thu, 27 Aug 2026 08:34:58 GMT
+alt-svc: h3=":443"; ma=86400
+

@@ -1,0 +1,17 @@
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/2026/Sanlam-Allianz-AR-2025---Online-Version-updated.pdf
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/Sanlam%20Annual%20Report%202024.pdf
+000ERR	ERR	https://ke.sanlamallianz.com/uploads/files/Sanlam Kenya PLC audited results.pdf
+000ERR	ERR	https://ke.sanlamallianz.com/uploads/files/Sanlam Kenya PLC unaudited results 30 June 2023.pdf
+404	text/html	https://ke.sanlamallianz.com/uploads/files/sanlam%20plc%202022%20results.pdf
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/Sanlam-AR-2023.pdf
+404	text/html	https://ke.sanlamallianz.com/uploads/filesSanlam%20Annual%20Report%202021.pdf
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/SANLAM-ANNUAL-REPORT-KENYA-PLC.pdf
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/Sanlam%202019%20Annual%20Report%20Website.pdf
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/Press%20Release%20FS%200619%20July%202019.pdf
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/Sanlam%20Kenya%20Plc%20Results.pdf
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/Annual%20Report_2018.pdf
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/Sanlam%20Financials%204pm.pdf
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/Annual%20Report%202017.pdf
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/Financial%20Results%202017.pdf
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/Annual%20Report%202016.pdf
+206	application/pdf	https://ke.sanlamallianz.com/uploads/files/Interim%20Results%202016.pdf

@@ -1,0 +1,8 @@
+records 7
+{'title': '2025-NSE-integrated-annual-report.pdf', 'url': 'https://www.nse.co.ke/wp-content/uploads/2025-NSE-integrated-annual-report.pdf'}
+{'title': 'NSE-Plc-2024-Integrated-Annual-Report-and-Financial-Statement-1.pdf', 'url': 'https://www.nse.co.ke/wp-content/uploads/NSE-Plc-2024-Integrated-Annual-Report-and-Financial-Statement-1.pdf'}
+{'title': 'NSE-Annual-Report-2023Interactive.pdf', 'url': 'https://www.nse.co.ke/wp-content/uploads/NSE-Annual-Report-2023Interactive.pdf'}
+{'title': 'NSE-Annual-Report-2022-Integrated-Report.pdf', 'url': 'https://www.nse.co.ke/wp-content/uploads/NSE-Annual-Report-2022-Integrated-Report.pdf'}
+{'title': 'NSE-2021-ANNUAL-REPORT-AND-FINANCIAL-STATEMENTS-1.pdf', 'url': 'https://www.nse.co.ke/wp-content/uploads/NSE-2021-ANNUAL-REPORT-AND-FINANCIAL-STATEMENTS-1.pdf'}
+{'title': '2020-integrated-report-and-financial-statements.pdf', 'url': 'https://www.nse.co.ke/wp-content/uploads/2020-integrated-report-and-financial-statements.pdf'}
+{'title': '2019-Integrated-report-and-financial-statements-1.pdf', 'url': 'https://www.nse.co.ke/wp-content/uploads/2019-Integrated-report-and-financial-statements-1.pdf'}

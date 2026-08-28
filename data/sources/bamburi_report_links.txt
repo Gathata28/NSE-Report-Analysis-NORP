@@ -1,0 +1,15 @@
+records 14
+{'title': 'IMPACT', 'url': 'https://bamburigroup.com/bamburi-cement-investor-relations/annual-reports/', 'filename': ''}
+{'title': 'ANNUAL REPORT AND FINANCIAL STATEMENTS 2025', 'url': 'https://bamburigroup.com/annual-report-and-financial-statements-2025/', 'filename': ''}
+{'title': 'Bamburi Cement Financial Statements 2025', 'url': 'https://bamburigroup.com/wp-content/uploads/2026/04/Bamburi-2026-FY-Results-17.04.2026.pdf', 'filename': 'Bamburi-2026-FY-Results-17.04.2026.pdf'}
+{'title': 'Bamburi Cement Financial Statements 2025', 'url': 'https://bamburigroup.com/bamburi-2025-financial-year-results/', 'filename': ''}
+{'title': 'INTERGRATED ANNUAL REPORT 2024', 'url': 'https://bamburigroup.com/intergrated-annual-report-2024/', 'filename': ''}
+{'title': 'Bamburi Cement Annual Report and Financial Statements 2023', 'url': 'https://bamburigroup.com/bamburi-2024-annual-report/', 'filename': ''}
+{'title': 'Annual and Financial Report 2022', 'url': 'https://bamburigroup.com/annual-and-financial-report-2022/', 'filename': ''}
+{'title': 'Bamburi Annual Report And Financial Statement 2021', 'url': 'https://bamburigroup.com/bamburi-2021-annual-report/', 'filename': ''}
+{'title': 'Annual Report and Financial Statements 2020', 'url': 'https://bamburigroup.com/annual-report-and-financial-statements-2020/', 'filename': ''}
+{'title': 'Annual Report and Financial Statements 2019', 'url': 'https://bamburigroup.com/annual-report-and-financial-statements-2019/', 'filename': ''}
+{'title': 'Bamburi Annual Report and financial statement 2018', 'url': 'https://bamburigroup.com/bamburi-annual-report-and-financial-statement-2018/', 'filename': ''}
+{'title': 'Annual Report and Financial Statements 2017', 'url': 'https://bamburigroup.com/annual-report-and-financial-statements-2017/', 'filename': ''}
+{'title': 'Bamburi Cement Annual and Financial report 2014', 'url': 'https://bamburigroup.com/bamburi-cement-annual-and-financial-report-2014/', 'filename': ''}
+{'title': 'Bamburi Cement Annual and Financial Report 2013', 'url': 'https://bamburigroup.com/bamburi-cement-annual-and-financial-report-2013/', 'filename': ''}

@@ -1,0 +1,30 @@
+records 29
+{'title': '2025 TPSEAP Financial Results', 'url': 'https://document-tc.galaxy.tf/wdpdf-zg87bfxkcs2fugvz43jy2p0b/file.pdf', 'filename': 'file.pdf'}
+{'title': '2024 TPSEAP Annual Report', 'url': 'https://document-tc.galaxy.tf/wdpdf-7i52uwid121f7cltay46n5t33/file.pdf', 'filename': 'file.pdf'}
+{'title': '2023 TPSEAP Annual Report', 'url': 'https://document-tc.galaxy.tf/wdpdf-c5pfbddmslb251zbcm7gpzuj/file.pdf', 'filename': 'file.pdf'}
+{'title': '2022 TPSEAP Annual Report', 'url': 'https://document-tc.galaxy.tf/wdpdf-dzxs9xb33c6vmruc4dlfdg5g8/file.pdf', 'filename': 'file.pdf'}
+{'title': '2021 TPSEAP Annual Report', 'url': 'https://document-tc.galaxy.tf/wdpdf-38rtg4jura96lujv3ymz3kwqg/file.pdf', 'filename': 'file.pdf'}
+{'title': '2020 TPSEAP Annual Report', 'url': 'https://document-tc.galaxy.tf/wdpdf-5y0xml5nh9zjnbtt9e2ellmat/file.pdf', 'filename': 'file.pdf'}
+{'title': '2019 TPSEAP Annual Report', 'url': 'https://document-tc.galaxy.tf/wdpdf-9yhkkhd1cqixg26wxakbt92si/file.pdf', 'filename': 'file.pdf'}
+{'title': '2019_TPSEAP_Financial_Results.pdf', 'url': 'https://document-tc.galaxy.tf/wdpdf-9xowizmgde49sh6746lpfac7o/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAP_2019_Half-Year_Results.pdf', 'url': 'https://document-tc.galaxy.tf/wdpdf-76u6f0t0z8vv67k7d5k6qe1g9/file.pdf', 'filename': 'file.pdf'}
+{'title': '2018_TPSEAP_Annual_Report.pdf', 'url': 'https://document-tc.galaxy.tf/wdpdf-40yztg4dcvjsy1iez5lw1yjeo/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAP_2018_Final_Results.pdf', 'url': 'https://document-tc.galaxy.tf/wdpdf-87jgmfifqo3hljkdudnjbgy7y/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAP_2018_Half-year_Results.pdf', 'url': 'https://document-tc.galaxy.tf/wdpdf-6x0d6v63122pe13srnppiscza/file.pdf', 'filename': 'file.pdf'}
+{'title': '2017_TPSEA_Annual_Report.pdf', 'url': 'https://document-tc.galaxy.tf/wdpdf-3yd0zbv00bu21xhwahi7ai9x5/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAL 2016 Annual Report', 'url': 'https://document-tc.galaxy.tf/wdpdf-6fy6ao0gjhs5p6bam5uygie62/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAL 2015 Annual Report', 'url': 'https://document-tc.galaxy.tf/wdpdf-3dxehevv4qugms69ug5s7ozua/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAL 2014 Annual Report', 'url': 'https://document-tc.galaxy.tf/wdpdf-c76lj1634oowlk69zeksvo4ue/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAL 2013 Annual Report', 'url': 'https://document-tc.galaxy.tf/wdpdf-9yslxle6tm42kvswfmeeouc0d/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAL 2012 Annual Report', 'url': 'https://document-tc.galaxy.tf/wdpdf-x250gacjc11owfpftrj23a11/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAL 2011 Annual Report', 'url': 'https://document-tc.galaxy.tf/wdpdf-8nudabnx404lmqc01l01clu7r/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAL 2010 Financial Results', 'url': 'https://document-tc.galaxy.tf/wdpdf-3s1gbretse2p0go89ta53zxe3/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAL 2009 Financial results', 'url': 'https://document-tc.galaxy.tf/wdpdf-9w1261r90ovh2vmcrcnc3h66b/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAL 2008 Financial Results', 'url': 'https://document-tc.galaxy.tf/wdpdf-s7e0tr8t1fxa2gigoe02pbiu/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAP 2024 Abridged Financial Statements', 'url': 'https://document-tc.galaxy.tf/wdpdf-6kzwvarpqrq1iiuygil4k3ncd/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAP 2023 Abridged Financial Statements', 'url': 'https://document-tc.galaxy.tf/wdpdf-ad0t3z7ttjqexyr7o9nu1grc7/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAP 2022 Annual Report.', 'url': 'http://document-tc.galaxy.tf/wdpdf-dzxs9xb33c6vmruc4dlfdg5g8/file.pdf?download=true', 'filename': 'file.pdf?download=true'}
+{'title': 'TPSEAP 2022 Abriged Financial Statements', 'url': 'https://document-tc.galaxy.tf/wdpdf-arhyuo6m8mqvbki6ptwd5vunq/file.pdf?download=true', 'filename': 'file.pdf?download=true'}
+{'title': '2021 TPSEAP Abridged Financial Statements', 'url': 'https://document-tc.galaxy.tf/wdpdf-9rl05c654nszt29zofcgl4wv7/file.pdf', 'filename': 'file.pdf'}
+{'title': '2019_TPSEAP_Signed_Financial_Statements.pdf', 'url': 'https://document-tc.galaxy.tf/wdpdf-5j9bft3z7yleeyu19nrxqle8x/file.pdf', 'filename': 'file.pdf'}
+{'title': 'TPSEAP_Abridged_Financial_Statements.PDF', 'url': 'https://document-tc.galaxy.tf/wdpdf-4ei54rg92ancgi03sv4xi36ij/file.pdf', 'filename': 'file.pdf'}

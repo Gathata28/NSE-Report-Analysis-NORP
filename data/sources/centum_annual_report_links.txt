@@ -1,0 +1,23 @@
+records 22
+{'title': 'Centum Integrated Report and Financial Statement FY 2025', 'url': 'https://centum.co.ke/wp-content/uploads/2025/09/Centum-Integrated-Report-fy25.pdf', 'filename': 'Centum-Integrated-Report-fy25.pdf'}
+{'title': 'Centum Integrated Report and Financial Statement FY 2024', 'url': 'https://centum.co.ke/wp-content/uploads/2024/09/FY-2024-Centum-Integrated-Report.pdf', 'filename': 'FY-2024-Centum-Integrated-Report.pdf'}
+{'title': 'Centum Integrated Report and Financial Statement FY 2023', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Centum_Investments_Plc_Integrated_Report_FY_2023.pdf', 'filename': 'Centum_Investments_Plc_Integrated_Report_FY_2023.pdf'}
+{'title': 'Centum Investment Company Plc FY 2022 Intergrated Report and Financial Statements', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Centum_Integrated_Report_and_Financial_Statement_FY2022.pdf', 'filename': 'Centum_Integrated_Report_and_Financial_Statement_FY2022.pdf'}
+{'title': 'Centum Integrated Report and Financial Statement FY2021', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Centum_Annual_report_and_financial_statements_FY2021.pdf', 'filename': 'Centum_Annual_report_and_financial_statements_FY2021.pdf'}
+{'title': 'Annual report FY20', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Integrated_Report_FY2020.pdf', 'filename': 'Integrated_Report_FY2020.pdf'}
+{'title': 'Annual report FY19', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Centum_Annual_Report_FY19.pdf', 'filename': 'Centum_Annual_Report_FY19.pdf'}
+{'title': 'Abridged Annual Report FY18', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/CICL-Abridged_Annual_Report_FY18.pdf', 'filename': 'CICL-Abridged_Annual_Report_FY18.pdf'}
+{'title': 'Annual Report FY18', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/CICL_Full_-Annual_Report_FY18.pdf', 'filename': 'CICL_Full_-Annual_Report_FY18.pdf'}
+{'title': 'Annual Report 2016', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/CentumAnnual_Report.pdf', 'filename': 'CentumAnnual_Report.pdf'}
+{'title': 'Centum Annual Report - 2014/2015', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Annual_Report_2014_2015.pdf', 'filename': 'Annual_Report_2014_2015.pdf'}
+{'title': 'Centum HY2016 - Interim Financial Statements', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Centum_HY2016_Interim_Financial_Statements.pdf', 'filename': 'Centum_HY2016_Interim_Financial_Statements.pdf'}
+{'title': 'Centum Annual Report - 2013/2014', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Annual_Report_2013_2014.pdf', 'filename': 'Annual_Report_2013_2014.pdf'}
+{'title': 'Centum Annual Report - 2012/2013', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Annual_Report_2012_2013.pdf', 'filename': 'Annual_Report_2012_2013.pdf'}
+{'title': 'Centum Annual Report - 2011/2012', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Annual_Report_2011_2012.pdf', 'filename': 'Annual_Report_2011_2012.pdf'}
+{'title': 'Centum Annual Report - 2010/2011', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Annual_Report_2010_2011.pdf', 'filename': 'Annual_Report_2010_2011.pdf'}
+{'title': 'Centum Annual Report - 2009/2010', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Annual_Report_2009_2010.pdf', 'filename': 'Annual_Report_2009_2010.pdf'}
+{'title': 'Centum Annual Report - 2008/2009', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Annual_Report_2008_2009.pdf', 'filename': 'Annual_Report_2008_2009.pdf'}
+{'title': 'Centum Annual Report - 2007/2008', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Annual_Report_2007_2008.pdf', 'filename': 'Annual_Report_2007_2008.pdf'}
+{'title': 'Centum Annual Report - 2006/2007', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Annual_Report_2006_2007.pdf', 'filename': 'Annual_Report_2006_2007.pdf'}
+{'title': 'Centum Annual Report - 2003/2004', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Annual_Report_2003_2004.pdf', 'filename': 'Annual_Report_2003_2004.pdf'}
+{'title': 'Centum Annual Report - 2002/2003', 'url': 'https://centum.co.ke/wp-content/uploads/2024/02/Annual_Report_2002_2003.pdf', 'filename': 'Annual_Report_2002_2003.pdf'}

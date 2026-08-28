@@ -1,0 +1,51 @@
+KENYA ORCHARDS LIMITED
+
+NOTES TO THE ACCOUNTS (Continued) PAGE 13
+FOR THE YEAR ENDED 31ST DECEMBER, 2007
+
+7. DEFERRED TAX
+Deferred income taxes are calculated on all temporary differences under the liability
+method using a principal tax rate of 30% (2006-30%). The movement on the deferred
+income tax account is as follows:
+
+2007 2006
+SHS SHS
+
+At beginning of the year:
+
+As Previously Stated (22,317,262) (13,683,751)
+Prior year adjustments = (5,961,020)
+As Restated (22,317,262) (19,644,771)
+Income Statement Charge (Note 3) (3,775,687) (2,672,491)
+At end of the year (26,092,949) (22,317,262)
+
+Deferred tax assets and deferred tax (credit)/charge in the profit and loss account are
+attributable to the following items:
+
+Charged/
+(Credited) to
+
+11.2006 P&LA/IC 31.12.2007
+Deferred Income Tax Liabilities KSHS KSHS KSHS
+Accelerated Tax Depreciation 432,131 2,517,037 2,949,168
+Assets Revaluations 6,845,592 (6,254,836) 590,756
+
+1,271,723 (3,737,799) 3,539,924
+Deferred Income Tax Assets
+Tax Loss carry forwards (29,594,985) (37,888) (29,632,873)
+Net deferred income tax assets (22,317,262)| (3,775,687) (26,092,949)
+
+— ——
+
+In addition, deferred tax of Shs.84,394 ( year 2006-Kshs.263,628 ) was transferred within
+Shareholders equity from revaluation reserves to retained earnings. This represents deferred tax on the
+difference between the actual depreciation on the property, plant and equipment and the equivalent
+depreciation based on the historical cost.
+
+2007 2006
+8. INVENTORIES SHS SHS
+Raw Materials 3,035,719 5,908,404
+Finished Goods 8,207,434 7,584,267
+
+11,243,153 13,492,671
+

@@ -1,0 +1,18 @@
+{
+  "foreign_key_violations": [],
+  "reports": 1761,
+  "sources": 1761,
+  "validations": 1761,
+  "local_files": 2,
+  "qualitative_rows": 52,
+  "fact_rows": 251,
+  "open_gaps": 1,
+  "duplicate_report_ids": 0,
+  "orphan_sources": 0,
+  "orphan_validations": 0,
+  "view_catalog_rows": 1761,
+  "view_core_rows": 313,
+  "unresolved_fact_rows": 251,
+  "ocr_pages": 52,
+  "failed_checks": []
+}

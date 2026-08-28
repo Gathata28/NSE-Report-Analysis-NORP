@@ -1,0 +1,5 @@
+select count(*) from report_text [(52,)]
+select count(*) from report_fact [(251,)]
+select extraction_method,count(*) from report_text group by extraction_method [('tesseract-ocr', 52)]
+select quality_status,count(*) from report_fact group by quality_status [('needs_review', 251)]
+select count(*) from report_file where checksum_status="verified" [(2,)]

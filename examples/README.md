@@ -1,0 +1,1 @@
+Example SQL queries are in `example_queries.sql`. Run them against `data/indexes/nse_reports_archive.sqlite`.

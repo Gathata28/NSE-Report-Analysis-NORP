@@ -1,0 +1,43 @@
+# NSE Report Analysis Project (NORP)
+
+NORP is a source-verifiable archive and analysis foundation for annual, semi-annual, quarterly, and related public reports of current and historical Nairobi Securities Exchange issuers. The repository preserves report metadata, issuer identity, source pages, direct URLs, source tiers, bounded validation evidence, downloaded-file checksums, historical-universe notes, and a relational SQLite database.
+
+## Repository status
+
+The current corpus contains 1,761 indexed report records across 68 issuer identities. The current-universe audit represents 65 of 66 rows, with TRFC / TRIFIC Green USD I-REIT retained as an explicit unresolved gap. The preliminary historical universe contains 64 candidates and is not an authoritative all-time delisting register.
+
+The SQLite database imports the full normalized report index and adds issuer, report, source, validation, local-file, raw-text, qualitative, quantitative-candidate, and coverage-gap tables. Only two locally retrieved scanned PDFs were OCR-processed; 52 page records and 251 review-flagged numeric-line candidates are included. Candidate facts retain original text and page provenance, while normalized numeric values remain NULL until manually verified.
+
+## Layout
+
+| Directory | Contents |
+| --- | --- |
+| `docs/` | Project documentation, schema explanation, research notes, and limitations |
+| `scripts/` | Portable Python collection, normalization, validation, workbook, OCR, database, and test scripts |
+| `schema/` | SQLite DDL and relational schema definitions |
+| `data/indexes/` | CSV, XLSX, SQLite, and structured analysis artifacts |
+| `data/sources/` | Preserved HTML, JSON, text, and PDF source materials |
+| `data/retrieved/` | Locally retrieved PDFs and OCR sidecars/directories |
+| `data/original/` | Original archive ZIP snapshots |
+| `examples/` | Example queries and sample analysis workflows |
+
+## Quick start
+
+```bash
+python -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+python scripts/test_nse_relational_db.py
+```
+
+The database is already included at `data/indexes/nse_reports_archive.sqlite`. To rebuild it from the normalized CSV, run `python scripts/build_nse_relational_db.py` with `NORP_ROOT` set to the repository root if executing from another directory. OCR additionally requires the system binaries `pdftoppm` and `tesseract`.
+
+Useful views include `vw_report_catalog`, `vw_periodic_core_reports`, `vw_fact_panel`, and `vw_data_quality_flags`.
+
+## Provenance and responsible use
+
+Issuer pages, issuer-controlled APIs/CDNs, and exact NSE/CMA fallback documents are distinguished in `source_tier`. A bounded HTTP sample is not a full-corpus download verification. Secondary sources are retained only as discovery or status leads. No delisting, successor identity, or report period is inferred from absence alone. This is research infrastructure, not investment advice.
+
+## Citation
+
+Please cite the project using `CITATION.cff` and preserve the source URL and page locator when using any report or fact.

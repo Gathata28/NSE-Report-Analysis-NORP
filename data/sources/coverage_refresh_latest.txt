@@ -1,0 +1,2 @@
+universe 66 with_records 65 without_records 1
+TRFC TRIFIC Green USD I-REIT https://trific.co.ke/i-reit/

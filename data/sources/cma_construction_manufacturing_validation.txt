@@ -1,0 +1,7 @@
+504	ERR	https://www.cmarcp.or.ke/joomlatools-files/docman-files/NSE%20Listed%20companies%20Annual%20Reports/CONSTRUCTION%20AND%20ALLIED/Athi%20River%20Mining/2005.pdf
+206	text/html	https://www.cmarcp.or.ke/joomlatools-files/docman-files/NSE%20Listed%20companies%20Annual%20Reports/CONSTRUCTION%20AND%20ALLIED/Athi%20River%20Mining/2007.pdf
+504	ERR	https://www.cmarcp.or.ke/joomlatools-files/docman-files/NSE%20Listed%20companies%20Annual%20Reports/MANUFACTURING%20AND%20ALLIED/Mumias%20Sugar%20Co.%20Ltd/1996.pdf
+504	ERR	https://www.cmarcp.or.ke/joomlatools-files/docman-files/NSE%20Listed%20companies%20Annual%20Reports/MANUFACTURING%20AND%20ALLIED/Mumias%20Sugar%20Co.%20Ltd/1997.pdf
+504	text/html	https://www.cmarcp.or.ke/joomlatools-files/docman-files/NSE%20Listed%20companies%20Annual%20Reports/MANUFACTURING%20AND%20ALLIED/Mumias%20Sugar%20Co.%20Ltd/2007.pdf
+504	text/html	https://www.cmarcp.or.ke/joomlatools-files/docman-files/NSE%20Listed%20companies%20Annual%20Reports/MANUFACTURING%20AND%20ALLIED/Mumias%20Sugar%20Co.%20Ltd/2014.pdf
+504	text/html	https://www.cmarcp.or.ke/joomlatools-files/docman-files/monday/halfyear/MANUFACTURING%20AND%20ALLIED/Mumias%20sugar/FY%202016.pdf

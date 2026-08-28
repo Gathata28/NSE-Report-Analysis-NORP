@@ -1,0 +1,67 @@
+rows 66
+{'sector': 'AGRICULTURAL', 'issuer_name': 'Eaagads Ltd Ord 1.25 AIMS', 'ticker': 'EGAD', 'isin': 'KE0000000208', 'status': 'current NSE page'}
+{'sector': 'AGRICULTURAL', 'issuer_name': 'Kapchorua Tea Co. Ltd Ord Ord 5.00 AIMS', 'ticker': 'KAPC', 'isin': 'KE4000001760', 'status': 'current NSE page'}
+{'sector': 'AGRICULTURAL', 'issuer_name': 'Kakuzi Ord.5.00', 'ticker': 'KUKZ', 'isin': 'KE0000000281', 'status': 'current NSE page'}
+{'sector': 'AGRICULTURAL', 'issuer_name': 'Limuru Tea Co. Ltd Ord 20.00', 'ticker': 'LIMT', 'isin': 'KE0000000356', 'status': 'current NSE page'}
+{'sector': 'AGRICULTURAL', 'issuer_name': 'Sasini Ltd Ord 1.00', 'ticker': 'SASN', 'isin': 'KE0000000430', 'status': 'current NSE page'}
+{'sector': 'AGRICULTURAL', 'issuer_name': 'Williamson Tea Kenya Ltd Ord 5.00', 'ticker': 'WTK', 'isin': 'KE0000000505', 'status': 'current NSE page'}
+{'sector': 'AUTOMOBILES AND ACCESSORIES', 'issuer_name': 'Car and General (K) Ltd Ord 5.00', 'ticker': 'CGEN', 'isin': 'KE0000000109', 'status': 'current NSE page'}
+{'sector': 'BANKING', 'issuer_name': 'Absa Bank Kenya PLC', 'ticker': 'ABSA', 'isin': 'KE0000000067', 'status': 'current NSE page'}
+{'sector': 'BANKING', 'issuer_name': 'Stanbic Holdings Plc. ord.5.00', 'ticker': 'SBIC', 'isin': 'KE0000000091', 'status': 'current NSE page'}
+{'sector': 'BANKING', 'issuer_name': 'I&M Holdings Ltd Ord 1.00', 'ticker': 'IMH', 'isin': 'KE0000000125', 'status': 'current NSE page'}
+{'sector': 'BANKING', 'issuer_name': 'Diamond Trust Bank Kenya Ltd Ord 4.00', 'ticker': 'DTK', 'isin': 'KE0000000158', 'status': 'current NSE page'}
+{'sector': 'BANKING', 'issuer_name': 'Standard Chartered Bank Ltd Ord 5.00', 'ticker': 'SCBK', 'isin': 'KE0000000448', 'status': 'current NSE page'}
+{'sector': 'BANKING', 'issuer_name': 'Equity Group Holdings Ord 0.50', 'ticker': 'EQTY', 'isin': 'KE0000000554', 'status': 'current NSE page'}
+{'sector': 'BANKING', 'issuer_name': 'The Co-operative Bank of Kenya Ltd Ord 1.00', 'ticker': 'COOP', 'isin': 'KE1000001568', 'status': 'current NSE page'}
+{'sector': 'BANKING', 'issuer_name': 'BK Group PLC', 'ticker': 'BKG', 'isin': 'KE5000008986', 'status': 'current NSE page'}
+{'sector': 'BANKING', 'issuer_name': 'Family Bank Limited', 'ticker': 'FMLY', 'isin': 'KE9930006987', 'status': 'current NSE page'}
+{'sector': 'BANKING', 'issuer_name': 'HF Group Ltd Ord 5.00', 'ticker': 'HFCK', 'isin': 'KE0000000240', 'status': 'current NSE page'}
+{'sector': 'BANKING', 'issuer_name': 'HF Group Ltd Ord 5.00', 'ticker': 'KCB', 'isin': 'KE0000000315', 'status': 'current NSE page'}
+{'sector': 'BANKING', 'issuer_name': 'NCBA Group PLC', 'ticker': 'NCBA', 'isin': 'KE0000000406', 'status': 'current NSE page'}
+{'sector': 'COMMERCIAL AND SERVICES', 'issuer_name': 'Express Ltd Ord 5.00', 'ticker': 'XPRS', 'isin': 'KE0000000224', 'status': 'current NSE page'}
+{'sector': 'COMMERCIAL AND SERVICES', 'issuer_name': 'Sameer Africa PLC Ord 5.00', 'ticker': 'SMER', 'isin': 'KE0000000232', 'status': 'current NSE page'}
+{'sector': 'COMMERCIAL AND SERVICES', 'issuer_name': 'Kenya Airways Ltd Ord 5.00', 'ticker': 'KQ', 'isin': 'KE0000000307', 'status': 'current NSE page'}
+{'sector': 'COMMERCIAL AND SERVICES', 'issuer_name': 'Nation Media Group Ord. 2.50', 'ticker': 'NMG', 'isin': 'KE0000000380', 'status': 'current NSE page'}
+{'sector': 'COMMERCIAL AND SERVICES', 'issuer_name': 'Standard Group Ltd Ord 5.00', 'ticker': 'SGL', 'isin': 'KE0000000455', 'status': 'current NSE page'}
+{'sector': 'COMMERCIAL AND SERVICES', 'issuer_name': 'TPS Eastern Africa (Serena) Ltd Ord 1.00', 'ticker': 'TPSE', 'isin': 'KE0000000539', 'status': 'current NSE page'}
+{'sector': 'COMMERCIAL AND SERVICES', 'issuer_name': 'Scangroup Ltd Ord 1.00', 'ticker': 'SCAN', 'isin': 'KE0000000562', 'status': 'current NSE page'}
+{'sector': 'COMMERCIAL AND SERVICES', 'issuer_name': 'Uchumi Supermarket Ltd Ord 5.00', 'ticker': 'UCHM', 'isin': 'KE0000000489', 'status': 'current NSE page'}
+{'sector': 'COMMERCIAL AND SERVICES', 'issuer_name': 'Longhorn Publishers Ltd', 'ticker': 'LKL', 'isin': 'KE2000002275', 'status': 'current NSE page'}
+{'sector': 'COMMERCIAL AND SERVICES', 'issuer_name': 'Deacons (East Africa) Plc Ord 2.50', 'ticker': 'DCON', 'isin': 'KE5000005438', 'status': 'current NSE page'}
+{'sector': 'COMMERCIAL AND SERVICES', 'issuer_name': 'Nairobi Business Ventures Ltd', 'ticker': 'NBV', 'isin': 'KE5000000090', 'status': 'current NSE page'}
+{'sector': 'CONSTRUCTION AND ALLIED', 'issuer_name': 'Athi River Mining Ord 5.00', 'ticker': 'ARM', 'isin': 'KE0000000034', 'status': 'current NSE page'}
+{'sector': 'CONSTRUCTION AND ALLIED', 'issuer_name': 'Bamburi Cement PLC Ord 5.00', 'ticker': 'BAMB', 'isin': 'KE0000000059', 'status': 'current NSE page'}
+{'sector': 'CONSTRUCTION AND ALLIED', 'issuer_name': 'Crown Paints Kenya PLC. 0rd 5.00', 'ticker': 'CRWN', 'isin': 'KE0000000141', 'status': 'current NSE page'}
+{'sector': 'CONSTRUCTION AND ALLIED', 'issuer_name': 'E.A.Cables PLC Ord 0.50', 'ticker': 'CABL', 'isin': 'KE0000000174', 'status': 'current NSE page'}
+{'sector': 'CONSTRUCTION AND ALLIED', 'issuer_name': 'E.A.Portland Cement Ltd Ord 5.00', 'ticker': 'PORT', 'isin': 'KE0000000190', 'status': 'current NSE page'}
+{'sector': 'ENERGY AND PETROLEUM', 'issuer_name': 'Total Kenya Ltd Ord 5.00', 'ticker': 'TOTL', 'isin': 'KE0000000463', 'status': 'current NSE page'}
+{'sector': 'ENERGY AND PETROLEUM', 'issuer_name': 'KenGen Ltd Ord. 2.50', 'ticker': 'KEGN', 'isin': 'KE0000000547', 'status': 'current NSE page'}
+{'sector': 'ENERGY AND PETROLEUM', 'issuer_name': 'Kenya Power & Lighting Co Ltd', 'ticker': 'KPLC', 'isin': 'KE0000000349', 'status': 'current NSE page'}
+{'sector': 'ENERGY AND PETROLEUM', 'issuer_name': 'Umeme Ltd Ord 0.50', 'ticker': 'UMME', 'isin': 'KE2000005815', 'status': 'current NSE page'}
+{'sector': 'INSURANCE', 'issuer_name': 'Jubilee Holdings Ltd Ord 5.00', 'ticker': 'JUB', 'isin': 'KE0000000273', 'status': 'current NSE page'}
+{'sector': 'INSURANCE', 'issuer_name': 'Sanlam Allianz Holdings (Kenya) PLC 0rd 5.00', 'ticker': 'SLAM', 'isin': 'KE0000000414', 'status': 'current NSE page'}
+{'sector': 'INSURANCE', 'issuer_name': 'Kenya Re-Insurance Corporation Ltd Ord 2.50', 'ticker': 'KNRE', 'isin': 'KE0000000604', 'status': 'current NSE page'}
+{'sector': 'INSURANCE', 'issuer_name': 'Liberty Kenya Holdings Ltd', 'ticker': 'LBTY', 'isin': '', 'status': 'current NSE page'}
+{'sector': 'INSURANCE', 'issuer_name': 'Britam Holdings Ltd Ord 0.10', 'ticker': 'BRIT', 'isin': 'KE2000002192', 'status': 'current NSE page'}
+{'sector': 'INSURANCE', 'issuer_name': 'CIC Insurance Group Ltd Ord 1.00', 'ticker': 'CIC', 'isin': 'KE2000002317', 'status': 'current NSE page'}
+{'sector': 'INVESTMENT', 'issuer_name': 'Olympia Capital Holdings ltd Ord 5.00', 'ticker': 'OCH', 'isin': 'KE0000000166', 'status': 'current NSE page'}
+{'sector': 'INVESTMENT', 'issuer_name': 'Centum Investment Co Ltd Ord 0.50', 'ticker': 'CTUM', 'isin': 'KE0000000265', 'status': 'current NSE page'}
+{'sector': 'INVESTMENT', 'issuer_name': 'Trans-Century Ltd', 'ticker': 'TCL', 'isin': 'KE2000002184', 'status': 'current NSE page'}
+{'sector': 'INVESTMENT', 'issuer_name': 'Home Afrika Ltd Ord 1.00', 'ticker': 'HAFR', 'isin': 'KE2000007258', 'status': 'current NSE page'}
+{'sector': 'INVESTMENT', 'issuer_name': 'Kurwitu Ventures', 'ticker': 'KURV', 'isin': 'KE4000001216', 'status': 'current NSE page'}
+{'sector': 'INVESTMENT SERVICES', 'issuer_name': 'Nairobi Securities Exchange Ltd Ord 4.00', 'ticker': 'NSE', 'isin': 'KE3000009674', 'status': 'current NSE page'}
+{'sector': 'MANUFACTURING AND ALLIED', 'issuer_name': 'B.O.C Kenya Ltd Ord 5.00', 'ticker': 'BOC', 'isin': 'KE0000000042', 'status': 'current NSE page'}
+{'sector': 'MANUFACTURING AND ALLIED', 'issuer_name': 'British American Tobacco Kenya Ltd Ord 10.00', 'ticker': 'BAT', 'isin': 'KE0000000075', 'status': 'current NSE page'}
+{'sector': 'MANUFACTURING AND ALLIED', 'issuer_name': 'Carbacid Investments Ltd Ord 5.00', 'ticker': 'CARB', 'isin': 'KE0000000117', 'status': 'current NSE page'}
+{'sector': 'MANUFACTURING AND ALLIED', 'issuer_name': 'East African Breweries Ltd Ord 2.00', 'ticker': 'EABL', 'isin': 'KE0000000216', 'status': 'current NSE page'}
+{'sector': 'MANUFACTURING AND ALLIED', 'issuer_name': 'Mumias Sugar Co. Ltd Ord 2.00', 'ticker': 'MSC', 'isin': 'KE0000000372', 'status': 'current NSE page'}
+{'sector': 'MANUFACTURING AND ALLIED', 'issuer_name': 'Unga Group Ltd Ord 5.00', 'ticker': 'UNGA', 'isin': 'KE0000000497', 'status': 'current NSE page'}
+{'sector': 'MANUFACTURING AND ALLIED', 'issuer_name': 'Eveready East Africa Ltd Ord.1.00', 'ticker': 'EVRD', 'isin': 'KE0000000588', 'status': 'current NSE page'}
+{'sector': 'MANUFACTURING AND ALLIED', 'issuer_name': 'AFRICA MEGA AGRICORP PLC 5.00', 'ticker': 'AMAC', 'isin': 'KE0000000331', 'status': 'current NSE page'}
+{'sector': 'MANUFACTURING AND ALLIED', 'issuer_name': 'Flame Tree Group Holdings Ltd Ord 0.825', 'ticker': 'FTGH', 'isin': 'KE4000001323', 'status': 'current NSE page'}
+{'sector': 'MANUFACTURING AND ALLIED', 'issuer_name': 'Shri Krishana Overseas (SKL)', 'ticker': 'SKL.O0000', 'isin': 'KE9900001216', 'status': 'current NSE page'}
+{'sector': 'TELECOMMUNICATION AND TECHNOLOGY', 'issuer_name': 'Safaricom PLC Ord 0.05', 'ticker': 'SCOM', 'isin': 'KE1000001402', 'status': 'current NSE page'}
+{'sector': 'REAL ESTATE INVESTMENT TRUST', 'issuer_name': 'Laptrust Imara I-REIT', 'ticker': 'LAPR', 'isin': 'KE9100008870', 'status': 'current NSE page'}
+{'sector': 'REAL ESTATE INVESTMENT TRUST', 'issuer_name': 'TRIFIC Green USD I-REIT', 'ticker': 'TRFC', 'isin': 'KE9930007092', 'status': 'current NSE page'}
+{'sector': 'EXCHANGE TRADED FUND', 'issuer_name': 'New Gold Issuer (RP) Ltd', 'ticker': 'GLD', 'isin': 'ZAE000060067', 'status': 'current NSE page'}
+{'sector': 'EXCHANGE TRADED FUND', 'issuer_name': 'Satrix MSCI World Feeder ETF', 'ticker': 'SMWF.E0000', 'isin': 'ZAE000246104', 'status': 'current NSE page'}

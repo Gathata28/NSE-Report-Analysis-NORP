@@ -1,0 +1,16 @@
+rows 15
+{'year': '2025', 'title': 'Britam Holdings PLC Annual Report 2025', 'url': 'https://www.britam.com/images/Annual-Reports/2025 Integrated Report and Audited Financial statements..pdf'}
+{'year': '2024', 'title': 'Britam Holdings PLC Annual Report 2024', 'url': 'https://www.britam.com/images/FormsAndDownloads/Britam_AnnualReport_2024.pdf'}
+{'year': '2023', 'title': 'Britam Holdings PLC Annual Report 2023', 'url': 'https://www.britam.com/images/FormsAndDownloads/Britam-2023-Integrated-Annual-Report-New.pdf'}
+{'year': '2022', 'title': 'Britam Holdings PLC Annual Report 2022', 'url': 'https://www.britam.com/images/AGM-Information/BRITAM_2022_Integrated_Report_FA_online3.pdf'}
+{'year': '2021', 'title': 'Britam Holdings PLC Annual Report 2021', 'url': 'https://www.britam.com/images/assets/annualreports/britam-holdings-plc-2021-annual-report.pdf'}
+{'year': '2020', 'title': 'Britam Holdings PLC Annual Report 2020', 'url': 'https://www.britam.com/images/assets/annualreports/britam-2020-annual-report.pdf'}
+{'year': '2019', 'title': 'Britam Holdings PLC Annual Report 2019', 'url': 'https://www.britam.com/images/assets/annualreports/2019-britam-holdings-plc-annual-report.pdf'}
+{'year': '2018', 'title': 'Britam Holdings PLC Annual Report 2018', 'url': 'https://www.britam.com/images/assets/annualreports/2018-britam-annual-report.pdf'}
+{'year': '2016', 'title': 'Britam Holdings PLC Annual Report 2016', 'url': 'https://www.britam.com/images/assets/annualreports/2016-britam-annual-report-and-financial-statements.pdf'}
+{'year': '2015', 'title': 'Britam Holdings PLC Annual Report 2015', 'url': 'https://www.britam.com/images/assets/annualreports/2015-britam-annual-report-and-financial-statements.pdf'}
+{'year': '2014', 'title': 'Britam Holdings PLC Annual Report 2014', 'url': 'https://www.britam.com/images/assets/annualreports/2014-group-annual-report.pdf'}
+{'year': '2013', 'title': 'Britam Holdings PLC Annual Report 2013', 'url': 'https://www.britam.com/images/assets/annualreports/2013-britam-annual-report.pdf'}
+{'year': '2012', 'title': 'Britam Holdings PLC Annual Report 2012', 'url': 'https://www.britam.com/images/assets/annualreports/2012-annual-report.pdf'}
+{'year': '2011', 'title': 'Britam Holdings PLC Annual Report 2011', 'url': 'https://www.britam.com/images/assets/annualreports/2011-britam-annual-report.pdf'}
+{'year': '2010', 'title': 'Britam Holdings PLC Annual Report 2010', 'url': 'https://www.britam.com/images/assets/annualreports/2010-britam-annual-report.pdf'}

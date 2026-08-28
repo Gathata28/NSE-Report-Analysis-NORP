@@ -1,0 +1,31 @@
+records 30
+{'title': '', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/SG_ANNUAL_REPORT_2024.pdf', 'filename': 'SG_ANNUAL_REPORT_2024.pdf'}
+{'title': 'unaudited group results for the 6 month period ended 30 june 2025', 'url': 'https://www.standardmedia.co.ke/corporate/assets/announcements/unaudited_group_results_for_the_6_month_period_ended_30_june_2025.pdf', 'filename': 'unaudited_group_results_for_the_6_month_period_ended_30_june_2025.pdf'}
+{'title': 'Financial Statement Year 2024', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/Financial_Statement_Year_2024.pdf', 'filename': 'Financial_Statement_Year_2024.pdf'}
+{'title': 'AUDITED GROUP RESULTS FOR THE YEAR ENDED 31 DECEMBER 2024', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/AUDITED_GROUP_RESULTS_FOR_THE_YEAR_ENDED_31_DECEMBER_2024.pdf', 'filename': 'AUDITED_GROUP_RESULTS_FOR_THE_YEAR_ENDED_31_DECEMBER_2024.pdf'}
+{'title': '', 'url': 'https://www.standardmedia.co.ke/corporate/assets/assets/reports/annualreport_2023_v1.pdf', 'filename': 'annualreport_2023_v1.pdf'}
+{'title': 'annualreport 2023 v1', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/annualreport_2023_v1.pdf', 'filename': 'annualreport_2023_v1.pdf'}
+{'title': '', 'url': 'https://www.standardmedia.co.ke/corporate/assets/assets/reports/sg_annual_report_2022.pdf', 'filename': 'sg_annual_report_2022.pdf'}
+{'title': 'sg annual report 2022', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/sg_annual_report_2022.pdf', 'filename': 'sg_annual_report_2022.pdf'}
+{'title': 'PUBLICATION OF THE AUDITED RESULTS FOR THE PERIOD ENDED 31ST DECEMBER 2023', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/PUBLICATION_OF_THE_AUDITED_RESULTS_FOR_THE_PERIOD_ENDED_31ST_DECEMBER_2023.pdf', 'filename': 'PUBLICATION_OF_THE_AUDITED_RESULTS_FOR_THE_PERIOD_ENDED_31ST_DECEMBER_2023.pdf'}
+{'title': 'June 23 Publication', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/June_23_Publication.pdf', 'filename': 'June_23_Publication.pdf'}
+{'title': '', 'url': 'https://www.standardmedia.co.ke/corporate/assets/assets/reports/TSG_PLC_ANNUAL_REPORT_FOR_THE_FY_2021.pdf', 'filename': 'TSG_PLC_ANNUAL_REPORT_FOR_THE_FY_2021.pdf'}
+{'title': 'TSG PLC ANNUAL REPORT FOR THE FY 2021', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/TSG_PLC_ANNUAL_REPORT_FOR_THE_FY_2021.pdf', 'filename': 'TSG_PLC_ANNUAL_REPORT_FOR_THE_FY_2021.pdf'}
+{'title': 'The Standard Group PLC Audited Group Results for the year ended 31st Dec 2022', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/The_Standard_Group_PLC_Audited_Group_Results_for_the_year_ended_31st_Dec_2022.pdf', 'filename': 'The_Standard_Group_PLC_Audited_Group_Results_for_the_year_ended_31st_Dec_2022.pdf'}
+{'title': 'THE STANDARD GROUP PLC HALF YEAR UNAUDITED RESULTS FOR THE PERIOD ENDED 30062022', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/THE_STANDARD_GROUP_PLC_HALF_YEAR_UNAUDITED_RESULTS_FOR_THE_PERIOD_ENDED_30062022.pdf', 'filename': 'THE_STANDARD_GROUP_PLC_HALF_YEAR_UNAUDITED_RESULTS_FOR_THE_PERIOD_ENDED_30062022.pdf'}
+{'title': 'THE STANDARD GROUP PLC AUDITED FINANCIAL STATEMENTS FOR THE STANDARD GROUP PLC PERIOD ENDED 31ST  DECEMBER 2021', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/THE_STANDARD_GROUP_PLC_AUDITED_FINANCIAL_STATEMENTS_FOR_THE_STANDARD_GROUP_PLC_PERIOD_ENDED_31ST _DECEMBER_2021.pdf', 'filename': 'THE_STANDARD_GROUP_PLC_AUDITED_FINANCIAL_STATEMENTS_FOR_THE_STANDARD_GROUP_PLC_PERIOD_ENDED_31ST _DECEMBER_2021.pdf'}
+{'title': '', 'url': 'https://www.standardmedia.co.ke/corporate/sdteam/documents/ANNUAL REPORT 2021 FINAL 18 Financial Statements.pdf', 'filename': 'ANNUAL REPORT 2021 FINAL 18 Financial Statements.pdf'}
+{'title': 'the standard group plc half year result 6 months 2021', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/the-standard-group-plc-half-year-result-6-months-2021.pdf', 'filename': 'the-standard-group-plc-half-year-result-6-months-2021.pdf'}
+{'title': 'THE STANDARD GROUP PLC AUDITED RESULTS FOR THE YEAR ENDED 31.12.2020', 'url': 'https://www.standardmedia.co.ke/corporate/sdteam/THE STANDARD GROUP PLC AUDITED RESULTS FOR THE YEAR ENDED 31.12.2020.pdf', 'filename': 'THE STANDARD GROUP PLC AUDITED RESULTS FOR THE YEAR ENDED 31.12.2020.pdf'}
+{'title': '', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/annualreport_2019.pdf', 'filename': 'annualreport_2019.pdf'}
+{'title': 'Standard Group Financials', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/Standard_Group_Financials.pdf', 'filename': 'Standard_Group_Financials.pdf'}
+{'title': 'annualreport 2018', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/annualreport_2018.pdf', 'filename': 'annualreport_2018.pdf'}
+{'title': 'annualreport 2017', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/annualreport_2017.pdf', 'filename': 'annualreport_2017.pdf'}
+{'title': 'annualreport 2016', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/annualreport_2016.pdf', 'filename': 'annualreport_2016.pdf'}
+{'title': 'Annual Report SG 2018', 'url': 'https://www.standardmedia.co.ke/corporate/assets/reports/Annual_Report_SG_2018.pdf', 'filename': 'Annual_Report_SG_2018.pdf'}
+{'title': 'annualreport2017', 'url': 'https://www.standardmedia.co.ke/corporate/assets/annualreport2017.pdf', 'filename': 'annualreport2017.pdf'}
+{'title': 'annualreport', 'url': 'https://www.standardmedia.co.ke/corporate/annualreport.pdf', 'filename': 'annualreport.pdf'}
+{'title': 'annualreport2015', 'url': 'https://www.standardmedia.co.ke/corporate/annualreport2015.pdf', 'filename': 'annualreport2015.pdf'}
+{'title': 'annualreport2014', 'url': 'https://www.standardmedia.co.ke/corporate/annualreport2014.pdf', 'filename': 'annualreport2014.pdf'}
+{'title': 'annualreport2013', 'url': 'https://www.standardmedia.co.ke/corporate/annualreport2013.pdf', 'filename': 'annualreport2013.pdf'}
+{'title': 'annualreport2012', 'url': 'https://www.standardmedia.co.ke/corporate/annualreport2012.pdf', 'filename': 'annualreport2012.pdf'}

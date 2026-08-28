@@ -1,0 +1,12 @@
+records 11
+{'title': 'FTG Annual Report Y2025m', 'url': 'https://admin.flametreegroup.com/storage/uploads/2026/06/03/FTG-Annual-Report-Y2025m_uid_6a1fdca703f92.pdf', 'filename': 'FTG-Annual-Report-Y2025m_uid_6a1fdca703f92.pdf'}
+{'title': 'FTG H1 2024 Results Final Press Release', 'url': 'https://admin.flametreegroup.com/storage/uploads/2024/09/03/FTG-H1-2024-Results-Final-Press-Release_uid_66d6d9878c922.pdf', 'filename': 'FTG-H1-2024-Results-Final-Press-Release_uid_66d6d9878c922.pdf'}
+{'title': 'FTG Annual Report 2015', 'url': 'https://admin.flametreegroup.com/storage/uploads/2023/12/05/FTG-Annual-Report-2015_uid_656edcd8b369a.pdf', 'filename': 'FTG-Annual-Report-2015_uid_656edcd8b369a.pdf'}
+{'title': 'FTG Annual Report 2014', 'url': 'https://admin.flametreegroup.com/storage/uploads/2023/12/05/FTG-Annual-Report-2014_uid_656edcd867bbf.pdf', 'filename': 'FTG-Annual-Report-2014_uid_656edcd867bbf.pdf'}
+{'title': 'FTG Annual Report 2017', 'url': 'https://admin.flametreegroup.com/storage/uploads/2023/12/05/FTG-Annual-Report-2017_uid_656edcd9223f1.pdf', 'filename': 'FTG-Annual-Report-2017_uid_656edcd9223f1.pdf'}
+{'title': 'FTG Annual Report 2016', 'url': 'https://admin.flametreegroup.com/storage/uploads/2023/12/05/FTG-Annual-Report-2016_uid_656edcdaa2016.pdf', 'filename': 'FTG-Annual-Report-2016_uid_656edcdaa2016.pdf'}
+{'title': 'FTG Annual Report 2021', 'url': 'https://admin.flametreegroup.com/storage/uploads/2023/12/05/FTG-Annual-Report-2021-final_uid_656edcda0813b.pdf', 'filename': 'FTG-Annual-Report-2021-final_uid_656edcda0813b.pdf'}
+{'title': 'FTG FInancial Report Dec 31 2015', 'url': 'https://admin.flametreegroup.com/storage/uploads/2023/12/03/FTG-FInancial-Report-Dec-31-2015_uid_656c58c0efcdb.pdf', 'filename': 'FTG-FInancial-Report-Dec-31-2015_uid_656c58c0efcdb.pdf'}
+{'title': 'FTG Annual Report 2020', 'url': 'https://admin.flametreegroup.com/storage/uploads/2023/12/06/FTG-Annual-Report-2020_uid_6570310f324f9.pdf', 'filename': 'FTG-Annual-Report-2020_uid_6570310f324f9.pdf'}
+{'title': 'FTG Annual Report 2018', 'url': 'https://admin.flametreegroup.com/storage/uploads/2023/12/03/FTG-Annual-Report-2018_uid_656c58c12dbb0.pdf', 'filename': 'FTG-Annual-Report-2018_uid_656c58c12dbb0.pdf'}
+{'title': 'FTG Annual Report 2019', 'url': 'https://admin.flametreegroup.com/storage/uploads/2023/12/03/FTG-Annual-Report-2019_uid_656c58c11594b.pdf', 'filename': 'FTG-Annual-Report-2019_uid_656c58c11594b.pdf'}

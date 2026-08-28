@@ -1,0 +1,19 @@
+records 18
+{'title': 'SanlamAllianz Holdings (Kenya) Integrated Report & Financial Statements 2025', 'url': 'https://ke.sanlamallianz.com/uploads/files/2026/Sanlam-Allianz-AR-2025---Online-Version-updated.pdf', 'filename': 'Sanlam-Allianz-AR-2025---Online-Version-updated.pdf'}
+{'title': 'Sanlam Annual Report 2024', 'url': 'https://ke.sanlamallianz.com/uploads/files/Sanlam%20Annual%20Report%202024.pdf', 'filename': 'Sanlam%20Annual%20Report%202024.pdf'}
+{'title': 'Sanlam Kenya PLC Annual Report 2023', 'url': 'https://ke.sanlamallianz.com/uploads/files/Sanlam Kenya PLC audited results.pdf', 'filename': 'Sanlam Kenya PLC audited results.pdf'}
+{'title': 'Sanlam Kenya PLC unaudited results 30 June 2023', 'url': 'https://ke.sanlamallianz.com/uploads/files/Sanlam Kenya PLC unaudited results 30 June 2023.pdf', 'filename': 'Sanlam Kenya PLC unaudited results 30 June 2023.pdf'}
+{'title': 'Sanlam Kenya PLC Unaudited Results - 30 June 2022', 'url': 'https://ke.sanlamallianz.com/uploads/files/sanlam%20plc%202022%20results.pdf', 'filename': 'sanlam%20plc%202022%20results.pdf'}
+{'title': 'Sanlam Kenya PLC 2022 Annual Report', 'url': 'https://ke.sanlamallianz.com/uploads/files/Sanlam-AR-2023.pdf', 'filename': 'Sanlam-AR-2023.pdf'}
+{'title': 'Sanlam Kenya PLC 2021 Annual Report', 'url': 'https://ke.sanlamallianz.com/uploads/filesSanlam%20Annual%20Report%202021.pdf', 'filename': 'filesSanlam%20Annual%20Report%202021.pdf'}
+{'title': 'Sanlam Kenya PLC 2020 Annual Report', 'url': 'https://ke.sanlamallianz.com/uploads/files/SANLAM-ANNUAL-REPORT-KENYA-PLC.pdf', 'filename': 'SANLAM-ANNUAL-REPORT-KENYA-PLC.pdf'}
+{'title': 'Sanlam Kenya PLC 2019 Annual Report', 'url': 'https://ke.sanlamallianz.com/uploads/files/Sanlam%202019%20Annual%20Report%20Website.pdf', 'filename': 'Sanlam%202019%20Annual%20Report%20Website.pdf'}
+{'title': '2019 Interim Results', 'url': 'https://ke.sanlamallianz.com/uploads/files/Press%20Release%20FS%200619%20July%202019.pdf', 'filename': 'Press%20Release%20FS%200619%20July%202019.pdf'}
+{'title': '2019 Financial Results', 'url': 'https://ke.sanlamallianz.com/uploads/files/Sanlam%20Kenya%20Plc%20Results.pdf', 'filename': 'Sanlam%20Kenya%20Plc%20Results.pdf'}
+{'title': '2018 Annual Report', 'url': 'https://ke.sanlamallianz.com/uploads/files/Annual%20Report_2018.pdf', 'filename': 'Annual%20Report_2018.pdf'}
+{'title': '2018 Financial Results', 'url': 'https://ke.sanlamallianz.com/uploads/files/Sanlam%20Financials%204pm.pdf', 'filename': 'Sanlam%20Financials%204pm.pdf'}
+{'title': '2017 Annual Report', 'url': 'https://ke.sanlamallianz.com/uploads/files/Annual%20Report%202017.pdf', 'filename': 'Annual%20Report%202017.pdf'}
+{'title': '2017 Financial Results', 'url': 'https://ke.sanlamallianz.com/uploads/files/Financial%20Results%202017.pdf', 'filename': 'Financial%20Results%202017.pdf'}
+{'title': '2016 Annual Report', 'url': 'https://ke.sanlamallianz.com/uploads/files/Annual%20Report%202016.pdf', 'filename': 'Annual%20Report%202016.pdf'}
+{'title': '2016 Interim Results', 'url': 'https://ke.sanlamallianz.com/uploads/files/Interim%20Results%202016.pdf', 'filename': 'Interim%20Results%202016.pdf'}
+{'title': '2015 Annual Report and Financial Statements', 'url': 'https://ke.sanlamallianz.com/uploads/files/Annual%20Report%202015.pdf', 'filename': 'Annual%20Report%202015.pdf'}

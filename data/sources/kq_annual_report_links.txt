@@ -1,0 +1,6 @@
+records 5
+{'title': 'annual-report-2025.pdf', 'url': 'https://corporate.kenya-airways.com/contentassets/0160e07788564ab39cbed32da21839b2/annual-report-2025.pdf', 'publication_date': ''}
+{'title': 'annual-report-fy24.pdf', 'url': 'https://corporate.kenya-airways.com/globalassets/corporate/investment--shareholders/annual-reports/2025/annual-report-fy24.pdf', 'publication_date': ''}
+{'title': 'annual-report---fy23.pdf', 'url': 'https://corporate.kenya-airways.com/globalassets/corporate/investment--shareholders/annual-reports/2024/annual-report---fy23.pdf', 'publication_date': ''}
+{'title': 'annual-report---2021.pdf', 'url': 'https://corporate.kenya-airways.com/globalassets/corporate/investment--shareholders/annual-reports/2022/annual-report---2021.pdf', 'publication_date': ''}
+{'title': 'annual-report-2020.pdf', 'url': 'https://corporate.kenya-airways.com/globalassets/corporate/investment--shareholders/annual-reports/2021/annual-report-2020.pdf', 'publication_date': ''}

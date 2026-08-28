@@ -1,0 +1,22 @@
+    <title>Financial Results &amp; Accounts | Limuru Tea PLC</title>
+---
+        <meta property="og:title" content="Financial Results &amp; Accounts | Limuru Tea PLC">
+---
+        <meta name="twitter:title" content="Financial Results &amp; Accounts | Limuru Tea PLC">
+---
+        <meta name="twitter:image:alt" content="Financial Results &amp; Accounts | Limuru Tea PLC">
+---
+                                                        <a class="dropdown-item" href="https://www.limuruteaplc.com/investor-information/financial-results-accounts" title="Financial Results &amp; Accounts">Financial Results &amp; Accounts</a>
+---
+                            <h1 class="title">Financial Results &amp; Accounts</h1>
+---
+                                    <li class="breadcrumb-item active" aria-current="page"><a href="https://www.limuruteaplc.com/investor-information/financial-results-accounts" data-manus_clickable="true" data-manus_click_id="10">Financial Results &amp; Accounts</a></li>
+---
+                        <h5 class="m-b-0">Financial Results &amp; Accounts</h5>
+---
+                                        <p class="file-name">Financial Results &amp; Accounts 2022</p>
+---
+                                        <p class="file-name">Financial Results &amp; Accounts 2021</p>
+---
+																					<li><a href="https://www.limuruteaplc.com/investor-information/financial-results-accounts"><i class="fa fa-check-square"></i> Financial Results &amp; Accounts</a></li>
+---

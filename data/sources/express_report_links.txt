@@ -1,0 +1,8 @@
+records 7
+{'title': 'Express Kenya 2025 H1 Report and Financial Statements', 'url': 'https://expresskenya.co.ke/wp-content/uploads/2025/08/EKL-Financial-Statement-H1-2025.pdf', 'filename': 'EKL-Financial-Statement-H1-2025.pdf'}
+{'title': 'Express Kenya 2025 Annual Report and Financial Statements', 'url': 'https://expresskenya.co.ke/wp-content/uploads/2026/06/Express-Kenya-Annual-Report-2025.pdf', 'filename': 'Express-Kenya-Annual-Report-2025.pdf'}
+{'title': 'Express Kenya 2024 H1 Report and Financial Statements', 'url': 'https://expresskenya.co.ke/wp-content/uploads/2024/09/EKL-Financial-Statement-H1-2024.pdf', 'filename': 'EKL-Financial-Statement-H1-2024.pdf'}
+{'title': 'Express Kenya 2024 Annual Report and Financial Statements', 'url': 'https://expresskenya.co.ke/wp-content/uploads/2025/06/Express-Kenya-Annual-Report-2024.pdf', 'filename': 'Express-Kenya-Annual-Report-2024.pdf'}
+{'title': 'Express Kenya 2023 H1 Report and Financial Statements', 'url': 'https://expresskenya.co.ke/wp-content/uploads/2023/08/Express-Kenya-125x3-31-07-1.pdf', 'filename': 'Express-Kenya-125x3-31-07-1.pdf'}
+{'title': 'Express Kenya 2023 Annual Report and Financial Statements', 'url': 'https://expresskenya.co.ke/wp-content/uploads/2024/07/Express-Kenya-Annual-Report2023.pdf', 'filename': 'Express-Kenya-Annual-Report2023.pdf'}
+{'title': 'Express Kenya 2022 H1 Report and Financial Statements', 'url': 'https://expresskenya.co.ke/wp-content/uploads/2023/07/Express-Kenya-Plc-2022-Half-year-published.pdf', 'filename': 'Express-Kenya-Plc-2022-Half-year-published.pdf'}

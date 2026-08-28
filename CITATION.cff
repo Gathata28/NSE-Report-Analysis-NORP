@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "NSE Report Analysis Project (NORP)"
+message: "If you use this archive or database, please cite this repository and the original source documents."
+type: dataset
+authors:
+  - family-names: "Gathata"
+    given-names: "Kepha"
+    affiliation: "Technical University of Kenya"
+    email: ""
+version: "2026.08.27"
+date-released: 2026-08-27
+repository-code: "https://github.com/Gathata28"
+keywords:
+  - Nairobi Securities Exchange
+  - Kenya
+  - financial reports
+  - source archive
+  - SQLite
+license: MIT

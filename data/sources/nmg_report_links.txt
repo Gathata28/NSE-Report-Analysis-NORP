@@ -1,0 +1,12 @@
+records 11
+{'title': 'NMG-Annual-report-Final-compressed-1.pdf', 'url': 'https://www.nationmedia.com/wp-content/uploads/2026/06/NMG-Annual-report-Final-compressed-1.pdf'}
+{'title': 'NMG-Annual-Report-9th-June.pdf', 'url': 'https://www.nationmedia.com/wp-content/uploads/2025/06/NMG-Annual-Report-9th-June.pdf'}
+{'title': 'NMG-2023-Annual-Report-and-Financial-Statements.pdf', 'url': 'https://www.nationmedia.com/wp-content/uploads/2024/06/NMG-2023-Annual-Report-and-Financial-Statements.pdf'}
+{'title': 'NMG-2022-Annual-Report-and-Financial-Statements-1.pdf', 'url': 'https://www.nationmedia.com/wp-content/uploads/2023/06/NMG-2022-Annual-Report-and-Financial-Statements-1.pdf'}
+{'title': 'NMG-2021-Annual-Report-and-Financial-Statements.pdf', 'url': 'https://www.nationmedia.com/wp-content/uploads/2022/06/NMG-2021-Annual-Report-and-Financial-Statements.pdf'}
+{'title': 'NMG-2020-Final-Annual-Report-and-Financial-Statements.pdf', 'url': 'https://www.nationmedia.com/wp-content/uploads/2021/05/NMG-2020-Final-Annual-Report-and-Financial-Statements.pdf'}
+{'title': 'NATION-ANNUAL-REPORT-2017.pdf', 'url': 'https://www.nationmedia.com/wp-content/uploads/2018/06/NATION-ANNUAL-REPORT-2017.pdf'}
+{'title': 'NMG-2016-Annual-Report.pdf', 'url': 'https://www.nationmedia.com/wp-content/uploads/2017/06/NMG-2016-Annual-Report.pdf'}
+{'title': 'NMG2015AnnualReport.pdf', 'url': 'https://www.nationmedia.com/wp-content/uploads/2016/11/NMG2015AnnualReport.pdf'}
+{'title': '2014FinancialReport.pdf', 'url': 'https://www.nationmedia.com/wp-content/uploads/2016/09/2014FinancialReport.pdf'}
+{'title': 'NMG-2013-Annual-Report.pdf', 'url': 'https://www.nationmedia.com/wp-content/uploads/2017/05/NMG-2013-Annual-Report.pdf'}

@@ -1,0 +1,1 @@
+rows 1759 validated_sample 210 status [('Linked from official issuer page', 1549), ('HTTP 206 sample-validated', 159), ('HTTP 200 sample-validated', 33), ('HTTP ERROR sample-validated', 10), ('HTTP 403 sample-validated', 5), ('HTTP 404 sample-validated', 3)]

@@ -1,0 +1,1 @@
+sample_records 212 validated 212 statuses [('206', 161), ('200', 33), ('ERROR', 10), ('403', 5), ('404', 3)]

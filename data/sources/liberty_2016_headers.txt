@@ -1,0 +1,16 @@
+HTTP/2 404 
+date: Thu, 27 Aug 2026 10:04:00 GMT
+content-type: text/html; charset=utf-8
+cf-ray: a31a3fe2df9effa7-BOM
+cf-cache-status: BYPASS
+cache-control: no-cache, private
+server: cloudflare
+strict-transport-security: max-age=15552000; includeSubDomains
+vary: Accept-Encoding
+content-security-policy: frame-ancestors 'self'
+permissions-policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+content-encoding: gzip
+

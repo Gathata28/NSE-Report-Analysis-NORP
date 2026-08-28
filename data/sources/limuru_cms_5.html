@@ -1,0 +1,255 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login | Limuru Tea PLC</title>
+
+    <link rel="stylesheet" href="https://www.limuruteaplc.com/assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.limuruteaplc.com/assets/node_modules/formvalidation/dist/css/formValidation.min.css">
+    <link rel="stylesheet" href="https://www.limuruteaplc.com/assets/css/admin.min.css?1787826056">
+    <link rel="stylesheet" href="https://www.limuruteaplc.com/assets/css/default.css">
+
+    <link rel="shortcut icon" href="https://www.limuruteaplc.com/assets/img/logos/favicon.ico" type="image/x-icon">
+
+    <script src="https://www.limuruteaplc.com/assets/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://www.limuruteaplc.com/assets/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://www.limuruteaplc.com/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body class="login-page">
+    <div class="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> 
+            </svg>
+        </div>
+    </div>
+    <section class="page-wrapper align-items-center d-flex">
+        <div class="container">
+            <div class="row m-t-30 m-b-30">
+                <div class="col-md-4 offset-md-4 text-center">
+                    <img src="https://www.limuruteaplc.com/assets/img/logos/logo.png" alt="Logo">
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form action="https://www.cms.limuruteaplc.com/forms.php" method="POST" role="form" id="login-form" class="m-b-30 login-form">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="text-info"><i class="cf cf-login"></i> Login</h6>
+                            </div>
+                            <div class="card-body">
+                                <input type="hidden" name="object" value="User">
+                                <input type="hidden" name="action" value="login">
+                                <input type="hidden" name="redirect" value="/resource/?id=5">
+                                <div class="form-group row">
+                                    <label for="email" class="col-form-label col-md-3">Email</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                            </div>
+                                            <input type="email" name="email" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="password" class="col-form-label col-md-3">Password</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-key fa-flip-vertical" aria-hidden="true"></i></span>
+                                            </div>
+                                            <input type="password" name="password" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row m-b-0">
+                                    <div class="col-md-9 offset-md-3">
+                                        <p class="m-b-0">Forgot password? <a href="#" id="passwordResetBtn">Click here</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-right">                                
+                                <button type="reset" class="btn btn-primary btn-sm"><i class="fa fa-times" aria-hidden="true"></i> Clear</button>
+                                <button type="submit" class="btn btn-success btn-sm"><i class="fa fa-check" aria-hidden="true"></i> Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div> 
+            <form action="https://www.limuruteaplc.com/app/forms.php" method="POST" role="form" id="resetPassword" style="display: none;">
+                <p>Please enter your email address below. Your password will be reset and sent to your email.</p>
+                <input type="hidden" name="action" value="self-password-reset">
+                <input type="hidden" name="object" value="User">
+                <div class="form-group row">
+                    <label for="email" class="col-form-label col-md-2">Email</label>
+                    <div class="col-md-10">
+                        <input type="email" name="email" class="form-control" autocomplete="off">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row form-footer"><hr></div>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-success btn-sm"><span class="fa fa-check"></span>&nbsp;Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <script src="https://www.limuruteaplc.com/assets/node_modules/formvalidation/dist/js/formValidation.min.js"></script>
+    <script src="https://www.limuruteaplc.com/assets/node_modules/formvalidation/dist/js/framework/bootstrap.min.js"></script>
+    <script src="https://www.limuruteaplc.com/assets/node_modules/bootbox/dist/bootbox.min.js"></script>
+    <script src="https://www.limuruteaplc.com/assets/node_modules/bootbox/dist/bootbox.locales.min.js"></script>
+    <script src="https://www.limuruteaplc.com/assets/node_modules/hideshowpassword/hideShowPassword.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('input[type="password"]').hideShowPassword({
+                show: false,
+                innerToggle: true,
+                states: {
+                    shown: {
+                        toggle: {
+                            content: '<i class="fa fa-eye-slash"></i>'
+                        }
+                    },
+                    hidden: {
+                        toggle: {
+                            content: '<i class="fa fa-eye"></i>'
+                        }
+                    }
+                }
+            });
+
+            $(document).on('submit', '#login-form', function (e) {
+                e.preventDefault();
+                var formObj = $(this);
+                var formURL = formObj.attr("action");
+                if (window.FormData !== undefined) {
+                    var formData = new FormData(this);
+                    $.ajax({
+                        beforeSend: function () {
+                            $(".preloader").fadeIn();
+                        },
+                        complete: function () {
+                            $(".preloader").fadeOut();
+                        },
+                        type: 'POST',
+                        url: formURL,
+                        data: formData,
+                        dataType: 'json',
+                        contentType: false,
+                        cache: false,
+                        processData: false,
+                        success: function (data, textStatus, jqXHR) {
+                            console.log(data);
+                            bootbox.alert({
+                                title: data.title,
+                                message: data.message
+                            });
+                            if (parseInt(data.status) == 1) {
+                                window.location = data.redirect;
+                            }
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            bootbox.alert({
+                                title: '<span class="text-danger"><span class="fa fa-warning"></span> Error!</span>',
+                                message: 'Ajax request failed because of '+errorThrown+''
+                            });
+                        }
+                    });
+                }
+            });
+
+            $(document).on('click', '#passwordResetBtn', function (e) {
+                e.preventDefault();
+                bootbox.dialog({
+                    title: '<span class="text-primary"><span class="fa fa-key fa-flip-vertical"></span>&nbsp;Reset Password</span>',
+                    message: $('#resetPassword'),
+                    show: false 
+                }).on('shown.bs.modal', function () {
+                    $('#resetPassword').show();
+                }).on('hide.bs.modal', function (e) {
+                    $('#resetPassword').hide().appendTo('body');
+                }).modal('show');
+            });
+
+            $('#resetPassword').formValidation({
+                framework: 'bootstrap',
+                icon: {
+                    valid: 'fa fa-check',
+                    invalid: 'fa fa-times',
+                    validating: 'fa fa-refresh'
+                },
+                fields: {
+                    email: {
+                        verbose: false,
+                        validators: {
+                            notEmpty: {
+                                message: 'The email address is required'
+                            },
+                            emailAddress: {
+                                message: 'The input is not a valid email address'
+                            },
+                            remote: {
+                                type: 'GET',
+                                crossDomain: true,
+                                url: 'https://www.limuruteaplc.com/app/forms.php',
+                                name: 'email',
+                                data: function () {
+                                    return {
+                                        object: 'User',
+                                        action: 'check_email',
+                                        '_': new Date().getTime()
+                                    } 
+                                },
+                                message: 'This email does not exist in the database.'
+                            }
+                        }
+                    }
+                }
+            }).on('success.form.fv', function (e) {
+                e.preventDefault();
+                var $form = $(e.target);
+                var formObj = $(this);
+                var formURL = formObj.attr("action");
+                if (window.FormData !== undefined) {
+                    var formData = new FormData(this);
+                    $.ajax({
+                        beforeSend: function () {
+                            $(".preloader").fadeIn();
+                        },
+                        complete: function () {
+                            $(".preloader").fadeOut();
+                            $form.parents('.bootbox').modal('hide');
+                        },
+                        type: 'POST',
+                        url: formURL,
+                        data: formData,
+                        dataType: 'json',
+                        contentType: false,
+                        cache: false,
+                        processData: false,
+                        success: function (data, textStatus, jqXHR) {
+                            bootbox.alert({
+                                title: data.title,
+                                message: data.message
+                            });
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            bootbox.alert({
+                                title: '<span class="text-danger"><span class="fa fa-warning"></span> Error!</span>',
+                                message: 'Ajax request failed because of '+errorThrown+''
+                            });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
