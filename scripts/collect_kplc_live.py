@@ -4,6 +4,8 @@ from __future__ import annotations
 import argparse
 import logging
 from pathlib import Path
+
+import requests
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
@@ -15,7 +17,7 @@ SOURCE_PAGE = "https://www.kplc.co.ke/investor-relations/"
 
 
 def collect_links() -> list[dict[str, str]]:
-    session = __import__("requests").Session()
+    session = requests.Session()
     response = fetch_with_retry(
         SOURCE_PAGE,
         source_tier="Issuer website",

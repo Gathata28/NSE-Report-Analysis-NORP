@@ -165,3 +165,22 @@ def test_bundle_outputs_rejects_working_tree_destination(tmp_path):
     (root / "data" / "indexes" / "nse_reports_archive.sqlite").write_bytes(b"sqlite-test")
     with pytest.raises(ValueError, match="outside the project working tree"):
         build_bundle(root, root / "release", "2026.08.28")
+
+
+def test_kplc_live_collector_filters_financial_pdfs_from_noise(monkeypatch):
+    from types import SimpleNamespace
+    import collect_kplc_live
+
+    fixture = Path(__file__).parent / "fixtures" / "kplc_investor_relations.html"
+    response = SimpleNamespace(text=fixture.read_text(encoding="utf-8"))
+    monkeypatch.setattr(collect_kplc_live, "fetch_with_retry", lambda *args, **kwargs: response)
+
+    rows = collect_kplc_live.collect_links()
+    urls = [row["url"] for row in rows]
+    titles = [row["title"].lower() for row in rows]
+
+    assert len(rows) == 11
+    assert len(urls) == len(set(urls))
+    assert any("annual report" in title or "financial results" in title for title in titles)
+    assert not any("e-mobility" in title for title in titles)
+    assert not any("conference" in title for title in titles)

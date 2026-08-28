@@ -11,7 +11,7 @@ This migration set validates `scripts/norp_import.py` against real legacy source
 | `parse_ncba_quarterly.py` | Quarterly earnings page | Saved or fetched issuer page | Tests quarterly classification and publication-date normalization |
 | `parse_limuru_nse_fallback_links.py` | NSE announcements fallback | Saved NSE HTML snapshot | Tests exchange fallback tier and issuer filtering |
 | `parse_newgold_api_links.py` | JSON download API response | Saved JSON | Tests structured API records, ID-derived PDF URLs, and ETF/security coverage |
-| `parse_transcentury_links.py` | Nested issuer pages and PDF links | Saved main page plus page requests | Tests multi-page discovery, deduplication, and source-page provenance |
+| `parse_bk_group_links.py` | Nested issuer pages and PDF/API links | Saved document-center and API snapshots | Tests multi-page discovery, deduplication, structured-source normalization, and source-page provenance |
 | `parse_unga_links.py` | Multiple archive pages with download detail pages | Saved pages with live fallback | Tests pagination/archive-page aggregation and detail-page PDF resolution |
 | `parse_nse_issuer_annual_links.py` | NSE annual archive | Saved NSE HTML snapshot | Tests central exchange annual archive and source-tier normalization |
 
@@ -23,4 +23,4 @@ The migration does not claim that the legacy scripts are interchangeable. Candid
 
 ## Retirement policy
 
-After the migrated configurations pass tests and their outputs are compared with the legacy outputs, the selected legacy scripts will be moved to `scripts/legacy/` with a README documenting their historical provenance. No legacy script will be deleted until its output comparison and repository tests pass.
+After the migrated configurations pass tests and their outputs are compared with the legacy outputs, the selected legacy scripts will be moved to `scripts/legacy/` with a README documenting their historical provenance. The current eight-script proof set includes `parse_bk_group_links.py`; `parse_transcentury_links.py` remains active and is tracked for a later migration batch. No legacy script will be deleted until its output comparison and repository tests pass.

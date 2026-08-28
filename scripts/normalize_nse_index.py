@@ -70,7 +70,7 @@ for r in csv.DictReader(master.open(encoding='utf-8')):
     elif 'linked from issuer page' in raw_status:link_status='Linked from official issuer page; direct HTTP validation pending'
     else:link_status=raw_status or 'Not validated'
     m=find_manifest(r)
-    dedupe=hashlib.sha1('|'.join([r.get('issuer','').strip().lower(),r.get('report_year_label','').strip(),freq,subtype]).encode()).hexdigest()[:16]
+    dedupe=hashlib.sha256('|'.join([r.get('issuer','').strip().lower(),r.get('report_year_label','').strip(),freq,subtype]).encode()).hexdigest()[:16]
     row=dict(r)
     row.update({'document_title':title,'report_period_end':infer_period_end(r,title),'publication_date':r.get('publication_date',''),'core_report_flag':core,'listing_status':listing_status,'validation_date':'2026-08-27' if raw_status in ('200','200 verified') else '', 'link_verification_status':link_status,'validation_method':'HTTP GET' if raw_status in ('200','200 verified') else ('official source-page link capture' if 'linked from issuer page' in raw_status else ''),'local_file':m.get('path','') if m else '','local_bytes':m.get('bytes','') if m else '','sha256':m.get('sha256','') if m else '','dedupe_group':dedupe,'collection_date':'2026-08-27','notes':''})
     rows.append(row)
