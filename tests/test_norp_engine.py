@@ -136,3 +136,32 @@ def test_host_limiter_keeps_hosts_independent():
     second = limiter.semaphore_for("https://two.example/a.pdf", "Issuer website")
     assert first is same_host
     assert first is not second
+
+
+def test_bundle_outputs_stages_release_assets_outside_tree(tmp_path):
+    import json
+    from bundle_outputs import build_bundle
+
+    root = tmp_path / "NORP"
+    (root / "data" / "indexes").mkdir(parents=True)
+    (root / "data" / "migrated_indexes").mkdir(parents=True)
+    (root / "data" / "indexes" / "nse_reports_archive.sqlite").write_bytes(b"sqlite-test")
+    (root / "data" / "indexes" / "sample.csv").write_text("a,b\n1,2\n", encoding="utf-8")
+    output = tmp_path / "release"
+    result = build_bundle(root, output, "2026.08.28")
+    manifest = json.loads(Path(result["manifest"]).read_text(encoding="utf-8"))
+    assert manifest["artifact_host"] == "GitHub Releases"
+    assert all(item["sha256"] for item in manifest["artifacts"])
+    assert all("releases/download/v2026.08.28/" in item["stable_url"] for item in manifest["artifacts"])
+    assert all(item["license_metadata"] for item in manifest["artifacts"])
+
+
+def test_bundle_outputs_rejects_working_tree_destination(tmp_path):
+    import pytest
+    from bundle_outputs import build_bundle
+
+    root = tmp_path / "NORP"
+    (root / "data" / "indexes").mkdir(parents=True)
+    (root / "data" / "indexes" / "nse_reports_archive.sqlite").write_bytes(b"sqlite-test")
+    with pytest.raises(ValueError, match="outside the project working tree"):
+        build_bundle(root, root / "release", "2026.08.28")

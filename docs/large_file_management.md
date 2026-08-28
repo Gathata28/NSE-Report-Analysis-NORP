@@ -23,3 +23,15 @@ Future full database snapshots and archive ZIP bundles must be attached to a tag
 - applicable license metadata, including the CC BY 4.0 notice for licensed market data.
 
 The default branch should retain code, schemas, documentation, compact examples, and the current compact database only while it remains within the repository size constraints. Any future migration of the current database must preserve its public download path through a release asset and update the repository documentation and citation guidance.
+
+## Reproducible staging command
+
+Use the release bundler from a checked-out repository and point it to a directory outside the project tree:
+
+```bash
+python scripts/bundle_outputs.py \
+  --version 2026.08.28 \
+  --output-dir /tmp/norp-release-2026.08.28
+```
+
+The command creates the versioned SQLite snapshot, an index ZIP bundle, a JSON release manifest, and a SHA-256 checksum file. The manifest contains the eventual GitHub Release asset URLs and license metadata. Upload the staged artifacts to the matching GitHub Release tag only after reviewing the manifest and checksums; the bundler does not publish releases automatically.
