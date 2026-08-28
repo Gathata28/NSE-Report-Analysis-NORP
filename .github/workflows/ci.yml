@@ -42,7 +42,7 @@ jobs:
         run: |
           set -euo pipefail
           if grep -RInEi 'Kinetiq|quant platform|marketSources|seed-uploaded|reconcile-uploaded|uploaded-mendeley|Mendeley baseline|/home/ubuntu|nse_attachment_inventory' \
-              --exclude-dir=.git --exclude='*.sqlite' --exclude='*.csv' --exclude='*.json' .; then
+              --exclude-dir=.git --exclude-dir=.github --exclude='*.sqlite' --exclude='*.csv' --exclude='*.json' .; then
             echo 'Potential private or environment-specific marker found.'
             exit 1
           fi
