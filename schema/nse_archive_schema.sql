@@ -210,3 +210,121 @@ FROM report r JOIN issuer i ON i.issuer_id=r.issuer_id
 LEFT JOIN report_source s ON s.report_id=r.report_id AND s.is_preferred=1
 LEFT JOIN report_validation v ON v.validation_id=(SELECT MAX(v2.validation_id) FROM report_validation v2 WHERE v2.report_id=r.report_id)
 LEFT JOIN report_fact f ON f.report_id=r.report_id;
+
+
+-- Attached NSE market-data integration. Each original CSV remains a dataset/file
+-- so duplicate releases are preserved rather than silently collapsed.
+CREATE TABLE market_dataset (
+  dataset_id INTEGER PRIMARY KEY,
+  dataset_name TEXT NOT NULL,
+  original_filename TEXT NOT NULL,
+  source_archive TEXT NOT NULL,
+  source_relative_path TEXT NOT NULL,
+  release_period TEXT,
+  source_url TEXT,
+  source_title TEXT,
+  source_provider TEXT,
+  license_name TEXT NOT NULL DEFAULT 'License not independently verified',
+  license_url TEXT,
+  attribution TEXT,
+  rights_status TEXT NOT NULL DEFAULT 'license_unverified',
+  source_file_sha256 TEXT NOT NULL,
+  source_file_bytes INTEGER NOT NULL,
+  imported_at TEXT NOT NULL,
+  notes TEXT,
+  UNIQUE(source_archive, source_relative_path, source_file_sha256)
+);
+
+CREATE TABLE market_observation (
+  observation_id INTEGER PRIMARY KEY,
+  dataset_id INTEGER NOT NULL REFERENCES market_dataset(dataset_id),
+  source_row_number INTEGER NOT NULL,
+  trading_date TEXT,
+  ticker TEXT,
+  company_name TEXT,
+  low_12m REAL,
+  high_12m REAL,
+  day_low REAL,
+  day_high REAL,
+  day_price REAL,
+  previous_price REAL,
+  change_value REAL,
+  change_percent REAL,
+  volume REAL,
+  adjusted_price REAL,
+  adjustment_factor REAL,
+  raw_row_json TEXT,
+  parse_status TEXT NOT NULL DEFAULT 'parsed',
+  anomaly_status TEXT NOT NULL DEFAULT 'not_reviewed',
+  notes TEXT,
+  UNIQUE(dataset_id, source_row_number)
+);
+
+CREATE TABLE market_sector_classification (
+  sector_id INTEGER PRIMARY KEY,
+  dataset_id INTEGER NOT NULL REFERENCES market_dataset(dataset_id),
+  source_row_number INTEGER NOT NULL,
+  sector TEXT,
+  ticker TEXT,
+  company_name TEXT,
+  raw_row_json TEXT NOT NULL,
+  parse_status TEXT NOT NULL DEFAULT 'parsed',
+  UNIQUE(dataset_id, source_row_number)
+);
+
+CREATE TABLE market_import_file (
+  import_file_id INTEGER PRIMARY KEY,
+  dataset_id INTEGER NOT NULL REFERENCES market_dataset(dataset_id),
+  original_archive TEXT,
+  extracted_relative_path TEXT,
+  file_sha256 TEXT NOT NULL,
+  byte_size INTEGER NOT NULL,
+  row_count INTEGER,
+  file_format TEXT NOT NULL,
+  rights_status TEXT NOT NULL DEFAULT 'license_unverified',
+  notes TEXT,
+  UNIQUE(dataset_id)
+);
+
+CREATE TABLE market_data_anomaly (
+  anomaly_id INTEGER PRIMARY KEY,
+  dataset_id INTEGER NOT NULL REFERENCES market_dataset(dataset_id),
+  observation_id INTEGER REFERENCES market_observation(observation_id),
+  source_row_number INTEGER,
+  anomaly_type TEXT NOT NULL,
+  severity TEXT NOT NULL DEFAULT 'review',
+  detail TEXT NOT NULL,
+  detected_at TEXT NOT NULL,
+  resolution_status TEXT NOT NULL DEFAULT 'open'
+);
+
+CREATE INDEX idx_market_observation_ticker_date ON market_observation(ticker, trading_date);
+CREATE INDEX idx_market_observation_dataset ON market_observation(dataset_id);
+CREATE INDEX idx_market_sector_ticker ON market_sector_classification(ticker);
+CREATE INDEX idx_market_anomaly_status ON market_data_anomaly(resolution_status, severity);
+
+CREATE VIEW vw_market_price_panel AS
+SELECT o.observation_id, d.dataset_name, d.original_filename, d.release_period,
+       d.source_url, d.source_provider, d.license_name, d.rights_status,
+       o.source_row_number, o.trading_date, o.ticker, o.company_name,
+       o.low_12m, o.high_12m, o.day_low, o.day_high, o.day_price,
+       o.previous_price, o.change_value, o.change_percent, o.volume,
+       o.adjusted_price, o.adjustment_factor, o.parse_status, o.anomaly_status
+FROM market_observation o JOIN market_dataset d ON d.dataset_id=o.dataset_id;
+
+CREATE VIEW vw_market_sector_panel AS
+SELECT s.sector_id, d.dataset_name, d.original_filename, d.release_period,
+       d.source_url, d.source_provider, d.license_name, d.rights_status,
+       s.source_row_number, s.sector, s.ticker, s.company_name, s.parse_status
+FROM market_sector_classification s JOIN market_dataset d ON d.dataset_id=s.dataset_id;
+
+CREATE VIEW vw_market_dataset_catalog AS
+SELECT d.*, f.row_count, f.extracted_relative_path, f.file_sha256 AS imported_file_sha256
+FROM market_dataset d LEFT JOIN market_import_file f ON f.dataset_id=d.dataset_id;
+
+CREATE VIEW vw_market_quality_flags AS
+SELECT o.observation_id, d.original_filename, o.source_row_number, o.trading_date,
+       o.ticker, o.company_name, o.parse_status, o.anomaly_status,
+       a.anomaly_type, a.severity, a.detail, a.resolution_status
+FROM market_observation o JOIN market_dataset d ON d.dataset_id=o.dataset_id
+LEFT JOIN market_data_anomaly a ON a.observation_id=o.observation_id;

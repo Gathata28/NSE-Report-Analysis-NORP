@@ -31,3 +31,9 @@ Financial facts require `metric_name`, `value_numeric` where parseable, `value_t
 ## Intended analytical views
 
 `vw_report_catalog` joins issuer, report, best source, validation, and file status. `vw_current_issuer_coverage` joins the official 66-row current universe to indexed reports and explicit gaps. `vw_periodic_core_reports` limits the catalog to annual, half-year, and quarterly core reports. `vw_fact_panel` presents normalized quantitative facts with provenance. `vw_data_quality_flags` exposes unresolved periods, missing units/currencies, weak source tiers, failed links, duplicates, and unvalidated records.
+
+## Attached market-data layer
+
+The market-data extension preserves every attached CSV as a `market_dataset` and `market_import_file` record, including source archive, original relative path, checksum, release period, source URL, attribution, and rights status. Price rows are stored in `market_observation`; sector snapshots are stored in `market_sector_classification`; parsing issues are retained in `market_data_anomaly`. The importer does not silently deduplicate identical files from separate archives.
+
+The main analysis views are `vw_market_price_panel`, `vw_market_sector_panel`, `vw_market_dataset_catalog`, and `vw_market_quality_flags`. The attached source records identify the imported releases as Mendeley Data datasets under CC BY 4.0; the release URLs and required attribution are documented in `docs/market_data_licensing.md`. The repository MIT license applies only to code and documentation.

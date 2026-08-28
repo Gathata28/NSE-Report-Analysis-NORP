@@ -1,9 +1,0 @@
-{
-  "database": "/home/ubuntu/NORP/data/indexes/nse_reports_archive.sqlite",
-  "reports": 1761,
-  "issuers": 189,
-  "facts": 251,
-  "text_rows": 52,
-  "files": 2,
-  "gaps": 1
-}

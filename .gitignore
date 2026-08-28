@@ -4,3 +4,6 @@ __pycache__/
 .env
 *.log
 .DS_Store
+# Local source workspaces are intentionally excluded from public distribution.
+data/external/
+attachment_workspace/

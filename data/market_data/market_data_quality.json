@@ -1,0 +1,294 @@
+{
+  "datasets": 32,
+  "import_files": 32,
+  "observations": 381400,
+  "sector_rows": 577,
+  "anomalies": 8,
+  "anomaly_types": [
+    [
+      "missing_day_price",
+      4
+    ],
+    [
+      "missing_ticker",
+      2
+    ],
+    [
+      "invalid_or_unparsed_date",
+      2
+    ]
+  ],
+  "rights_status": [
+    [
+      "cc_by_4_0",
+      32
+    ]
+  ],
+  "dataset_rows": [
+    [
+      "NSE_data_all_stocks_2007.csv",
+      "2007-2012",
+      "NairobiSecuritiesExchangeAllStocksPrices2007-2012.zip",
+      "Nairobi Securities Exchange All Stocks Prices 2007-2012/NSE_data_all_stocks_2007.csv",
+      "cc_by_4_0",
+      10608
+    ],
+    [
+      "NSE_data_all_stocks_2008.csv",
+      "2007-2012",
+      "NairobiSecuritiesExchangeAllStocksPrices2007-2012.zip",
+      "Nairobi Securities Exchange All Stocks Prices 2007-2012/NSE_data_all_stocks_2008.csv",
+      "cc_by_4_0",
+      10583
+    ],
+    [
+      "NSE_data_all_stocks_2009.csv",
+      "2007-2012",
+      "NairobiSecuritiesExchangeAllStocksPrices2007-2012.zip",
+      "Nairobi Securities Exchange All Stocks Prices 2007-2012/NSE_data_all_stocks_2009.csv",
+      "cc_by_4_0",
+      14386
+    ],
+    [
+      "NSE_data_all_stocks_2010.csv",
+      "2007-2012",
+      "NairobiSecuritiesExchangeAllStocksPrices2007-2012.zip",
+      "Nairobi Securities Exchange All Stocks Prices 2007-2012/NSE_data_all_stocks_2010.csv",
+      "cc_by_4_0",
+      14952
+    ],
+    [
+      "NSE_data_all_stocks_2011.csv",
+      "2007-2012",
+      "NairobiSecuritiesExchangeAllStocksPrices2007-2012.zip",
+      "Nairobi Securities Exchange All Stocks Prices 2007-2012/NSE_data_all_stocks_2011.csv",
+      "cc_by_4_0",
+      14931
+    ],
+    [
+      "NSE_data_all_stocks_2012.csv",
+      "2007-2012",
+      "NairobiSecuritiesExchangeAllStocksPrices2007-2012.zip",
+      "Nairobi Securities Exchange All Stocks Prices 2007-2012/NSE_data_all_stocks_2012.csv",
+      "cc_by_4_0",
+      16044
+    ],
+    [
+      "NSE_data_all_stocks_2013.csv",
+      "2013-2020",
+      "ComprehensiveReviewofNairobiSecuritiesExchangeFiles.zip",
+      "NSE_data_all_stocks_2013.csv",
+      "cc_by_4_0",
+      14889
+    ],
+    [
+      "NSE_data_all_stocks_2013.csv",
+      "2013-2020",
+      "73rb78pmzw-2.zip",
+      "NSE_data_all_stocks_2013.csv",
+      "cc_by_4_0",
+      14889
+    ],
+    [
+      "NSE_data_all_stocks_2014.csv",
+      "2013-2020",
+      "73rb78pmzw-2.zip",
+      "NSE_data_all_stocks_2014.csv",
+      "cc_by_4_0",
+      15696
+    ],
+    [
+      "NSE_data_all_stocks_2015.csv",
+      "2013-2020",
+      "73rb78pmzw-2.zip",
+      "NSE_data_all_stocks_2015.csv",
+      "cc_by_4_0",
+      16386
+    ],
+    [
+      "NSE_data_all_stocks_2016.csv",
+      "2013-2020",
+      "73rb78pmzw-2.zip",
+      "NSE_data_all_stocks_2016.csv",
+      "cc_by_4_0",
+      16800
+    ],
+    [
+      "NSE_data_all_stocks_2017.csv",
+      "2013-2020",
+      "ComprehensiveReviewofNairobiSecuritiesExchangeFiles.zip",
+      "NSE_data_all_stocks_2017.csv",
+      "cc_by_4_0",
+      16981
+    ],
+    [
+      "NSE_data_all_stocks_2017.csv",
+      "2013-2020",
+      "73rb78pmzw-2.zip",
+      "NSE_data_all_stocks_2017.csv",
+      "cc_by_4_0",
+      16981
+    ],
+    [
+      "NSE_data_all_stocks_2018.csv",
+      "2013-2020",
+      "73rb78pmzw-2.zip",
+      "NSE_data_all_stocks_2018.csv",
+      "cc_by_4_0",
+      17651
+    ],
+    [
+      "NSE_data_all_stocks_2019.csv",
+      "2013-2020",
+      "ComprehensiveReviewofNairobiSecuritiesExchangeFiles.zip",
+      "NSE_data_all_stocks_2019.csv",
+      "cc_by_4_0",
+      18147
+    ],
+    [
+      "NSE_data_all_stocks_2019.csv",
+      "2013-2020",
+      "73rb78pmzw-2.zip",
+      "NSE_data_all_stocks_2019.csv",
+      "cc_by_4_0",
+      18147
+    ],
+    [
+      "NSE_data_all_stocks_2020.csv",
+      "2013-2020",
+      "73rb78pmzw-2.zip",
+      "NSE_data_all_stocks_2020.csv",
+      "cc_by_4_0",
+      17892
+    ],
+    [
+      "NSE_data_all_stocks_2021_upto_31dec2021.csv",
+      "2021",
+      "97hkwn5y3x-4.zip",
+      "97hkwn5y3x-4/NSE_data_all_stocks_2021_upto_31dec2021.csv",
+      "cc_by_4_0",
+      17746
+    ],
+    [
+      "NSE_data_all_stocks_2022.csv",
+      "2022",
+      "KenyaNairobiSecuritiesExchange(NSE)AllStocksPrices2022.zip",
+      "Kenya Nairobi Securities Exchange (NSE) All Stocks Prices 2022/NSE_data_all_stocks_2022.csv",
+      "cc_by_4_0",
+      16806
+    ],
+    [
+      "NSE_data_all_stocks_2023.csv",
+      "2023-2024",
+      "KenyaNairobiSecuritiesExchange(NSE)AllStocks.zip",
+      "Kenya Nairobi Securities Exchange (NSE) All Stocks/NSE_data_all_stocks_2023.csv",
+      "cc_by_4_0",
+      17274
+    ],
+    [
+      "NSE_data_all_stocks_2024.csv",
+      "2023-2024",
+      "KenyaNairobiSecuritiesExchange(NSE)AllStocks.zip",
+      "Kenya Nairobi Securities Exchange (NSE) All Stocks/NSE_data_all_stocks_2024.csv",
+      "cc_by_4_0",
+      18119
+    ],
+    [
+      "NSE_data_all_stocks_2025.csv",
+      "2025",
+      "ComprehensiveReviewofNairobiSecuritiesExchangeFiles.zip",
+      "NSE_data_all_stocks_2025.csv",
+      "cc_by_4_0",
+      18106
+    ],
+    [
+      "NSE_data_all_stocks_2025.csv",
+      "2025",
+      "KenyaNairobiSecuritiesExchange(NSE)AllStocks(1).zip",
+      "Kenya Nairobi Securities Exchange (NSE) All Stocks/NSE_data_all_stocks_2025.csv",
+      "cc_by_4_0",
+      18106
+    ],
+    [
+      "NSE_data_all_stocks_2026_upto_jun.csv",
+      "2026",
+      "KenyaNairobiSecuritiesExchange(NSE)AllStocks(2).zip",
+      "Kenya Nairobi Securities Exchange (NSE) All Stocks/NSE_data_all_stocks_2026_upto_jun.csv",
+      "cc_by_4_0",
+      9280
+    ],
+    [
+      "NSE_data_stock_market_sectors_2013.csv",
+      "2013-2020",
+      "73rb78pmzw-2.zip",
+      "NSE_data_stock_market_sectors_2013.csv",
+      "cc_by_4_0",
+      64
+    ],
+    [
+      "NSE_data_stock_market_sectors_2020.csv",
+      "2013-2020",
+      "73rb78pmzw-2.zip",
+      "NSE_data_stock_market_sectors_2020.csv",
+      "cc_by_4_0",
+      73
+    ],
+    [
+      "NSE_data_stock_market_sectors_2022.csv",
+      "2022",
+      "KenyaNairobiSecuritiesExchange(NSE)AllStocksPrices2022.zip",
+      "Kenya Nairobi Securities Exchange (NSE) All Stocks Prices 2022/NSE_data_stock_market_sectors_2022.csv",
+      "cc_by_4_0",
+      71
+    ],
+    [
+      "NSE_data_stock_market_sectors_2023_2024.csv",
+      "2023-2024",
+      "ComprehensiveReviewofNairobiSecuritiesExchangeFiles.zip",
+      "NSE_data_stock_market_sectors_2023_2024.csv",
+      "cc_by_4_0",
+      73
+    ],
+    [
+      "NSE_data_stock_market_sectors_2023_2024.csv",
+      "2023-2024",
+      "KenyaNairobiSecuritiesExchange(NSE)AllStocks.zip",
+      "Kenya Nairobi Securities Exchange (NSE) All Stocks/NSE_data_stock_market_sectors_2023_2024.csv",
+      "cc_by_4_0",
+      73
+    ],
+    [
+      "NSE_data_stock_market_sectors_2025.csv",
+      "2025",
+      "KenyaNairobiSecuritiesExchange(NSE)AllStocks(1).zip",
+      "Kenya Nairobi Securities Exchange (NSE) All Stocks/NSE_data_stock_market_sectors_2025.csv",
+      "cc_by_4_0",
+      75
+    ],
+    [
+      "NSE_data_stock_market_sectors_2026.csv",
+      "2026",
+      "KenyaNairobiSecuritiesExchange(NSE)AllStocks(2).zip",
+      "Kenya Nairobi Securities Exchange (NSE) All Stocks/NSE_data_stock_market_sectors_2026.csv",
+      "cc_by_4_0",
+      77
+    ],
+    [
+      "NSE_data_stock_market_sectors_as_at_31dec2021.csv",
+      "2021",
+      "97hkwn5y3x-4.zip",
+      "97hkwn5y3x-4/NSE_data_stock_market_sectors_as_at_31dec2021.csv",
+      "cc_by_4_0",
+      71
+    ]
+  ],
+  "observation_date_bounds": [
+    [
+      "2007-01-02",
+      "2026-06-30",
+      4848
+    ]
+  ],
+  "tickers": 111,
+  "duplicate_content_groups": 5
+}

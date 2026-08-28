@@ -26,6 +26,14 @@ checks['view_catalog_rows']=con.execute('SELECT COUNT(*) FROM vw_report_catalog'
 checks['view_core_rows']=con.execute('SELECT COUNT(*) FROM vw_periodic_core_reports').fetchone()[0]
 checks['unresolved_fact_rows']=con.execute("SELECT COUNT(*) FROM report_fact WHERE quality_status='needs_review'").fetchone()[0]
 checks['ocr_pages']=con.execute("SELECT COUNT(*) FROM report_text WHERE extraction_method='tesseract-ocr'").fetchone()[0]
+checks['market_datasets']=con.execute('SELECT COUNT(*) FROM market_dataset').fetchone()[0]
+checks['market_files']=con.execute('SELECT COUNT(*) FROM market_import_file').fetchone()[0]
+checks['market_observations']=con.execute('SELECT COUNT(*) FROM market_observation').fetchone()[0]
+checks['market_sector_rows']=con.execute('SELECT COUNT(*) FROM market_sector_classification').fetchone()[0]
+checks['market_anomalies']=con.execute('SELECT COUNT(*) FROM market_data_anomaly').fetchone()[0]
+checks['market_price_view_rows']=con.execute('SELECT COUNT(*) FROM vw_market_price_panel').fetchone()[0]
+checks['market_sector_view_rows']=con.execute('SELECT COUNT(*) FROM vw_market_sector_panel').fetchone()[0]
+checks['market_license_unverified']=con.execute("SELECT COUNT(*) FROM market_dataset WHERE rights_status='license_unverified'").fetchone()[0]
 checks['failed_checks']=[k for k,v in checks.items() if (isinstance(v,int) and v<0) or (isinstance(v,list) and v)]
 print(json.dumps(checks,indent=2))
 if checks['failed_checks'] or checks['duplicate_report_ids'] or checks['orphan_sources'] or checks['orphan_validations']:
