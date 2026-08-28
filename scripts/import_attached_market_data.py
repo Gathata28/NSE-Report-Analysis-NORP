@@ -1,6 +1,7 @@
 from pathlib import Path
 import csv, hashlib, json, os, re, sqlite3
 from datetime import datetime, timezone
+from norp_engine import market_anomaly_flags
 
 BASE = Path(os.environ.get('NORP_ROOT', Path(__file__).resolve().parents[1]))
 DB = BASE / 'data' / 'indexes' / 'nse_reports_archive.sqlite'
@@ -101,11 +102,7 @@ def main():
                   'change_value':parse_num(canonical(row,'Change')),'change_percent':parse_num(canonical(row,'Change%')),
                   'volume':parse_num(canonical(row,'Volume')),'adjusted_price':parse_num(canonical(row,'Adjusted Price')),
                   'adjustment_factor':parse_num(canonical(row,'Adjust'))}
-                flags=[]
-                if not date: flags.append('invalid_or_unparsed_date')
-                if not str(ticker or '').strip(): flags.append('missing_ticker')
-                if vals['day_price'] is None: flags.append('missing_day_price')
-                if vals['day_low'] is not None and vals['day_high'] is not None and vals['day_low']>vals['day_high']: flags.append('day_low_above_day_high')
+                flags=market_anomaly_flags(trading_date=date,ticker=ticker,day_price=vals['day_price'],day_low=vals['day_low'],day_high=vals['day_high'])
                 status='review' if flags else 'not_reviewed'
                 cur.execute('INSERT INTO market_observation(dataset_id,source_row_number,trading_date,ticker,company_name,low_12m,high_12m,day_low,day_high,day_price,previous_price,change_value,change_percent,volume,adjusted_price,adjustment_factor,raw_row_json,parse_status,anomaly_status,notes) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',(did,rownum,date,str(ticker).strip() if ticker else None,str(company).strip() if company else None,vals['low_12m'],vals['high_12m'],vals['day_low'],vals['day_high'],vals['day_price'],vals['previous_price'],vals['change_value'],vals['change_percent'],vals['volume'],vals['adjusted_price'],vals['adjustment_factor'],raw if flags else None,'parsed',status,'; '.join(flags) if flags else None))
                 oid=cur.lastrowid; obs_count+=1

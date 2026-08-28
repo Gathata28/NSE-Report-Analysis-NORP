@@ -3,18 +3,17 @@ from pathlib import Path as _Path
 import os as _os
 PROJECT_ROOT = _Path(_os.environ.get('NORP_ROOT', _Path(__file__).resolve().parents[1]))
 
-import csv,requests,re,urllib3
+import csv,requests,re
 from pathlib import Path
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 base='https://www.transcentury.co.ke'
 main=Path(str(PROJECT_ROOT / 'data' / 'sources' / 'www.transcentury.co.ke_annual-reports_1787827088194.html'))
 soup=BeautifulSoup(main.read_text(errors='ignore'),'html.parser')
 seeds=[{'title':'TransCentury 2023 Integrated Report','url':base+'/post/transcentury-2023-integrated-report'},{'title':'TransCentury 2022 Integrated Report','url':base+'/post/transcentury-2022-integrated-report'},{'title':'TransCentury 2021 Integrated Report','url':base+'/post/transcentury-2021-integrated-report'}]
 out=[]
 for r in seeds:
- try:html=requests.get(r['url'],headers={'User-Agent':'Mozilla/5.0'},timeout=25,verify=False).text
+ try:html=requests.get(r['url'],headers={'User-Agent':'Mozilla/5.0'},timeout=25).text
  except Exception as e:print('ERROR',r['url'],e);continue
  s=BeautifulSoup(html,'html.parser')
  for a in s.find_all('a',href=True):

@@ -3,8 +3,7 @@ from pathlib import Path as _Path
 import os as _os
 PROJECT_ROOT = _Path(_os.environ.get('NORP_ROOT', _Path(__file__).resolve().parents[1]))
 
-import csv,re,requests,urllib3
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+import csv,re,requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 base='https://www.umeme.co.ug'

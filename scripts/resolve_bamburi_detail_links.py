@@ -3,10 +3,9 @@ from pathlib import Path as _Path
 import os as _os
 PROJECT_ROOT = _Path(_os.environ.get('NORP_ROOT', _Path(__file__).resolve().parents[1]))
 
-import csv,requests,re,urllib3
+import csv,requests,re
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 base='https://bamburigroup.com'
 seed=[]
 with open(str(PROJECT_ROOT / 'bamburi_report_links.csv'),encoding='utf-8') as f:
@@ -14,7 +13,7 @@ with open(str(PROJECT_ROOT / 'bamburi_report_links.csv'),encoding='utf-8') as f:
   if r['url'].startswith(base+'/') and r['url'].rstrip('/') != 'https://bamburigroup.com/bamburi-cement-investor-relations/annual-reports' and not r['url'].lower().endswith('.pdf') and 'annual-report' in (r['url']+' '+r['title']).lower():seed.append(r)
 out=[]
 for r in seed:
- try:html=requests.get(r['url'],headers={'User-Agent':'Mozilla/5.0'},timeout=20,verify=False).text
+ try:html=requests.get(r['url'],headers={'User-Agent':'Mozilla/5.0'},timeout=20).text
  except Exception as e:print('ERROR',r['url'],e);continue
  soup=BeautifulSoup(html,'html.parser')
  found=False

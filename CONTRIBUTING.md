@@ -4,7 +4,9 @@ Contributions are welcome when they improve source coverage, provenance, reprodu
 
 ## Workflow
 
-Use a feature branch, preserve the original source artifact, add or update a reproducible parser or source CSV, run the canonical rebuild and downstream normalization/validation scripts, run the SQLite integrity tests, and document any unresolved ambiguity. Never overwrite a source PDF or replace a failed URL with an unverified search snippet.
+Use a feature branch, preserve the original source artifact, add or update a reproducible parser or source CSV, run the canonical rebuild and downstream normalization/validation scripts, run the SQLite integrity tests, and document any unresolved ambiguity. For new report-link imports, prefer the config-driven workflow in `docs/config_driven_ingestion.md` and `scripts/norp_import.py` rather than creating another issuer-specific copy. Never overwrite a source PDF or replace a failed URL with an unverified search snippet.
+
+Before rebuilding or running OCR, install the Python dependencies from `requirements.txt` and ensure `pdftotext`, `pdftoppm`, and `tesseract` are available on `PATH`. Missing binaries now produce explicit errors. Run `pytest -q` and `python scripts/test_nse_relational_db.py` before opening a pull request; the same checks run in GitHub Actions.
 
 ## Review standard
 

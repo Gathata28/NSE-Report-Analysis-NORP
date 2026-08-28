@@ -1,0 +1,8 @@
+{
+  "issuer": "Example NSE Issuer PLC",
+  "ticker": "EXMP",
+  "source_page": "https://example.org/investor-relations/reports",
+  "source_tier": "Issuer website",
+  "input_csv": "example_source_links.csv",
+  "output_csv": "example_normalized_links.csv"
+}

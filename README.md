@@ -24,16 +24,29 @@ The database also includes 32 attached NSE market-data datasets, 381,400 price o
 | `data/original/` | Original archive ZIP snapshots |
 | `examples/` | Example queries and sample analysis workflows |
 
+## Dependencies
+
+Python dependencies are listed in `requirements.txt`; project metadata and pytest configuration are also available in `pyproject.toml`. PDF extraction and OCR require these system binaries to be installed and available on `PATH`:
+
+| Binary | Package/source | Used by |
+| --- | --- | --- |
+| `pdftotext` | Poppler utilities (`poppler-utils` on Debian/Ubuntu) | Database report-text extraction |
+| `pdftoppm` | Poppler utilities (`poppler-utils` on Debian/Ubuntu) | PDF page rendering for OCR |
+| `tesseract` | Tesseract OCR (`tesseract-ocr` on Debian/Ubuntu) | OCR text extraction |
+
+The extraction scripts fail explicitly with an actionable error when a required binary is unavailable or a subprocess fails. This prevents a missing system dependency from silently producing incomplete output.
+
 ## Quick start
 
 ```bash
 python -m venv .venv
 . .venv/bin/activate
 pip install -r requirements.txt
+pytest -q
 python scripts/test_nse_relational_db.py
 ```
 
-The database is already included at `data/indexes/nse_reports_archive.sqlite`. To rebuild it from the normalized CSV, run `python scripts/build_nse_relational_db.py` with `NORP_ROOT` set to the repository root if executing from another directory. OCR additionally requires the system binaries `pdftoppm` and `tesseract`.
+The database is already included at `data/indexes/nse_reports_archive.sqlite`. To rebuild it from the normalized CSV, run `python scripts/build_nse_relational_db.py` with `NORP_ROOT` set to the repository root if executing from another directory. Install the system dependencies listed above before rebuilding or running OCR.
 
 Useful views include `vw_report_catalog`, `vw_periodic_core_reports`, `vw_fact_panel`, `vw_data_quality_flags`, `vw_market_price_panel`, `vw_market_sector_panel`, `vw_market_dataset_catalog`, and `vw_market_quality_flags`.
 

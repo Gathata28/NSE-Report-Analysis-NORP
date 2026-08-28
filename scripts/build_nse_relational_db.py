@@ -4,7 +4,7 @@ from pathlib import Path as _Path
 import os as _os
 PROJECT_ROOT = _Path(_os.environ.get('NORP_ROOT', _Path(__file__).resolve().parents[1]))
 
-import csv, hashlib, json, re, sqlite3, subprocess
+import csv, hashlib, json, re, sqlite3, subprocess, shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -57,8 +57,11 @@ def source_tier(x):
     return 'unknown'
 
 def extract_pdf_pages(pdf_path):
+    binary = shutil.which('pdftotext')
+    if binary is None:
+        raise RuntimeError('pdftotext is required to rebuild the database. Install poppler-utils and retry.')
     out = pdf_path.with_suffix('.txt')
-    subprocess.run(['pdftotext','-layout',str(pdf_path),str(out)], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    subprocess.run([binary,'-layout',str(pdf_path),str(out)], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE, text=True)
     text = out.read_text(errors='replace') if out.exists() else ''
     pages = [p.strip() for p in text.split('\f')]
     if any(len(p) >= 40 for p in pages):

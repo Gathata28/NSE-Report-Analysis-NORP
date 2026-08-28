@@ -1,0 +1,48 @@
+name: NORP checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-and-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils tesseract-ocr
+
+      - name: Install Python dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements.txt
+
+      - name: Compile all scripts
+        run: python -m compileall -q scripts tests
+
+      - name: Run unit tests
+        run: pytest -q
+
+      - name: Run database integrity checks
+        run: python scripts/test_nse_relational_db.py
+
+      - name: Run market-data quality checks
+        run: python scripts/report_market_data_quality.py
+
+      - name: Scan public tree for private/environment markers
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RInEi 'Kinetiq|quant platform|marketSources|seed-uploaded|reconcile-uploaded|uploaded-mendeley|Mendeley baseline|/home/ubuntu|nse_attachment_inventory' \
+              --exclude-dir=.git --exclude='*.sqlite' --exclude='*.csv' --exclude='*.json' .; then
+            echo 'Potential private or environment-specific marker found.'
+            exit 1
+          fi
