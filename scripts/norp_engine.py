@@ -1,4 +1,10 @@
-"""Reusable helpers for NORP report-ingestion workflows."""
+"""Shared normalization, validation, retry, and indexing helpers for NORP.
+
+The module is intentionally dependency-light and is used by the configuration-driven
+importer and public report downloader. Network requests retain normal TLS verification,
+and source-tier policies control retry and host-concurrency behavior.
+"""
+
 from __future__ import annotations
 
 import csv
@@ -21,7 +27,15 @@ REPORT_FIELDS = [
 
 
 def parse_date(value: object) -> date | None:
-    """Parse the date formats used by the attached NSE market datasets."""
+    """Parse the date formats used by attached NSE market datasets.
+
+    Args:
+        value: A date-like value or a missing/malformed placeholder.
+
+    Returns:
+        A ``datetime.date`` when one of the supported formats matches; otherwise
+        ``None``. The function never guesses or imputes a date.
+    """
     if value is None:
         return None
     text = str(value).strip()
@@ -36,7 +50,11 @@ def parse_date(value: object) -> date | None:
 
 
 def parse_number(value: object) -> float | None:
-    """Parse a numeric value without imputing placeholders or malformed text."""
+    """Parse a numeric value without imputing placeholders or malformed text.
+
+    Percentage signs and thousands separators are removed. Empty values and
+    explicit missing-value markers remain ``None``.
+    """
     if value is None:
         return None
     text = str(value).strip().replace(",", "").replace("%", "")
@@ -49,7 +67,11 @@ def parse_number(value: object) -> float | None:
 
 
 def market_anomaly_flags(*, trading_date: date | None, ticker: object, day_price: float | None, day_low: float | None, day_high: float | None) -> list[str]:
-    """Return explicit anomaly flags without modifying or dropping the source row."""
+    """Return explicit anomaly flags without modifying or dropping the source row.
+
+    The returned strings are stable machine-readable labels suitable for storing
+    beside the original observation and reviewing later.
+    """
     flags: list[str] = []
     if trading_date is None:
         flags.append("invalid_or_unparsed_date")
@@ -63,7 +85,12 @@ def market_anomaly_flags(*, trading_date: date | None, ticker: object, day_price
 
 
 def classify_frequency(title: str = "", url: str = "") -> str:
-    """Classify a disclosure conservatively from title and URL evidence."""
+    """Classify a disclosure conservatively from title and URL evidence.
+
+    Quarterly and half-year evidence takes precedence over generic financial-
+    statement wording. Unclear material is classified as periodic results
+    rather than being promoted to an annual report.
+    """
     text = f"{title} {url}".lower()
     if re.search(r"\b(q[1-4]|quarter|quarterly|three months|9 months)\b", text):
         return "Quarterly"
@@ -81,7 +108,11 @@ def infer_year(title: str = "", url: str = "") -> str:
 
 
 def deduplicate_records(records: Iterable[Mapping[str, str]], issuer: str | None = None) -> list[dict[str, str]]:
-    """Deduplicate records by issuer and download URL, preserving first-seen order."""
+    """Deduplicate records by issuer and download URL, preserving first-seen order.
+
+    ``download_url``, ``direct_url``, and ``url`` are accepted as input aliases;
+    missing links are skipped rather than converted into fabricated records.
+    """
     result: list[dict[str, str]] = []
     seen: set[tuple[str, str]] = set()
     for record in records:
@@ -99,7 +130,11 @@ def deduplicate_records(records: Iterable[Mapping[str, str]], issuer: str | None
 
 
 def normalize_source_records(records: Iterable[Mapping[str, str]], *, issuer: str, ticker: str, source_page: str, source_tier: str = "Issuer website") -> list[dict[str, str]]:
-    """Map source records into the canonical NORP flat-index schema."""
+    """Map source records into the canonical NORP flat-index schema.
+
+    The normalizer preserves source URLs and derives frequency and year labels
+    only from visible title/URL evidence. It does not download or inspect PDFs.
+    """
     normalized: list[dict[str, str]] = []
     for record in deduplicate_records(records, issuer=issuer):
         title = (record.get("title") or record.get("document_title") or "").strip()
@@ -123,13 +158,17 @@ def normalize_source_records(records: Iterable[Mapping[str, str]], *, issuer: st
 
 
 def load_csv(path: Path) -> list[dict[str, str]]:
-    """Load a UTF-8 CSV as dictionaries."""
+    """Load a UTF-8 or UTF-8-with-BOM CSV as dictionaries."""
     with path.open(newline="", encoding="utf-8-sig") as handle:
         return list(csv.DictReader(handle))
 
 
 def write_index(path: Path, records: Iterable[Mapping[str, str]]) -> None:
-    """Write canonical records with deterministic sequential record IDs."""
+    """Write canonical records with deterministic sequential record IDs.
+
+    The destination directory is created automatically and unknown input fields
+    are ignored so source-specific columns do not leak into the canonical index.
+    """
     rows = [dict(record) for record in records]
     for number, row in enumerate(rows, start=1):
         row["record_id"] = f"NSE-{number:05d}"
@@ -159,7 +198,11 @@ RETRYABLE_STATUS_CODES = {408, 425, 429, 500, 502, 503, 504}
 
 
 def retry_policy_for_tier(source_tier: str) -> RetryPolicy:
-    """Return a conservative policy based on the source tier label."""
+    """Return a conservative policy based on the source tier label.
+
+    Exchange/CMA sources receive the most attempts but the lowest host cap;
+    secondary aggregators receive fewer attempts because they are discovery leads.
+    """
     label = (source_tier or "").lower()
     if "nse" in label or "exchange" in label or "cma" in label:
         return RETRY_POLICIES["nse"]
@@ -189,7 +232,11 @@ class HostConcurrencyLimiter:
         return max(1, int(self.cap_by_tier.get(policy_key, self.default_cap)))
 
     def semaphore_for(self, url: str, source_tier: str) -> BoundedSemaphore:
-        """Return the shared semaphore for the URL's hostname."""
+        """Return the shared semaphore for the URL's hostname.
+
+        Semaphores are keyed by hostname, so a slow or restrictive issuer does
+        not consume the concurrency budget of an unrelated host.
+        """
         host = (urlparse(url).hostname or "").lower()
         if not host:
             raise ValueError(f"URL has no hostname: {url!r}")

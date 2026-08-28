@@ -65,6 +65,17 @@ python scripts/download_reports.py \
 
 Use `--dry-run` first to inspect the exact selection without making network requests.
 
+## Install the tools as a Python package
+
+NORP also provides a pip-installable wheel and source distribution. Install the tools with `python -m pip install norp-nse-report-analysis` when a package release is available. The large SQLite archive is distributed separately through GitHub Releases, so installed users pass its path with `--database`. See [`docs/PACKAGING_AND_RELEASES.md`](docs/PACKAGING_AND_RELEASES.md) for beginner and maintainer instructions.
+
+```bash
+python -m pip install norp-nse-report-analysis
+norp-download-reports --database ./nse_reports_archive_0.2.0.sqlite --output-dir ./downloads/kplc --ticker KPLC
+```
+
+Maintainers publish versioned assets by pushing a tag such as `v0.2.0`. The tagged workflow builds the wheel and source distribution, stages the database and index ZIP outside Git history, generates checksums and a release manifest, and publishes the GitHub Release. The manifest contract is defined in [`docs/release_manifest.schema.json`](docs/release_manifest.schema.json), and the release-note template is [`docs/release_notes_template.md`](docs/release_notes_template.md).
+
 ## Provenance and responsible use
 
 Issuer pages, issuer-controlled APIs/CDNs, and exact NSE/CMA fallback documents are distinguished in `source_tier`. A bounded HTTP sample is not a full-corpus download verification. Secondary sources are retained only as discovery or status leads. No delisting, successor identity, or report period is inferred from absence alone. The attached market-data import preserves anomalies rather than imputing or silently dropping values. This is research infrastructure, not investment advice.

@@ -1,5 +1,11 @@
 """Download filtered public NSE report PDFs from the NORP SQLite archive.
 
+Typical usage from the repository root::
+
+    python scripts/download_reports.py --output-dir ./downloads/kcb --ticker KCB
+    python scripts/download_reports.py --output-dir ./downloads/banking \\
+        --sector BANKING --year-from 2020 --year-to 2025 --dry-run
+
 This tool downloads only public URLs already present in the archive. It does not
 bypass authentication, CAPTCHA, robots controls, or HTTP 403 responses. Landing
 pages are resolved conservatively by looking for PDF links in returned HTML.
@@ -13,13 +19,12 @@ import json
 import logging
 import re
 import sqlite3
-import sys
 import zipfile
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 import requests
@@ -27,7 +32,23 @@ import requests
 from norp_engine import fetch_with_retry
 
 LOGGER = logging.getLogger("norp_download")
-DEFAULT_DB = Path(__file__).resolve().parents[1] / "data/indexes/nse_reports_archive.sqlite"
+
+
+def discover_default_database() -> Path:
+    """Find the archive database in the current checkout or installed layout.
+
+    Source distributions and wheels intentionally do not embed NORP's large
+    SQLite snapshot. Installed users can pass ``--database`` explicitly; users
+    running from a cloned repository get the database automatically.
+    """
+    candidates = (
+        Path.cwd() / "data/indexes/nse_reports_archive.sqlite",
+        Path(__file__).resolve().parents[1] / "data/indexes/nse_reports_archive.sqlite",
+    )
+    return next((path for path in candidates if path.exists()), candidates[0])
+
+
+DEFAULT_DB = discover_default_database()
 SECTOR_ALIASES = {
     "AUTOMOBILES & ACCESSORIES": "AUTOMOBILES AND ACCESSORIES",
     "COMMERCIAL & SERVICES": "COMMERCIAL AND SERVICES",
@@ -58,17 +79,24 @@ class DownloadResult:
 
 
 def canonical_sector(value: str | None) -> str:
+    """Return a stable uppercase sector label for filtering and folder names.
+
+    Common ampersand/``AND`` variants are mapped to one canonical spelling so
+    users do not lose results because of legacy database label differences.
+    """
     normalized = re.sub(r"\s+", " ", (value or "").strip().upper())
     normalized = SECTOR_ALIASES.get(normalized, normalized)
     return normalized
 
 
 def safe_name(value: str, fallback: str = "unknown") -> str:
+    """Convert an issuer or report label into a filesystem-safe path component."""
     value = re.sub(r"[^A-Za-z0-9._-]+", "_", value.strip()).strip("._")
     return value[:120] or fallback
 
 
 def parse_year(value: str | None) -> int | None:
+    """Extract the first four-digit year from a catalog label, if available."""
     match = re.search(r"20\d{2}", value or "")
     return int(match.group()) if match else None
 
@@ -85,7 +113,12 @@ def select_reports(
     subtypes: list[str],
     limit: int | None,
 ) -> list[dict[str, str]]:
-    """Select one preferred source per report using issuer_id, never ticker joins."""
+    """Select one preferred source per report using issuer_id, never ticker joins.
+
+    Different filter dimensions are combined with ``AND``. Repeated values in
+    one dimension are combined with ``OR``. ``limit`` is applied after all
+    sector and year filtering so previews are deterministic and accurate.
+    """
     conditions: list[str] = []
     params: list[str | int] = []
     if tickers:
@@ -139,6 +172,11 @@ def select_reports(
 
 
 def pdf_candidates(html: str, landing_url: str, expected: str) -> list[tuple[int, str]]:
+    """Rank static PDF anchors found in a returned HTML landing page.
+
+    The score is only a selection heuristic; the caller still validates the
+    selected response by status, content type, and PDF magic bytes.
+    """
     soup = BeautifulSoup(html, "html.parser")
     expected_tokens = {t for t in re.findall(r"[a-z0-9]+", expected.lower()) if len(t) > 2}
     candidates: list[tuple[int, str]] = []
@@ -158,11 +196,17 @@ def pdf_candidates(html: str, landing_url: str, expected: str) -> list[tuple[int
 
 
 def is_pdf(response: requests.Response) -> bool:
+    """Return whether a response looks like a PDF by bytes or content type."""
     content_type = (response.headers.get("content-type") or "").lower()
     return response.content[:5] == b"%PDF-" or "application/pdf" in content_type
 
 
 def download_one(row: dict[str, str], output_dir: Path, session: requests.Session, *, force: bool = False) -> DownloadResult:
+    """Download one selected catalog row and return a manifest-ready result.
+
+    Landing pages are followed only when a static, plausible PDF anchor is found.
+    HTTP 403 and other blocked responses are recorded rather than bypassed.
+    """
     report_id = row["report_id"]
     title = row.get("title") or report_id
     sector_dir = output_dir / safe_name(row.get("sector") or "UNCLASSIFIED")
@@ -203,6 +247,7 @@ def download_one(row: dict[str, str], output_dir: Path, session: requests.Sessio
 
 
 def write_manifest(path: Path, results: Iterable[DownloadResult]) -> None:
+    """Append JSONL download results to ``path`` for resumable audit history."""
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as handle:
         for result in results:
@@ -210,6 +255,7 @@ def write_manifest(path: Path, results: Iterable[DownloadResult]) -> None:
 
 
 def write_csv(path: Path, results: list[DownloadResult]) -> None:
+    """Write the current run's download results as a tabular CSV manifest."""
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(asdict(results[0]).keys()) if results else list(DownloadResult.__annotations__.keys()))
@@ -218,6 +264,7 @@ def write_csv(path: Path, results: list[DownloadResult]) -> None:
 
 
 def make_zip(output_dir: Path, zip_path: Path) -> None:
+    """Create a ZIP containing PDFs below ``output_dir`` with relative paths."""
     zip_path.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
         for file in sorted(output_dir.rglob("*.pdf")):
@@ -225,8 +272,15 @@ def make_zip(output_dir: Path, zip_path: Path) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Download filtered public NSE report PDFs from the NORP archive.")
-    parser.add_argument("--database", type=Path, default=DEFAULT_DB)
+    """Run the command-line downloader and return a process exit code."""
+    parser = argparse.ArgumentParser(
+        description="Download filtered public NSE report PDFs from the NORP archive.",
+        epilog=("Examples: --output-dir ./downloads/all; "
+                "--output-dir ./downloads/kcb --ticker KCB; "
+                "--output-dir ./downloads/banking --sector BANKING "
+                "--year-from 2020 --year-to 2025 --dry-run"),
+    )
+    parser.add_argument("--database", type=Path, default=DEFAULT_DB, help="SQLite archive path; defaults to a checkout-local database when present.")
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--manifest", type=Path)
     parser.add_argument("--csv-manifest", type=Path)

@@ -1,4 +1,6 @@
-"""Build versioned, checksummed artifacts for GitHub Releases."""
+"""Stage checksummed NORP database and index artifacts for GitHub Releases.
+"""
+
 from __future__ import annotations
 
 import argparse
@@ -12,10 +14,12 @@ from pathlib import Path
 
 
 def project_root() -> Path:
+    """Return the repository root, honoring ``NORP_ROOT`` when provided."""
     return Path(os.environ.get("NORP_ROOT", Path(__file__).resolve().parents[1])).resolve()
 
 
 def sha256(path: Path) -> str:
+    """Compute a streaming SHA-256 checksum for an artifact."""
     digest = hashlib.sha256()
     with path.open("rb") as handle:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
@@ -24,6 +28,7 @@ def sha256(path: Path) -> str:
 
 
 def safe_version(version: str) -> str:
+    """Validate a release label before using it in filenames and URLs."""
     cleaned = version.strip()
     if not cleaned or any(char in cleaned for char in "/\\\0"):
         raise ValueError("version must be a non-empty release-safe label")
@@ -31,6 +36,7 @@ def safe_version(version: str) -> str:
 
 
 def make_indexes_zip(root: Path, destination: Path, version: str) -> list[Path]:
+    """Create a compressed ZIP of CSV indexes from the working tree."""
     source_dirs = [root / "data" / "indexes", root / "data" / "migrated_indexes"]
     source_files = [
         path
@@ -49,6 +55,11 @@ def make_indexes_zip(root: Path, destination: Path, version: str) -> list[Path]:
 
 
 def build_bundle(root: Path, output_dir: Path, version: str) -> dict[str, object]:
+    """Stage release assets, manifest metadata, and SHA-256 checksums externally.
+
+    The destination must not be inside the repository working tree, preventing
+    large release artifacts from being accidentally committed to Git history.
+    """
     version = safe_version(version)
     output_dir = output_dir.resolve()
     if output_dir.is_relative_to(root):
@@ -103,6 +114,7 @@ def build_bundle(root: Path, output_dir: Path, version: str) -> dict[str, object
 
 
 def main() -> int:
+    """Run the external release-artifact staging command."""
     parser = argparse.ArgumentParser(description="Stage checksummed NORP GitHub Release artifacts outside the repository.")
     parser.add_argument("--version", required=True, help="Release label, such as 2026.08.28 or v2026.08.28.")
     parser.add_argument("--output-dir", type=Path, required=True, help="External staging directory, outside NORP.")

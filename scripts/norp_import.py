@@ -1,4 +1,6 @@
-"""Config-driven NORP report-link importer."""
+"""Normalize an archived source CSV using a JSON NORP importer configuration.
+"""
+
 from __future__ import annotations
 
 import argparse
@@ -12,6 +14,7 @@ LOGGER = logging.getLogger("norp_import")
 
 
 def main() -> int:
+    """Run the config-driven importer and return a process exit code."""
     parser = argparse.ArgumentParser(description="Import a source CSV into a NORP report index.")
     parser.add_argument("--config", type=Path, required=True, help="JSON configuration file.")
     parser.add_argument("--dry-run", action="store_true", help="Print normalized records without writing output.")

@@ -236,3 +236,69 @@ def test_landing_page_candidates_rank_matching_pdf_links():
     """
     candidates = pdf_candidates(html, "https://example.test/reports/", "SCBK Annual Report 2024")
     assert candidates[0][1] == "https://example.test/SCBK-Annual-Report-2024.pdf"
+
+
+def test_download_one_records_http_403_without_bypass(monkeypatch, tmp_path):
+    from types import SimpleNamespace
+    import download_reports
+
+    blocked = SimpleNamespace(
+        status_code=403,
+        url="https://issuer.example/report.pdf",
+        headers={"content-type": "text/html"},
+        content=b"Access denied",
+        text="Access denied",
+    )
+    monkeypatch.setattr(download_reports, "fetch_with_retry", lambda *args, **kwargs: blocked)
+    result = download_reports.download_one(
+        {"report_id": "NSE-TEST", "issuer": "Example PLC", "ticker": "EXM", "sector": "BANKING", "report_year": "2024", "report_frequency": "Annual / full-year", "title": "Example Annual Report", "download_url": "https://issuer.example/report.pdf", "source_tier": "Issuer website"},
+        tmp_path,
+        SimpleNamespace(),
+    )
+    assert result.status == "blocked_or_not_pdf"
+    assert result.http_status == 403
+    assert not list(tmp_path.rglob("*.pdf"))
+
+
+def test_download_one_resolves_static_landing_page(monkeypatch, tmp_path):
+    from types import SimpleNamespace
+    import download_reports
+
+    landing = SimpleNamespace(
+        status_code=200,
+        url="https://issuer.example/reports/2024",
+        headers={"content-type": "text/html"},
+        content=b"<html>",
+        text='<a href="/files/example-annual-report-2024.pdf">Example Annual Report 2024</a>',
+    )
+    pdf = SimpleNamespace(
+        status_code=200,
+        url="https://issuer.example/files/example-annual-report-2024.pdf",
+        headers={"content-type": "application/pdf"},
+        content=b"%PDF-1.7 test",
+        text="",
+    )
+    responses = iter([landing, pdf])
+    monkeypatch.setattr(download_reports, "fetch_with_retry", lambda *args, **kwargs: next(responses))
+    result = download_reports.download_one(
+        {"report_id": "NSE-TEST2", "issuer": "Example PLC", "ticker": "EXM", "sector": "BANKING", "report_year": "2024", "report_frequency": "Annual / full-year", "title": "Example Annual Report", "download_url": "https://issuer.example/reports/2024", "source_tier": "Issuer website"},
+        tmp_path,
+        SimpleNamespace(),
+    )
+    assert result.status == "downloaded"
+    assert result.resolved_url.endswith("example-annual-report-2024.pdf")
+    assert result.sha256
+    assert next(tmp_path.rglob("*.pdf")).read_bytes().startswith(b"%PDF-")
+
+
+def test_download_one_rejects_invalid_url(tmp_path):
+    from types import SimpleNamespace
+    import download_reports
+
+    result = download_reports.download_one(
+        {"report_id": "NSE-TEST3", "issuer": "Example PLC", "ticker": "EXM", "sector": "", "report_year": "", "report_frequency": "", "title": "Example", "download_url": "javascript:void(0)", "source_tier": "Issuer website"},
+        tmp_path,
+        SimpleNamespace(),
+    )
+    assert result.status == "invalid_url"
+    assert result.error == "URL is not absolute HTTP(S)"

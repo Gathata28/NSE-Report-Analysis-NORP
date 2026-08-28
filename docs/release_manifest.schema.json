@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NORP Release Manifest",
+  "type": "object",
+  "required": ["project", "release_label", "release_tag", "generated_at_utc", "artifact_host", "artifacts"],
+  "properties": {
+    "project": {"const": "NSE-Report-Analysis-NORP"},
+    "release_label": {"type": "string", "minLength": 1},
+    "release_tag": {"type": "string", "pattern": "^v"},
+    "generated_at_utc": {"type": "string", "format": "date-time"},
+    "artifact_host": {"const": "GitHub Releases"},
+    "source_policy": {"type": "string"},
+    "artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["filename", "stable_url", "sha256", "bytes", "release_label", "license_metadata"],
+        "properties": {
+          "filename": {"type": "string", "minLength": 1},
+          "stable_url": {"type": "string", "format": "uri"},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "bytes": {"type": "integer", "minimum": 1},
+          "release_label": {"type": "string"},
+          "license_metadata": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
