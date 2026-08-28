@@ -1,0 +1,8 @@
+{
+  "issuer": "The Kenya Power and Lighting Company PLC",
+  "ticker": "KPLC",
+  "source_page": "https://www.kplc.co.ke/investor-relations/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/kplc_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/kplc.csv"
+}

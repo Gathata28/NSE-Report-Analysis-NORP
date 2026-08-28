@@ -1,0 +1,8 @@
+{
+  "issuer": "Limuru Tea PLC",
+  "ticker": "LIMT",
+  "source_page": "https://www.nse.co.ke/listed-company-announcements/",
+  "source_tier": "NSE/exchange fallback",
+  "input_csv": "../../data/indexes/limuru_nse_fallback_links.csv",
+  "output_csv": "../../data/migrated_indexes/limuru_nse_fallback.csv"
+}

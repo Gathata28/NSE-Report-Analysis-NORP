@@ -1,0 +1,8 @@
+{
+  "issuer": "NCBA Group PLC",
+  "ticker": "NCBA",
+  "source_page": "https://ncbagroup.com/quarterly-earnings/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/ncba_quarterly_links.csv",
+  "output_csv": "../../data/migrated_indexes/ncba_quarterly.csv"
+}

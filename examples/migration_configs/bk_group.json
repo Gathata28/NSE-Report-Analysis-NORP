@@ -1,0 +1,8 @@
+{
+  "issuer": "BK Group PLC",
+  "ticker": "BKG",
+  "source_page": "https://bk-group.com/investor-relations/financial-reports/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/bk_group_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/bk_group.csv"
+}

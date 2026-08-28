@@ -43,3 +43,26 @@ def test_market_anomaly_rules_are_explicit():
     flags = market_anomaly_flags(trading_date=None, ticker="", day_price=None, day_low=None, day_high=None)
     assert flags == ["invalid_or_unparsed_date", "missing_ticker", "missing_day_price"]
     assert market_anomaly_flags(trading_date=parse_date("2-Jan-25"), ticker="ABC", day_price=10.0, day_low=12.0, day_high=10.0) == ["day_low_above_day_high"]
+
+
+def test_normalization_accepts_direct_url_and_source_page_url_aliases():
+    from norp_engine import normalize_source_records
+
+    rows = normalize_source_records(
+        [{
+            "title": "NCBA Group PLC Q3 Results 2025",
+            "direct_url": "https://example.test/ncba-q3-2025.pdf",
+            "source_page_url": "https://example.test/quarterly-earnings/",
+        }],
+        issuer="NCBA Group PLC",
+        ticker="NCBA",
+        source_page="https://example.test/fallback",
+    )
+    assert len(rows) == 1
+    assert rows[0]["download_url"] == "https://example.test/ncba-q3-2025.pdf"
+    assert rows[0]["source_page_url"] == "https://example.test/quarterly-earnings/"
+    assert rows[0]["report_frequency"] == "Quarterly"
+
+
+def test_hyphenated_integrated_report_is_annual():
+    assert classify_frequency("Integrated-Report-Financial-Statements-2024", "") == "Annual / full-year"

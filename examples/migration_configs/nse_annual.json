@@ -1,0 +1,8 @@
+{
+  "issuer": "Nairobi Securities Exchange PLC",
+  "ticker": "NSE",
+  "source_page": "https://www.nse.co.ke/annual-reports/",
+  "source_tier": "NSE/exchange",
+  "input_csv": "../../data/indexes/nse_issuer_annual_links.csv",
+  "output_csv": "../../data/migrated_indexes/nse_annual.csv"
+}

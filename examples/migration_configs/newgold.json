@@ -1,0 +1,8 @@
+{
+  "issuer": "NewGold ETF",
+  "ticker": "NEWGOLD",
+  "source_page": "https://aiss.absa.africa/product/etf/ZAE000060067/GHA/downloads",
+  "source_tier": "Issuer/administrator website",
+  "input_csv": "../../data/indexes/newgold_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/newgold.csv"
+}

@@ -63,7 +63,7 @@ def classify_frequency(title: str = "", url: str = "") -> str:
         return "Quarterly"
     if re.search(r"\b(h[12]|half[- ]year|semi[- ]annual|interim|six months|six-month)\b", text):
         return "Semi-annual / half-year"
-    if re.search(r"\b(annual|full[- ]year|integrated report|year ended|financial statements)\b", text):
+    if re.search(r"\b(annual|full[- ]year|integrated[- ]report|year ended|financial[- ]statements)\b", text):
         return "Annual / full-year"
     return "Periodic results material"
 
@@ -81,7 +81,7 @@ def deduplicate_records(records: Iterable[Mapping[str, str]], issuer: str | None
     for record in records:
         row = dict(record)
         row_issuer = row.get("issuer", issuer or "")
-        url = row.get("download_url", row.get("url", ""))
+        url = row.get("download_url") or row.get("direct_url") or row.get("url", "")
         key = (row_issuer.strip().lower(), url.strip())
         if not url.strip() or key in seen:
             continue
@@ -97,8 +97,8 @@ def normalize_source_records(records: Iterable[Mapping[str, str]], *, issuer: st
     normalized: list[dict[str, str]] = []
     for record in deduplicate_records(records, issuer=issuer):
         title = (record.get("title") or record.get("document_title") or "").strip()
-        url = (record.get("download_url") or record.get("url") or "").strip()
-        page = (record.get("source_page") or source_page).strip()
+        url = (record.get("download_url") or record.get("direct_url") or record.get("url") or "").strip()
+        page = (record.get("source_page") or record.get("source_page_url") or source_page).strip()
         normalized.append({
             "record_id": "",
             "issuer": issuer,
