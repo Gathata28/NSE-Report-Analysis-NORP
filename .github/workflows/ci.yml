@@ -34,6 +34,9 @@ jobs:
       - name: Run database integrity checks
         run: python scripts/test_nse_relational_db.py
 
+      - name: Run report-index quality checks
+        run: python scripts/test_report_index_quality.py
+
       - name: Run market-data quality checks
         run: python scripts/report_market_data_quality.py
 
