@@ -1,0 +1,2 @@
+record_id,issuer,ticker,report_frequency,document_subtype,report_year_label,webpage_title,source_page_url,download_url,http_status,content_type,source_tier
+NSE-00001,Liberty Kenya Holdings PLC,LBTY,Annual / full-year,Annual report,2022,Liberty Life Assurance Kenya Limited Annual Financial Statements and Reports for the year ended 31 December 2022,https://annualreport.cma.or.ke/,https://annualreport.cma.or.ke/media/INSURANCE/Liberty%20Kenya%20Holdings/documents/2022.pdf,linked from source page,application/pdf (inferred from URL),Issuer website

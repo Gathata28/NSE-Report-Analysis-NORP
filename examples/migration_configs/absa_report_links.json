@@ -1,0 +1,8 @@
+{
+  "issuer": "Absa Bank Kenya PLC",
+  "ticker": "ABSA",
+  "source_page": "https://www.absabank.co.ke/investor-relations/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/absa_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_absa_report_links.csv"
+}

@@ -1,0 +1,8 @@
+{
+  "issuer": "Umeme PLC",
+  "ticker": "UMME",
+  "source_page": "https://www.umeme.co.ug/investor-relations/reports/136",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/umeme_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_umeme_report_links.csv"
+}

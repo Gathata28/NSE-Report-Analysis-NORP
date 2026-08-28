@@ -1,0 +1,8 @@
+{
+  "issuer": "Kenya Airways PLC",
+  "ticker": "KQ",
+  "source_page": "https://corporate.kenya-airways.com/en/investors-shareholders/annual-reports/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/kq_annual_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_kq_annual_report_links.csv"
+}

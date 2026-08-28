@@ -1,0 +1,8 @@
+{
+  "issuer": "Family Bank Limited",
+  "ticker": "FMLY",
+  "source_page": "https://familybank.co.ke/?page_id=654",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/family_financial_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_family_financial_report_links.csv"
+}

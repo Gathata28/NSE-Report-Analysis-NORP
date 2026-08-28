@@ -1,0 +1,8 @@
+{
+  "issuer": "Kenya Orchards Limited",
+  "ticker": "ORCH",
+  "source_page": "https://www.cmarcp.or.ke/",
+  "source_tier": "CMA/regulator fallback",
+  "input_csv": "../../data/indexes/amac_predecessor_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_amac_predecessor_report_links.csv"
+}

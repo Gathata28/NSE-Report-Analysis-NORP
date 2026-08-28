@@ -1,0 +1,8 @@
+{
+  "issuer": "Jubilee Holdings Limited",
+  "ticker": "JUB",
+  "source_page": "https://jubileeinsurance.com/group/investor-relations/annual-reports/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/jubilee_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch2_jubilee.csv"
+}

@@ -1,0 +1,8 @@
+{
+  "issuer": "ARM Cement PLC",
+  "ticker": "ARM",
+  "source_page": "https://www.cmarcp.or.ke/",
+  "source_tier": "CMA/regulator fallback",
+  "input_csv": "../../data/indexes/cma_construction_manufacturing_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_cma_construction_manufacturing_report_links.csv"
+}

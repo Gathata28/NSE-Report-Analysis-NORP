@@ -1,0 +1,8 @@
+{
+  "issuer": "East African Cables PLC",
+  "ticker": "CABL",
+  "source_page": "https://www.nse.co.ke/listed-company-announcements/",
+  "source_tier": "NSE/exchange fallback",
+  "input_csv": "../../data/indexes/cabl_nse_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_cabl_nse_report_links.csv"
+}

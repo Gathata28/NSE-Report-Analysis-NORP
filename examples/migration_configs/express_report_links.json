@@ -1,0 +1,8 @@
+{
+  "issuer": "Express Kenya PLC",
+  "ticker": "XPRS",
+  "source_page": "https://expresskenya.co.ke/investor-relations/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/express_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_express_report_links.csv"
+}

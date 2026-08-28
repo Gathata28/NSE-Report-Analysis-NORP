@@ -1,0 +1,8 @@
+{
+  "issuer": "Centum Investment Company PLC",
+  "ticker": "CTUM",
+  "source_page": "https://centum.co.ke/financial-results/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/centum_financial_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_centum_financial_report_links.csv"
+}

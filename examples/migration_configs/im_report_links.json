@@ -1,0 +1,8 @@
+{
+  "issuer": "I&M Group PLC",
+  "ticker": "IMH",
+  "source_page": "https://www.imbankgroup.com/financial-results-annual-reports-and-investor-presentation/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/im_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_im_report_links.csv"
+}

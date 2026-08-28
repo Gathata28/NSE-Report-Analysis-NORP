@@ -1,0 +1,8 @@
+{
+  "issuer": "Homeboyz Entertainment PLC",
+  "ticker": "HBE",
+  "source_page": "https://homeboyz.co.ke/investor-relations",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/homeboyz_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_homeboyz_report_links.csv"
+}

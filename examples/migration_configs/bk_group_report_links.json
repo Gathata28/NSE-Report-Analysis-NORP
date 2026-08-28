@@ -1,0 +1,8 @@
+{
+  "issuer": "BK Group PLC",
+  "ticker": "BKG",
+  "source_page": "https://bk.rw/en/about/document-center",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/bk_group_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_bk_group_report_links.csv"
+}

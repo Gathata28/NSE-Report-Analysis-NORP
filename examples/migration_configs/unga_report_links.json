@@ -1,0 +1,8 @@
+{
+  "issuer": "Unga Group PLC",
+  "ticker": "UNGA",
+  "source_page": "https://unga-group.com/download-category/annual-reports-and-financial-statements/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/unga_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_unga_report_links.csv"
+}

@@ -1,0 +1,2 @@
+record_id,issuer,ticker,report_frequency,document_subtype,report_year_label,webpage_title,source_page_url,download_url,http_status,content_type,source_tier
+NSE-00001,Bamburi Cement PLC,BAMB,Semi-annual / half-year,Financial results / statements,2025,Bamburi Unaudited Half Year Group Financial Statements FY 2025,https://bamburigroup.com/bamburi-unaudited-half-year-group-financial-statements-fy-2025/,https://bamburigroup.com/wp-content/uploads/2025/08/Bamburi-2025-FY-Results.pdf,linked from source page,application/pdf (inferred from URL),Issuer website

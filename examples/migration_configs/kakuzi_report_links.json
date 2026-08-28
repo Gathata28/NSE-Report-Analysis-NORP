@@ -1,0 +1,8 @@
+{
+  "issuer": "Kakuzi PLC",
+  "ticker": "KUKZ",
+  "source_page": "https://www.kakuzi.co.ke/company-reports",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/kakuzi_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_kakuzi_report_links.csv"
+}

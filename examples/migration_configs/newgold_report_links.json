@@ -1,0 +1,8 @@
+{
+  "issuer": "NewGold Issuer (RF) Limited",
+  "ticker": "GLD",
+  "source_page": "https://aiss.absa.africa/product/etf/ZAE000060067/GHA/downloads",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/newgold_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_newgold_report_links.csv"
+}

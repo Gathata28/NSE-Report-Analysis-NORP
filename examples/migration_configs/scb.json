@@ -1,0 +1,8 @@
+{
+  "issuer": "Standard Chartered Bank Kenya Ltd",
+  "ticker": "SCBK",
+  "source_page": "https://www.sc.com/ke/investor-relations/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/scb_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch2_scb.csv"
+}

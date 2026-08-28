@@ -1,0 +1,8 @@
+{
+  "issuer": "Sasini PLC",
+  "ticker": "SASN",
+  "source_page": "https://sasini.co.ke/downloads/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/sasini_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_sasini_report_links.csv"
+}

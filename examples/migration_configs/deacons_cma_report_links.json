@@ -1,0 +1,8 @@
+{
+  "issuer": "Deacons (East Africa) PLC",
+  "ticker": "DCON",
+  "source_page": "https://annualreport.cma.or.ke/",
+  "source_tier": "CMA/regulator fallback",
+  "input_csv": "../../data/indexes/deacons_cma_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_deacons_cma_report_links.csv"
+}

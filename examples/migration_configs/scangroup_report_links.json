@@ -1,0 +1,8 @@
+{
+  "issuer": "WPP-Scangroup PLC",
+  "ticker": "SCAN",
+  "source_page": "https://wpp-scangroup.com/investor-relations/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/scangroup_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_scangroup_report_links.csv"
+}

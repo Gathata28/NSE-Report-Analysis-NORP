@@ -1,0 +1,8 @@
+{
+  "issuer": "Home Afrika Limited",
+  "ticker": "HAFR",
+  "source_page": "https://www.homeafrika.com/investor-info/annual-reports",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/home_afrika_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch2_home_afrika.csv"
+}

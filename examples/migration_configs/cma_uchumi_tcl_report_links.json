@@ -1,0 +1,8 @@
+{
+  "issuer": "Uchumi Supermarkets PLC",
+  "ticker": "UCHM",
+  "source_page": "https://www.cmarcp.or.ke/",
+  "source_tier": "CMA/regulator fallback",
+  "input_csv": "../../data/indexes/cma_uchumi_tcl_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_cma_uchumi_tcl_report_links.csv"
+}

@@ -1,0 +1,8 @@
+{
+  "issuer": "Liberty Kenya Holdings PLC",
+  "ticker": "LBTY",
+  "source_page": "https://annualreport.cma.or.ke/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/liberty_cma_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_liberty_cma_report_links.csv"
+}

@@ -1,0 +1,8 @@
+{
+  "issuer": "Eveready East Africa PLC",
+  "ticker": "EVRD",
+  "source_page": "https://www.cmarcp.or.ke/",
+  "source_tier": "CMA/regulator fallback",
+  "input_csv": "../../data/indexes/eveready_cma_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_eveready_cma_report_links.csv"
+}

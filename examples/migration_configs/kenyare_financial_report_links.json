@@ -1,0 +1,8 @@
+{
+  "issuer": "Kenya Reinsurance Corporation PLC",
+  "ticker": "KNRE",
+  "source_page": "https://www.kenyare.co.ke/investor-relations/financial-reports",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/kenyare_financial_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_kenyare_financial_report_links.csv"
+}

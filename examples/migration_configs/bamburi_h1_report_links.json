@@ -1,0 +1,8 @@
+{
+  "issuer": "Bamburi Cement PLC",
+  "ticker": "BAMB",
+  "source_page": "https://bamburigroup.com/bamburi-unaudited-half-year-group-financial-statements-fy-2025/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/bamburi_h1_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_bamburi_h1_report_links.csv"
+}

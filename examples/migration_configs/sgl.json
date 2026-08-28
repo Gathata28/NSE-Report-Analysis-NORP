@@ -1,0 +1,8 @@
+{
+  "issuer": "Standard Group PLC",
+  "ticker": "SGL",
+  "source_page": "https://www.standardmedia.co.ke/corporate/investors",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/sgl_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch3_sgl.csv"
+}

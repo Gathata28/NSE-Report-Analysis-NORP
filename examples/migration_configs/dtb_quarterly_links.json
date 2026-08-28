@@ -1,0 +1,8 @@
+{
+  "issuer": "Diamond Trust Bank Kenya PLC",
+  "ticker": "DTK",
+  "source_page": "https://dtbk.dtbafrica.com/quarterly-financial-reports",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/dtb_quarterly_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_dtb_quarterly_links.csv"
+}

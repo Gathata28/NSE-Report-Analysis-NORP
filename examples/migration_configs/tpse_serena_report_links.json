@@ -1,0 +1,8 @@
+{
+  "issuer": "TPS Eastern Africa PLC",
+  "ticker": "TPSE",
+  "source_page": "https://www.serenahotels.com/about-us/governance",
+  "source_tier": "Issuer-controlled CDN linked from issuer page",
+  "input_csv": "../../data/indexes/tpse_serena_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_tpse_serena_report_links.csv"
+}

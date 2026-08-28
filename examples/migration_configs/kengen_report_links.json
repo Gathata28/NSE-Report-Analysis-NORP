@@ -1,0 +1,8 @@
+{
+  "issuer": "KenGen PLC",
+  "ticker": "KEGN",
+  "source_page": "https://www.kengen.co.ke/download/kengen-integrated-annual-report-financial-statement-2025/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/kengen_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_kengen_report_links.csv"
+}

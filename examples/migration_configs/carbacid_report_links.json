@@ -1,0 +1,8 @@
+{
+  "issuer": "Carbacid Investments PLC",
+  "ticker": "CARB",
+  "source_page": "https://carbacid.com/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/carbacid_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_carbacid_report_links.csv"
+}

@@ -1,0 +1,8 @@
+{
+  "issuer": "Sameer Africa PLC",
+  "ticker": "SMER",
+  "source_page": "https://sameerafrica.com/financial-reports/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/sameer_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_sameer_report_links.csv"
+}

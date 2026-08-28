@@ -1,0 +1,8 @@
+{
+  "issuer": "Kenya Power and Lighting PLC",
+  "ticker": "KPLC",
+  "source_page": "https://www.kplc.co.ke/annual-reports",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/kplc_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_kplc_report_links.csv"
+}

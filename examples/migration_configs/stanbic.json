@@ -1,0 +1,8 @@
+{
+  "issuer": "Stanbic Holdings PLC",
+  "ticker": "SBIC",
+  "source_page": "https://www.stanbicbank.co.ke/kenya/personal/about-us/investor-relations",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/stanbic_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch2_stanbic.csv"
+}

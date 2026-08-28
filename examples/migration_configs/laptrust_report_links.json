@@ -1,0 +1,8 @@
+{
+  "issuer": "Laptrust Imara I-REIT",
+  "ticker": "LAPR",
+  "source_page": "https://laptrustimaraireit.co.ke/integrated-annual-reports/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/laptrust_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_laptrust_report_links.csv"
+}

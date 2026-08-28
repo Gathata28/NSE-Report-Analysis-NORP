@@ -1,0 +1,8 @@
+{
+  "issuer": "Sanlam Allianz Holdings (Kenya) PLC",
+  "ticker": "SLAM",
+  "source_page": "https://ke.sanlamallianz.com/life-insurance/about/our-profile",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/sanlam_allianz_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch3_sanlam_allianz.csv"
+}

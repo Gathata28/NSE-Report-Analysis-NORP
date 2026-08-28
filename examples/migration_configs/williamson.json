@@ -1,0 +1,8 @@
+{
+  "issuer": "Williamson Tea Kenya PLC",
+  "ticker": "WTK",
+  "source_page": "https://www.williamsontea.com/investor-reports/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/williamson_tea_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch4_williamson.csv"
+}

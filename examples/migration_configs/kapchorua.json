@@ -1,0 +1,8 @@
+{
+  "issuer": "Kapchorua Tea Company PLC",
+  "ticker": "KAPC",
+  "source_page": "https://www.williamsontea.com/investor-reports/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/kapchorua_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch4_kapchorua.csv"
+}

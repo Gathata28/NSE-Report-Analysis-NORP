@@ -1,0 +1,8 @@
+{
+  "issuer": "Nation Media Group PLC",
+  "ticker": "NMG",
+  "source_page": "https://www.nationmedia.com/investor-relations/financial-reports/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/nmg_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_nmg_report_links.csv"
+}

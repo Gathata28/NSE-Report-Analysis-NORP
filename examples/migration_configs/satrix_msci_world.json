@@ -1,0 +1,8 @@
+{
+  "issuer": "Satrix MSCI World Feeder ETF",
+  "ticker": "SMWF.E0000",
+  "source_page": "https://satrix.co.za/products/product-details?id=33",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/satrix_msci_world_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch3_satrix_msci_world.csv"
+}

@@ -1,0 +1,8 @@
+{
+  "issuer": "Olympia Capital Holdings PLC",
+  "ticker": "OCH",
+  "source_page": "https://ochl.co.ke/investment/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/olympia_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_olympia_report_links.csv"
+}

@@ -1,0 +1,8 @@
+{
+  "issuer": "HF Group PLC",
+  "ticker": "HFCK",
+  "source_page": "https://hfcb.co.ke/investor-relations",
+  "source_tier": "Historical/current successor issuer website",
+  "input_csv": "../../data/indexes/hfcb_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_hfcb_report_links.csv"
+}

@@ -1,0 +1,8 @@
+{
+  "issuer": "National Bank of Kenya PLC",
+  "ticker": "NBK",
+  "source_page": "https://www.nationalbank.co.ke/investor-relations",
+  "source_tier": "Historical issuer website",
+  "input_csv": "../../data/indexes/nbk_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_nbk_report_links.csv"
+}

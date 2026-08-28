@@ -1,0 +1,8 @@
+{
+  "issuer": "TotalEnergies Marketing Kenya PLC",
+  "ticker": "TOTL",
+  "source_page": "https://totalenergies.ke/about-us/shareholder-information/financials",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/total_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch2_total.csv"
+}

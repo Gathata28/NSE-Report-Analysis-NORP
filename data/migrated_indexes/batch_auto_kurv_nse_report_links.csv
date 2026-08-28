@@ -1,0 +1,2 @@
+record_id,issuer,ticker,report_frequency,document_subtype,report_year_label,webpage_title,source_page_url,download_url,http_status,content_type,source_tier
+NSE-00001,Kurwitu Ventures Ltd,KURV,Annual / full-year,Annual report,2020,Kurwitu Ventures Ltd - Financial Statements for the Year Ended 31-Dec-2020,https://www.nse.co.ke/listed-company-announcements/,https://www.nse.co.ke/wp-content/uploads/kurwitu-ventures-ltd-financial-statements-for-the-year-ended-31-dec-2020.pdf,linked from source page,application/pdf (inferred from URL),NSE/exchange fallback

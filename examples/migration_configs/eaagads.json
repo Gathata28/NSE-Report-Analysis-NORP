@@ -1,0 +1,8 @@
+{
+  "issuer": "Eaagads Ltd Ord 1.25 AIMS",
+  "ticker": "EGAD",
+  "source_page": "https://www.eaagads.co.ke/annual-reports-and-financial-statements/",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/eaagads_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch3_eaagads.csv"
+}

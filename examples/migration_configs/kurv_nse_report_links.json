@@ -1,0 +1,8 @@
+{
+  "issuer": "Kurwitu Ventures Ltd",
+  "ticker": "KURV",
+  "source_page": "https://www.nse.co.ke/listed-company-announcements/",
+  "source_tier": "NSE/exchange fallback",
+  "input_csv": "../../data/indexes/kurv_nse_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_kurv_nse_report_links.csv"
+}

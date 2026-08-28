@@ -1,0 +1,8 @@
+{
+  "issuer": "Nairobi Business Ventures PLC",
+  "ticker": "NBV",
+  "source_page": "https://www.nbvplc.com/annual.html",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/nbv_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch3_nbv.csv"
+}

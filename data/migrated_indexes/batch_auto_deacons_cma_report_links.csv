@@ -1,0 +1,2 @@
+record_id,issuer,ticker,report_frequency,document_subtype,report_year_label,webpage_title,source_page_url,download_url,http_status,content_type,source_tier
+NSE-00001,Deacons (East Africa) PLC,DCON,Annual / full-year,Annual report,2018,Deacons (East Africa) PLC financial statements / report 2018,https://annualreport.cma.or.ke/,https://annualreport.cma.or.ke/media/COMMERCIAL%20AND%20SERVICES/Decons%20(East%20Africa)%20Plc/documents/2018.PDF,linked from source page,application/pdf (inferred from URL),CMA/regulator fallback

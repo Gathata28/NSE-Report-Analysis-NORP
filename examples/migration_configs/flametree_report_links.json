@@ -1,0 +1,8 @@
+{
+  "issuer": "Flame Tree Group Holdings PLC",
+  "ticker": "FTGH",
+  "source_page": "https://flametreegroup.com/financial-reports",
+  "source_tier": "Issuer website",
+  "input_csv": "../../data/indexes/flametree_report_links.csv",
+  "output_csv": "../../data/migrated_indexes/batch_auto_flametree_report_links.csv"
+}
