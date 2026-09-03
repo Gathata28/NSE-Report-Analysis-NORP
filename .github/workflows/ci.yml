@@ -77,3 +77,5 @@ jobs:
           /tmp/norp-package-venv/bin/python -m pip install dist/*.whl
           /tmp/norp-package-venv/bin/norp-download-reports --help
           /tmp/norp-package-venv/bin/norp-import --help
+          /tmp/norp-package-venv/bin/norp-extract-pdfs --help
+          /tmp/norp-package-venv/bin/norp-bundle-report --help

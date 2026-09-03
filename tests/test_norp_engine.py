@@ -302,3 +302,24 @@ def test_download_one_rejects_invalid_url(tmp_path):
     )
     assert result.status == "invalid_url"
     assert result.error == "URL is not absolute HTTP(S)"
+
+
+def test_text_layer_threshold_distinguishes_usable_text():
+    from ocr_local_pdfs import has_usable_text
+
+    assert has_usable_text("Annual report " * 20, 80)
+    assert not has_usable_text("scan", 80)
+
+
+def test_bundle_report_counts_download_and_extraction_statuses():
+    from generate_bundle_report import markdown_report
+
+    markdown = markdown_report(
+        [{"status": "downloaded", "sha256": "a" * 64, "byte_size": 10}, {"status": "blocked_or_not_pdf", "sha256": None, "byte_size": None}],
+        [{"extraction_method": "pdftotext", "extraction_status": "extracted"}],
+        "Banking bundle",
+    )
+    assert "Catalog rows selected | 2" in markdown
+    assert "`blocked_or_not_pdf` | 1" in markdown
+    assert "`pdftotext` | 1" in markdown
+    assert "Pending or unsuccessful rows | 1" in markdown

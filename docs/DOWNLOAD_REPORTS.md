@@ -97,3 +97,31 @@ For a public web interface, the recommended design is to let a user submit filte
 ## Current scope and limitations
 
 The downloader is intentionally a local/public-repository CLI rather than an always-on service. It resolves ordinary HTML landing pages with static anchor links; JavaScript-only microsites, authentication-gated pages, and blocked hosts remain manifest-visible exceptions for manual review. A future hosted interface should use a background queue and object storage rather than keeping large ZIP files in Git history. GitHub Releases remains NORP's selected location for versioned database and archive snapshots.
+
+## Extracting downloaded PDFs
+
+Downloading a PDF only proves that a public file was retrieved and checksummed. It does not mean the report has been read or that its numbers have been verified. After a bundle is downloaded, run the text-layer-first extractor:
+
+```bash
+norp-extract-pdfs \
+  --input-dir ./downloads/banking \
+  --manifest ./downloads/banking/extraction_manifest.jsonl
+```
+
+The extractor recursively finds PDFs, tries `pdftotext` first, and uses `pdftoppm` plus Tesseract only when the direct text layer is empty or too short to be useful. This is faster and generally more accurate for modern born-digital reports. Use `--keep-pages` only when OCR page images are needed for review. Extracted text is evidence; it does not automatically create validated financial facts.
+
+## Reviewing bundle completion
+
+Generate a concise status report after download and extraction:
+
+```bash
+norp-bundle-report \
+  --download-manifest ./downloads/banking/download_manifest.jsonl \
+  --extraction-manifest ./downloads/banking/extraction_manifest.jsonl \
+  --output ./downloads/banking/BUNDLE_STATUS.md \
+  --title "BANKING bundle status"
+```
+
+The report separates catalog rows selected, files retrieved or already present, checksum-bearing files, blocked or unresolved rows, and extraction methods. Keep the status report next to the bundle so future users can distinguish **not attempted**, **not retrievable**, **retrieved**, and **text-extracted** records.
+
+For large sectors, use `--dry-run` and then split the work by sector, ticker, or year range. A full selection can contain hundreds of issuer-hosted files and may take substantial time because NORP deliberately respects source-host pacing and records 403 or timeout outcomes instead of bypassing them.

@@ -71,10 +71,10 @@ NORP also provides a pip-installable wheel and source distribution. Install the 
 
 ```bash
 python -m pip install norp-nse-report-analysis
-norp-download-reports --database ./nse_reports_archive_0.2.0.sqlite --output-dir ./downloads/kplc --ticker KPLC
+norp-download-reports --database ./nse_reports_archive_0.3.0.sqlite --output-dir ./downloads/kplc --ticker KPLC
 ```
 
-Maintainers publish versioned assets by pushing a tag such as `v0.2.0`. The tagged workflow builds the wheel and source distribution, stages the database and index ZIP outside Git history, generates checksums and a release manifest, and publishes the GitHub Release. The manifest contract is defined in [`docs/release_manifest.schema.json`](docs/release_manifest.schema.json), and the release-note template is [`docs/release_notes_template.md`](docs/release_notes_template.md).
+Maintainers publish versioned assets by pushing a tag such as `v0.3.0`. The tagged workflow builds the wheel and source distribution, stages the database and index ZIP outside Git history, generates checksums and a release manifest, and publishes the GitHub Release. The manifest contract is defined in [`docs/release_manifest.schema.json`](docs/release_manifest.schema.json), and the release-note template is [`docs/release_notes_template.md`](docs/release_notes_template.md).
 
 ## Provenance and responsible use
 
@@ -85,3 +85,25 @@ The public repository contains only the permitted NORP archive and market-data e
 ## Citation
 
 Please cite the project using `CITATION.cff` and preserve the source URL and page locator when using any report or fact.
+
+## Extract and document a downloaded bundle
+
+A downloaded PDF is a retrieved source file, not yet a reviewed report. The optional extraction command recursively scans a download directory, prefers the PDF’s existing text layer, and falls back to OCR only when direct extraction is insufficient:
+
+```bash
+norp-extract-pdfs \
+  --input-dir ./downloads/banking \
+  --manifest ./downloads/banking/extraction_manifest.jsonl
+```
+
+Then create a bundle-level completion report:
+
+```bash
+norp-bundle-report \
+  --download-manifest ./downloads/banking/download_manifest.jsonl \
+  --extraction-manifest ./downloads/banking/extraction_manifest.jsonl \
+  --output ./downloads/banking/BUNDLE_STATUS.md \
+  --title "BANKING bundle status"
+```
+
+The status report makes it clear which rows were retrieved, checksum-recorded, blocked, unresolved, or text-extracted. Extracted text and numeric candidates remain source evidence requiring manual page-level review; the tools do not silently promote OCR output into verified financial facts.

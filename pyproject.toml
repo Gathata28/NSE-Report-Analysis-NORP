@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "norp-nse-report-analysis"
-version = "0.2.0"
+version = "0.3.0"
 description = "Source-verifiable Nairobi Securities Exchange report and market-data archive tools"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -37,13 +37,15 @@ Issues = "https://github.com/Gathata28/NSE-Report-Analysis-NORP/issues"
 [project.scripts]
 norp-download-reports = "download_reports:main"
 norp-import = "norp_import:main"
+norp-extract-pdfs = "ocr_local_pdfs:main"
+norp-bundle-report = "generate_bundle_report:main"
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "build>=1.2", "twine>=5.0"]
 
 [tool.setuptools]
 package-dir = {"" = "scripts"}
-py-modules = ["download_reports", "norp_engine", "norp_import"]
+py-modules = ["download_reports", "norp_engine", "norp_import", "ocr_local_pdfs", "generate_bundle_report"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

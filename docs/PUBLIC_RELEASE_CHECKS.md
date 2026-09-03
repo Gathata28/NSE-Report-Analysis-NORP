@@ -22,6 +22,22 @@ python scripts/test_report_index_quality.py
 python scripts/report_market_data_quality.py
 ```
 
+For a downloaded sector or ticker bundle, run the text-layer-first extraction and generate a completion report:
+
+```bash
+norp-extract-pdfs \
+  --input-dir ./downloads/banking \
+  --manifest ./downloads/banking/extraction_manifest.jsonl
+norp-bundle-report \
+  --download-manifest ./downloads/banking/download_manifest.jsonl \
+  --extraction-manifest ./downloads/banking/extraction_manifest.jsonl \
+  --output ./downloads/banking/BUNDLE_STATUS.md \
+  --title "BANKING bundle status"
+```
+
+The extraction manifest must distinguish `pdftotext` from `tesseract-ocr`; OCR is a fallback, not the default for every PDF. The bundle report must make selected, retrieved, checksum-recorded, unresolved, and failed rows visible.
+
+
 The public filtered downloader should also pass a dry-run smoke test:
 
 ```bash
@@ -67,17 +83,17 @@ Large database and index snapshots are staged outside the working tree:
 
 ```bash
 python scripts/bundle_outputs.py \
-  --version 0.2.0 \
-  --output-dir /tmp/norp-release-0.2.0
+  --version 0.3.0 \
+  --output-dir /tmp/norp-release-0.3.0
 ```
 
-Review the generated release manifest and `SHA256SUMS_0.2.0.txt`. Each artifact must have a stable GitHub Release URL, a 64-character SHA-256 checksum, byte size, release label, and license metadata. Validate the manifest against `docs/release_manifest.schema.json` when a JSON Schema validator is available.
+Review the generated release manifest and `SHA256SUMS_0.3.0.txt`. Each artifact must have a stable GitHub Release URL, a 64-character SHA-256 checksum, byte size, release label, and license metadata. Validate the manifest against `docs/release_manifest.schema.json` when a JSON Schema validator is available.
 
 To publish the first or next release, create and push a tag in the form `vMAJOR.MINOR.PATCH`:
 
 ```bash
-git tag v0.2.0
-git push origin v0.2.0
+git tag v0.3.0
+git push origin v0.3.0
 ```
 
 The `.github/workflows/release.yml` workflow builds the wheel and source distribution, stages the SQLite and CSV-index assets outside Git history, fills `docs/release_notes_template.md`, and publishes the resulting files to GitHub Releases. Inspect the published release and verify one downloaded asset against its checksum file.
